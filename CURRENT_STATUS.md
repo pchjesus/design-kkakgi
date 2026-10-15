@@ -5,6 +5,7 @@
 - 저장소 운영 정책 전환: **COMPLETED** — 이미지 없는 새 Git 이력과 Public 전환 완료
 - 범용 시각 디자인 지침: v1.2 **DRAFT** 유지
 - EXP-001 MUL.: 다섯 버전 코드·문서·피드백·검증 기록 보존. 미리보기·공유 이미지 제거에 따른 화면 재현 영향은 사례 README에 기록됨.
+- EXP-001 MUL. 동기화(2026-10-16): 통합 백업과 5개 실행 HTML·13개 문서/검증 파일 Git blob SHA 일치 확인. 동일 파일 재업로드 없이 [동기화 검증 기록](cases/mul-cup/SYNC_REVIEW_2026-10-16.md) 추가. 이미지 포함 ZIP은 기존 이미지 정책에 따라 제외.
 - EXP-002 SAI: v0.1·v0.2 코드·문서 보존. 서로 다른 localStorage 키와 자동 이전 부재는 변경하지 않음.
 - EXP-003 작업형 웹앱: `PLANNED / NOT STARTED`
 
