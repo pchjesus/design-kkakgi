@@ -1,0 +1,42 @@
+source	original_relative_path	reason
+MUL	misc_review_crops/sliceB_0.png	duplicated release/archive or temporary crop/reference guideline
+MUL	misc_review_crops/sliceB_1.png	duplicated release/archive or temporary crop/reference guideline
+MUL	misc_review_crops/slice_0.png	duplicated release/archive or temporary crop/reference guideline
+MUL	misc_review_crops/slice_1.png	duplicated release/archive or temporary crop/reference guideline
+MUL	misc_review_crops/slice_2.png	duplicated release/archive or temporary crop/reference guideline
+MUL	misc_review_crops/slice_3.png	duplicated release/archive or temporary crop/reference guideline
+MUL	original_release_archives/MUL_Cup_Promo_Animated_Site.zip	duplicated release/archive or temporary crop/reference guideline
+MUL	original_release_archives/MUL_Cup_Promo_Site.zip	duplicated release/archive or temporary crop/reference guideline
+MUL	original_release_archives/MUL_Cup_v1.2_Complete.zip	duplicated release/archive or temporary crop/reference guideline
+MUL	original_release_archives/MUL_Cup_v1.2_Refined_Complete.zip	duplicated release/archive or temporary crop/reference guideline
+MUL	original_release_archives/MUL_Cup_v1.2_Rework_Complete.zip	duplicated release/archive or temporary crop/reference guideline
+MUL	reference_guidelines/Universal_Visual_Design_UI_UX_Guidelines_v1.1.md	duplicated release/archive or temporary crop/reference guideline
+MUL	reference_guidelines/Universal_Visual_Design_UI_UX_Guidelines_v1.2.md	duplicated release/archive or temporary crop/reference guideline
+MUL	reference_guidelines/Universal_Visual_Design_v1.2_QUICK_START.md	duplicated release/archive or temporary crop/reference guideline
+MUL	versions/01_v1.1_Initial/previews/desktop_mobile_composite.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/02_v1.1_Animated/previews/desktop_mobile_composite.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/above_fold_1440.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/above_fold_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/above_fold_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/color_amber.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/color_clear.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/color_smoke.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/03_v1.2_Catalog/previews/desktop_mobile_preview.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/above_fold_1440.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/above_fold_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/above_fold_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/desktop_mobile_preview.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/stage_amber.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/stage_clear.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/04_v1.2_Rework/previews/stage_smoke.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/fold_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/fold_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_amber_1440.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_amber_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_amber_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_clear_1440.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_clear_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_clear_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_rotated_320.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/previews/stage_rotated_390.png	non-core preview; retained in separately provided original ZIP
+MUL	versions/05_v1.2_Refined/tests/debug_red.png	temporary debug screenshot

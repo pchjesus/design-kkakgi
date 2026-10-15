@@ -1,0 +1,90 @@
+[
+  {
+    "viewport": 1440,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": [],
+    "color_change": true,
+    "static_background": true,
+    "changed_tint": "#ce874a",
+    "drawer_open": true,
+    "price_deferred": true,
+    "sync_color": true,
+    "quantity": true,
+    "bag_count": true,
+    "total": true,
+    "escape_close": true,
+    "remove": true,
+    "faq": true
+  },
+  {
+    "viewport": 1024,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "viewport": 790,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "viewport": 700,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "viewport": 390,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": [],
+    "color_change": true,
+    "static_background": true,
+    "changed_tint": "#ce874a",
+    "drawer_open": true,
+    "price_deferred": true,
+    "sync_color": true,
+    "quantity": true,
+    "bag_count": true,
+    "total": true,
+    "escape_close": true,
+    "remove": true,
+    "faq": true,
+    "menu_open": true,
+    "menu_close": true
+  },
+  {
+    "viewport": 360,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "viewport": 320,
+    "navigation": "set_content_with_mock_storage",
+    "overflow": 0,
+    "errors": [],
+    "color_change": true,
+    "static_background": true,
+    "changed_tint": "#ce874a",
+    "drawer_open": true,
+    "price_deferred": true,
+    "sync_color": true,
+    "quantity": true,
+    "bag_count": true,
+    "total": true,
+    "escape_close": true,
+    "remove": true,
+    "faq": true,
+    "menu_open": true,
+    "menu_close": true
+  },
+  {
+    "reduced_motion_animation": "none"
+  },
+  {
+    "text_200pct_overflow": 0
+  }
+]

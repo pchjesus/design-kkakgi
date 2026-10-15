@@ -1,0 +1,5 @@
+PASS: 1440px interactions, motion classes, responsive width, 0 JS exceptions
+PASS: 390px interactions, motion classes, responsive width, 0 JS exceptions
+PASS: 320px interactions, motion classes, responsive width, 0 JS exceptions
+PASS: reduced motion disables animations and reveals static content
+NOT RUN: real devices, 200% zoom accessibility audit, browser reload persistence (automation environment denies navigation)

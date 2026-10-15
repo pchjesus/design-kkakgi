@@ -1,0 +1,8 @@
+PASS responsive 1440px, scroll width 1440px, JS errors=0
+PASS desktop links / 3 color selections / quantity / bag add-remove / totals / Escape / FAQ
+PASS responsive 390px, scroll width 390px, JS errors=0
+PASS mobile open-close navigation
+PASS responsive 320px, scroll width 320px, JS errors=0
+PASS color selection updates rendered product stage
+NOT RUN browser reload + localStorage retention (browser harness blocked local navigation)
+NOT RUN automated color contrast WCAG audit; actual device/user usability

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="사이 — 애니메이션과 웹툰, 세상의 이야기를 학술 연구와 연결하는 블로그. 재미있는 질문을 연구의 근거와 한계까지 따라갑니다.">
+  <title>사이 — 이야기에서 시작해, 근거까지.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">본문으로 바로가기</a>
+<div id="read-progress" class="read-progress" hidden><div id="read-progress-fill"></div></div>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="logo" href="#home" aria-label="사이, 첫 화면으로"><span class="logo-glyph" aria-hidden="true"><span></span><span></span></span><span>사이<span class="logo-dot">.</span></span><small>생각과 근거 사이</small></a>
+    <nav class="main-nav" aria-label="주요 탐색"><a href="#library" id="nav-library">읽을거리</a><a href="#saved" id="nav-saved">저장한 글 <span id="saved-count" class="count" aria-label="저장한 글 수">0</span></a><a href="#about" id="nav-about">소개</a></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="open-search" aria-label="글 검색창으로 이동" title="검색"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button" id="theme-toggle" aria-label="다크 모드로 변경" title="화면 모드 전환"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 16A8.5 8.5 0 0 1 8 4 8.5 8.5 0 1 0 20 16Z"/></svg></button>
+      <button id="new-post" class="button button-primary header-write"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>글 작성</span></button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+ <div id="home-view">
+  <section class="hero shell" id="home" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A JOURNAL OF CULTURE & RESEARCH</div>
+      <h1 id="hero-title">재밌는 이야기는<br><span>좋은 질문</span>에서<br>시작되니까.</h1>
+      <p class="hero-description">만화 속 능력, 애니메이션의 한 장면, 모두가 당연하게 믿는 이야기. 한 번 더 질문하고, 논문으로 확인하고, 우리만의 시선을 더해 봅니다.</p>
+      <div class="hero-actions"><a href="#post/memory" class="button button-primary button-big">첫 이야기 읽기 <span aria-hidden="true">↗</span></a><a href="#library" class="text-link">다른 주제 둘러보기 <span aria-hidden="true">→</span></a></div>
+      <div class="hero-footnote"><span class="small-icon" aria-hidden="true">✳</span> 익숙한 이야기에서 출발해, 근거와 해석을 구분하며 읽는 곳</div>
+    </div>
+    <div class="hero-scene" aria-label="이야기와 연구가 만나 하나의 질문이 되는 추상 일러스트" role="img">
+      <div class="scene-grid" aria-hidden="true"></div>
+      <div class="scene-index">ISSUE 001 <span>THE CURIOUS MIND</span></div>
+      <div class="scene-ring ring-a"></div><div class="scene-ring ring-b"></div>
+      <div class="scene-page scene-fiction"><div class="page-kicker">01 — STORY</div><div class="page-symbol">?</div><div class="page-caption">이야기의<br>가능성</div></div>
+      <div class="scene-page scene-research"><div class="page-kicker">02 — RESEARCH</div><div class="page-wave"></div><div class="page-caption">논문이<br>말하는 것</div></div>
+      <div class="scene-label">WHERE IDEAS MEET <span aria-hidden="true">↗</span></div>
+    </div>
+  </section>
+  <section class="process-band" aria-label="사이에서 글을 읽는 방식"><div class="shell process-content"><div class="process-intro">한 편을 읽는 방식</div><div class="process-step"><span class="step-index">01</span><span>작품에서 질문 발견</span></div><span class="process-arrow" aria-hidden="true">→</span><div class="process-step"><span class="step-index">02</span><span>연구 결과 확인</span></div><span class="process-arrow" aria-hidden="true">→</span><div class="process-step"><span class="step-index">03</span><span>해석과 한계 구분</span></div></div></section>
+  <section class="featured shell" aria-labelledby="featured-heading">
+    <div class="section-heading"><div><p class="overline">EDITOR’S NOTE / 001</p><h2 id="featured-heading">지금 펼쳐볼 이야기</h2></div><span class="section-trail">호기심이 연구를 만나는 순간</span></div>
+    <article class="featured-story">
+      <div class="feature-cover feature-memory" aria-hidden="true"><div class="feature-orbit"></div><div class="feature-core"></div><span class="feature-cover-top">CASE 001 / MEMORY</span><span class="feature-cover-bottom">WHAT MAKES US, US?</span></div>
+      <div class="feature-copy"><div class="meta-label"><span class="pill pill-story">애니메이션 × 기억</span><span>7분 읽기</span></div><h3>기억을 지우는 캐릭터들,<br>과학은 어디까지 왔을까?</h3><p>드라마틱한 기억 삭제 장면을 보고 문득 궁금해졌다면. 실제 기억 재고착 연구가 보여준 가능성과 넘을 수 없는 경계를 함께 읽어봅니다.</p><div class="featured-bottom"><span class="evidence-small"><span class="evidence-mark"></span> 실험 연구에서 출발한 해설</span><a href="#post/memory" class="inline-link">이야기 읽기 <span aria-hidden="true">↗</span></a></div></div>
+    </article>
+  </section>
+  <section class="library shell" id="library" aria-labelledby="library-heading">
+    <div class="section-heading"><div><p class="overline">THE READING ROOM</p><h2 id="library-heading">호기심의 서재</h2><p class="section-summary">관심 있는 이야기부터 골라 읽어봐. 논문과 연결되는 지점은 글 안에서 자세히 설명해 둘게.</p></div></div>
+    <div class="library-controls"><div class="chip-row" id="category-tabs" role="group" aria-label="글 주제 선택"></div><div class="filter-right"><label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><span class="visually-hidden">제목, 주제, 본문 검색</span><input id="post-search" type="search" placeholder="궁금한 키워드 찾기" autocomplete="off"></label><label class="visually-hidden" for="post-sort">글 정렬</label><select id="post-sort"><option value="recent">최신순</option><option value="oldest">오래된순</option><option value="title">제목순</option></select></div></div>
+    <p id="result-status" class="result-status" role="status" aria-live="polite"></p>
+    <div class="post-grid" id="post-grid"></div>
+    <div class="library-bottom"><span>다음 이야기는 어떤 질문에서 시작될까?</span><button id="library-compose" class="inline-link">내 이야기 써보기 <span aria-hidden="true">↗</span></button></div>
+  </section>
+  <section class="about-section" id="about" aria-labelledby="about-heading"><div class="shell about-inner"><div class="about-copy"><p class="overline">OUR EDITORIAL PROMISE</p><h2 id="about-heading">재미있게 읽고,<br>쉽게 단정하지 않기.</h2><p>논문 한 편이 모든 질문의 정답을 주지는 않아요. ‘사이’에서는 작품의 상상력과 연구에서 실제로 관찰된 사실을 구분하고, 연구 대상·방법·한계를 독자에게 보여줍니다.</p></div><div class="promise-list"><div><span>01</span><strong>흥미를 만드는 질문</strong><p>웹툰, 애니메이션, 사회의 통념을 관찰해요.</p></div><div><span>02</span><strong>연구가 확인한 범위</strong><p>논문의 설계와 근거 수준을 표시해요.</p></div><div><span>03</span><strong>해석의 경계까지</strong><p>저자의 주장과 우리의 생각이 섞이지 않게 해요.</p></div></div></div></section>
+ </div>
+ <section id="article-view" class="article-view" hidden aria-labelledby="article-title"><div class="shell"><div class="article-toolbar"><a href="#library" id="back-to-library" class="subtle-link">← 읽을거리로 돌아가기</a><div class="article-toolbar-actions"><button id="edit-article" class="button button-outline" hidden>내 글 수정</button><button id="bookmark-article" class="button button-outline" aria-pressed="false">☆ 글 저장</button><button id="copy-link" class="button button-outline">↗ 링크 복사</button></div></div><div id="article-slot"></div></div></section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><div><div class="footer-logo">사이<span>.</span></div><p>이야기에서 시작해, 근거까지.</p></div><div><p>개인 블로그 UI/UX 프로토타입 · v0.2</p><p>예시 글은 교육용 요약이며 논문 원문의 전체 분석을 대체하지 않습니다.</p></div></div></footer>
+<div class="modal-layer" id="editor-layer" hidden><div class="modal-shade" data-close-editor></div><section class="editor-dialog" role="dialog" aria-modal="true" aria-labelledby="editor-title"><div class="editor-head"><div><p class="overline">WRITE YOUR CURIOSITY</p><h2 id="editor-title">나만의 글 쓰기</h2><p>질문 · 근거 · 해석 · 한계를 나눠 적어봐. 저장하기 전까지 기존 글은 바뀌지 않아.</p></div><button id="close-editor" class="icon-button" aria-label="글 작성 창 닫기">✕</button></div><form id="editor-form"><div class="editor-columns"><div class="editor-fields"><label>제목 <span>*</span><input id="form-title" required maxlength="120" placeholder="예: 웹툰 속 천재는 정말 모든 걸 기억할까?"></label><label>주제 <span>*</span><select id="form-category"><option>애니메이션</option><option>웹툰</option><option>사회·인식</option><option>일상·과학</option></select></label><label>짧은 소개 <span>*</span><textarea id="form-excerpt" rows="2" maxlength="220" required placeholder="독자에게 던질 질문을 한두 문장으로"></textarea></label><label>작품이나 일상에서 시작한 질문 <span>*</span><textarea id="form-story" rows="4" maxlength="5000" required placeholder="어떤 장면, 어떤 상식에서 이 질문이 나왔나요?"></textarea></label><label>논문에서 확인한 것 <span>*</span><textarea id="form-evidence" rows="5" maxlength="5000" required placeholder="연구 설계·연구 대상·실제 결과를 구분해 적어봐"></textarea></label></div><div class="editor-fields"><label>나의 연결과 해석 <span>*</span><textarea id="form-interpretation" rows="5" maxlength="5000" required placeholder="여기부터는 연구 결과가 아닌 나의 해석임을 밝혀봐"></textarea></label><label>주의할 점 · 연구의 한계 <span>*</span><textarea id="form-limitations" rows="4" maxlength="4000" required placeholder="무엇을 아직 결론 내릴 수 없을까?"></textarea></label><label>APA 7 참고문헌 (선택)<textarea id="form-reference" rows="3" maxlength="1300" placeholder="저자. (연도). 논문 제목. 학술지, 권(호), 페이지. DOI"></textarea></label><div class="editor-notice"><strong>어디에 저장되나요?</strong><p>글은 이 브라우저 안에만 저장됩니다. 온라인 게시·다른 기기 공유는 되지 않으며 브라우저 데이터를 지우면 사라질 수 있습니다.</p></div></div></div><div class="editor-footer"><span id="editor-state" role="status" aria-live="polite">새 글 작성 중 · 저장 전</span><div class="editor-buttons"><button type="button" class="button button-outline" id="cancel-editor">작성 취소</button><button type="submit" class="button button-primary" id="submit-editor">내 브라우저에 글 저장</button></div></div></form></section></div>
+<div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+<script src="seed-data.js"></script><script src="app.js"></script>
+</body>
+</html>

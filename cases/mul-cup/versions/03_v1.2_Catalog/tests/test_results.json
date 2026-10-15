@@ -1,0 +1,72 @@
+[
+  {
+    "viewport": 1440,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif",
+    "tone_changes": true,
+    "qty_inc": true,
+    "badge_update": true,
+    "persist_after_rerender": true,
+    "bag_open": true,
+    "esc_closes": true,
+    "remove": true,
+    "faq_works": true
+  },
+  {
+    "viewport": 1024,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif"
+  },
+  {
+    "viewport": 790,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif"
+  },
+  {
+    "viewport": 390,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif",
+    "tone_changes": true,
+    "qty_inc": true,
+    "badge_update": true,
+    "persist_after_rerender": true,
+    "bag_open": true,
+    "esc_closes": true,
+    "remove": true,
+    "faq_works": true,
+    "mobile_nav": true,
+    "menu_closes": true
+  },
+  {
+    "viewport": 360,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif"
+  },
+  {
+    "viewport": 320,
+    "overflow": 0,
+    "errors": [],
+    "font": "Arial, \"Noto Sans CJK KR\", \"Malgun Gothic\", sans-serif",
+    "tone_changes": true,
+    "qty_inc": true,
+    "badge_update": true,
+    "persist_after_rerender": true,
+    "bag_open": true,
+    "esc_closes": true,
+    "remove": true,
+    "faq_works": true,
+    "mobile_nav": true,
+    "menu_closes": true
+  },
+  {
+    "reduced_motion": "none"
+  },
+  {
+    "200pct_root_text_overflow": 0
+  }
+]

@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="사이 — 애니메이션과 웹툰, 세상의 이야기를 학술 연구와 연결하는 블로그. 재미있는 질문을 연구의 근거와 한계까지 따라갑니다.">
+  <title>사이 — 이야기에서 시작해, 근거까지.</title>
+  <style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color-scheme:light;--bg:#f7f7f3;--surface:#fff;--surface-soft:#f0f1ec;--ink:#17221f;--muted:#53625b;--line:#d7dfd7;--accent:#195f47;--accent-hover:#104a37;--accent-contrast:#fff;--accent-soft:#e5f1e9;--story:#9c5438;--story-soft:#faeee5;--warning:#81561f;--warning-soft:#fbf3df;--header:rgba(247,247,243,.95);--focus:#2c67b3;--shadow:0 22px 70px rgba(26,48,40,.09);--radius:22px}
+:root[data-theme=dark]{color-scheme:dark;--bg:#141a18;--surface:#1c2521;--surface-soft:#25312b;--ink:#f3f5f1;--muted:#b9cbc1;--line:#405247;--accent:#9bd5b7;--accent-hover:#bce8cd;--accent-contrast:#12231a;--accent-soft:#2b4537;--story:#ffc09d;--story-soft:#403329;--warning:#f4cf91;--warning-soft:#403727;--header:rgba(20,26,24,.95);--focus:#a3c5ff;--shadow:0 22px 70px rgba(0,0,0,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}body.modal-open{overflow:hidden}body,button,input,select,textarea{font-size:16px}button,input,select,textarea{font-family:inherit}a{text-decoration:none;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed}button:focus-visible,a:focus-visible,select:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}[hidden]{display:none!important}.shell{width:min(1176px,calc(100% - 64px));margin-inline:auto}.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.skip-link{position:fixed;z-index:200;top:-100px;left:16px;background:var(--ink);color:var(--bg);padding:12px 20px;border-radius:12px}.skip-link:focus{top:12px}.button{display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:44px;padding:11px 18px;border:1px solid transparent;border-radius:12px;font-weight:750;font-size:14px;line-height:1.3;white-space:nowrap;transition:background .15s,transform .15s}.button svg{height:19px;width:19px}.button-primary{background:var(--accent);color:var(--accent-contrast)}.button-primary:hover{background:var(--accent-hover)}.button-outline{border-color:var(--line);background:var(--surface);color:var(--ink)}.button-outline:hover{background:var(--surface-soft)}.button-big{min-height:52px;padding:14px 20px;font-size:15px}.text-link,.inline-link{min-height:44px;display:inline-flex;align-items:center;gap:10px;font-weight:750;font-size:15px;background:none;border:0;color:var(--accent);padding:0}.text-link:hover,.inline-link:hover{text-decoration:underline;text-underline-offset:4px}.subtle-link{min-height:44px;display:inline-flex;align-items:center;font-size:15px;font-weight:650;color:var(--muted)}.subtle-link:hover{color:var(--accent)}.overline{margin:0 0 14px;font-size:12px;letter-spacing:.14em;font-weight:850;color:var(--accent)}
+.site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:var(--header);backdrop-filter:blur(14px)}.header-inner{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:28px}.logo{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;font-size:24px;letter-spacing:-.085em;font-weight:900}.logo-dot{color:var(--accent)}.logo small{margin:5px 0 0 5px;letter-spacing:.005em;color:var(--muted);font-weight:600;font-size:12px}.logo-glyph{position:relative;width:28px;height:29px;display:inline-block}.logo-glyph span{position:absolute;top:4px;width:22px;height:22px;border:4px solid var(--accent);border-radius:50%}.logo-glyph span:first-child{left:0}.logo-glyph span:last-child{left:8px;opacity:.42}.main-nav{display:flex;align-items:center;gap:30px;margin-left:auto}.main-nav a{font-size:14px;min-height:44px;display:inline-flex;align-items:center;gap:6px;font-weight:650;color:var(--muted);white-space:nowrap}.main-nav a:hover,.main-nav a[aria-current=page]{color:var(--accent)}.count{display:inline-grid;place-items:center;background:var(--accent-soft);color:var(--accent);height:22px;min-width:22px;padding:0 5px;border-radius:7px;font-size:12px}.header-actions{display:flex;align-items:center;gap:5px}.icon-button{height:44px;width:44px;display:inline-grid;place-items:center;flex:0 0 auto;background:transparent;border:0;border-radius:12px;color:var(--ink)}.icon-button:hover{background:var(--surface-soft)}.icon-button svg{width:21px;height:21px}.header-write{margin-left:8px}.read-progress{position:fixed;top:0;left:0;right:0;z-index:90;height:4px;background:transparent}.read-progress>div{height:100%;width:0;background:var(--accent)}
+.hero{display:grid;grid-template-columns:1.07fr .93fr;gap:68px;align-items:center;padding-top:82px;padding-bottom:88px}.eyebrow{font-size:11px;font-weight:850;letter-spacing:.15em;color:var(--accent);display:flex;align-items:center;gap:10px}.eyebrow-line{width:23px;height:2px;background:var(--accent)}.hero h1{font-size:clamp(42px,5vw,70px);letter-spacing:-.078em;line-height:1.23;margin:30px 0 24px;font-weight:850;word-break:keep-all}.hero h1 span{color:var(--accent)}.hero-description{font-size:17px;line-height:1.87;color:var(--muted);max-width:515px;word-break:keep-all}.hero-actions{display:flex;gap:24px;flex-wrap:wrap;align-items:center;margin:32px 0 40px}.hero-footnote{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:9px;line-height:1.65}.small-icon{width:30px;height:30px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);border-radius:9px;font-size:19px;flex-shrink:0}
+.hero-scene{height:464px;position:relative;overflow:hidden;background:#172e29;border-radius:28px;isolation:isolate;box-shadow:0 30px 70px rgba(29,53,40,.13)}.scene-grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff10 1px,transparent 1px),linear-gradient(90deg,#ffffff10 1px,transparent 1px);background-size:30px 30px;mask-image:linear-gradient(to bottom,transparent,#000)}.scene-index{position:absolute;top:30px;left:32px;right:32px;display:flex;justify-content:space-between;font-size:11px;font-weight:750;letter-spacing:.13em;color:#d1e4d8;z-index:4}.scene-index span{color:#aec5b8}.scene-ring{position:absolute;z-index:0;border:1px solid #d0e1c635;border-radius:50%;height:380px;width:380px;top:38px;left:calc(50% - 190px)}.ring-b{width:300px;height:300px;top:78px;left:calc(50% - 150px)}.scene-page{position:absolute;top:112px;height:243px;width:183px;border-radius:13px;border:1px solid #ffffff50;box-shadow:0 20px 35px #06181377;padding:19px 18px;display:flex;flex-direction:column;justify-content:space-between}.scene-fiction{left:calc(50% - 154px);z-index:2;transform:rotate(-13deg);background:linear-gradient(150deg,#dfbfa6,#ecceb6 44%,#ba8c74);color:#52362a}.scene-research{left:calc(50% - 23px);top:100px;z-index:3;transform:rotate(12deg);background:linear-gradient(150deg,#cfeada,#a4d9bb 64%,#75ad9c);color:#1a5643}.page-kicker{font-weight:800;letter-spacing:.13em;font-size:9px}.page-symbol{font-family:Georgia,serif;font-weight:700;font-size:112px;line-height:1;text-align:center}.page-caption{font-size:18px;letter-spacing:-.055em;line-height:1.28;font-weight:850}.page-wave{height:90px;display:flex;align-items:center;background:repeating-radial-gradient(ellipse at 50% 42%,transparent 0 10px,#28796270 11px 12px,transparent 13px 20px);border-radius:50%}.scene-label{position:absolute;left:33px;right:33px;bottom:27px;border-top:1px solid #b7dbca60;padding-top:15px;display:flex;justify-content:space-between;font-size:12px;color:#d1e7da;font-weight:750;letter-spacing:.12em}
+.process-band{background:var(--surface);border-block:1px solid var(--line)}.process-content{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:100px}.process-intro{font-size:14px;font-weight:850;white-space:nowrap}.process-step{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;white-space:nowrap}.step-index{display:grid;place-items:center;height:34px;width:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:850}.process-arrow{color:var(--muted)}
+.featured{padding-top:100px;padding-bottom:105px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.section-heading h2{font-size:clamp(29px,3.2vw,39px);font-weight:850;letter-spacing:-.063em;margin:0;line-height:1.25}.section-trail,.section-summary{color:var(--muted);font-size:14px}.section-summary{margin:14px 0 0;line-height:1.75}.featured-story{display:grid;grid-template-columns:1fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:26px;overflow:hidden}.feature-cover{position:relative;min-height:370px;overflow:hidden;background:linear-gradient(140deg,#97bcae,#40756a 65%,#174437)}.feature-orbit{position:absolute;width:420px;height:420px;border-radius:50%;border:1px solid #ffffff55;top:calc(50% - 210px);left:calc(50% - 210px);box-shadow:0 0 0 45px #ffffff09,0 0 0 95px #ffffff13,0 0 0 147px #ffffff11}.feature-core{position:absolute;top:calc(50% - 83px);left:calc(50% - 83px);width:166px;height:166px;border-radius:50%;background:radial-gradient(circle at 32% 24%,#effaf0,#bbebc5 32%,#4c9a83 68%,#1e584c);box-shadow:20px 25px 50px #163b3d99}.feature-cover-top,.feature-cover-bottom{position:absolute;font-size:12px;font-weight:800;letter-spacing:.15em;color:#e4fff2}.feature-cover-top{left:32px;top:30px}.feature-cover-bottom{left:32px;bottom:29px}.feature-copy{padding:42px 44px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.meta-label{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:13px}.pill{display:inline-block;padding:7px 11px;border-radius:8px;font-weight:850;font-size:12px}.pill-story{color:var(--story);background:var(--story-soft)}.pill-evidence{color:var(--accent);background:var(--accent-soft)}.feature-copy h3{margin:22px 0 16px;font-size:clamp(26px,2.7vw,36px);line-height:1.36;letter-spacing:-.055em;word-break:keep-all}.feature-copy>p{font-size:16px;line-height:1.83;color:var(--muted);word-break:keep-all}.featured-bottom{display:flex;align-items:center;justify-content:space-between;width:100%;flex-wrap:wrap;gap:8px;margin-top:22px}.evidence-small{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--muted)}.evidence-mark{background:var(--accent);width:7px;height:7px;border-radius:50%}
+.library{padding-bottom:110px}.library-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:24px 0 14px;border-top:1px solid var(--line)}.chip-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.chip{min-height:44px;padding:9px 14px;border-radius:11px;border:1px solid var(--line);font-weight:700;font-size:14px;background:var(--surface);color:var(--muted)}.chip:hover{color:var(--accent);border-color:var(--accent)}.chip[aria-pressed=true]{color:var(--accent-contrast);background:var(--accent);border-color:var(--accent)}.filter-right{display:flex;gap:9px;align-items:center}.search-field{height:46px;border:1px solid var(--line);background:var(--surface);border-radius:11px;display:flex;align-items:center;padding:0 13px;gap:8px;color:var(--muted)}.search-field svg{width:18px;height:18px;flex-shrink:0}.search-field:focus-within{outline:2px solid var(--focus);outline-offset:2px}.search-field input{width:176px;min-width:0;border:0;background:transparent;color:var(--ink);outline:none!important;font-size:14px}.search-field input::placeholder{color:var(--muted)}#post-sort{min-height:46px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--ink);padding:0 10px;font-size:14px}.result-status{font-size:14px;color:var(--muted);min-height:21px;margin:10px 0 26px}.post-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 24px}.post-card{min-width:0}.card-cover{display:block;position:relative;aspect-ratio:1.52;overflow:hidden;background:var(--cover);color:#fff;border-radius:18px;margin-bottom:17px;isolation:isolate}.card-cover:before{content:"";position:absolute;width:80%;aspect-ratio:1;top:-50%;right:-15%;border:1px solid #ffffff8a;border-radius:50%;box-shadow:0 0 0 32px #ffffff12,0 0 0 63px #ffffff15,0 0 0 97px #ffffff0d}.card-cover:after{content:"";position:absolute;inset:0;background-image:radial-gradient(#ffffff20 .8px,transparent .8px);background-size:17px 17px}.cover-caption{position:absolute;top:20px;left:22px;z-index:2;font-size:11px;font-weight:800;letter-spacing:.13em;color:#fff}.cover-name{position:absolute;left:20px;bottom:18px;z-index:2;font-weight:850;font-size:clamp(28px,2.3vw,43px);letter-spacing:-.065em;line-height:1.05;transform:rotate(-5deg);max-width:85%;overflow-wrap:anywhere}.post-card .card-detail{display:flex;justify-content:space-between;align-items:start;gap:8px}.card-tagline{font-size:12px;color:var(--accent);font-weight:800}.card-time{color:var(--muted);font-size:12px}.post-card h3{margin:11px 0 9px;line-height:1.5;letter-spacing:-.035em;font-size:19px;word-break:keep-all}.post-card h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}.post-card>p{font-size:14px;line-height:1.72;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;word-break:keep-all}.card-foot{margin-top:17px;display:flex;align-items:center;justify-content:space-between;gap:9px;color:var(--muted);font-size:12px}.bookmark-icon{display:grid;place-items:center;width:44px;height:44px;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--muted);flex-shrink:0}.bookmark-icon svg{height:18px;width:18px;fill:none;stroke:currentColor;stroke-width:1.8}.bookmark-icon[aria-pressed=true]{color:var(--accent);background:var(--accent-soft);border-color:var(--accent)}.bookmark-icon[aria-pressed=true] svg{fill:currentColor}.cover-memory{--cover:linear-gradient(125deg,#5866a8,#b68ccf)}.cover-breath{--cover:linear-gradient(120deg,#14647d,#61c8bb)}.cover-sleep{--cover:linear-gradient(120deg,#223367,#708bd2)}.cover-media{--cover:linear-gradient(120deg,#b6623a,#e8a279)}.cover-webtoon{--cover:linear-gradient(120deg,#a54a75,#db8c9a)}.cover-social{--cover:linear-gradient(120deg,#1c605d,#89b7a0)}.cover-custom{--cover:linear-gradient(120deg,#575f50,#a0b291)}.empty-state{grid-column:1/-1;text-align:center;padding:65px 20px;background:var(--surface);border:1px dashed var(--line);border-radius:18px}.empty-state h3{font-size:20px}.empty-state p{font-size:15px;line-height:1.7;color:var(--muted)}.library-bottom{margin-top:62px;border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--muted);font-size:14px}
+.about-section{background:var(--surface-soft);padding:93px 0}.about-inner{display:grid;grid-template-columns:1fr .8fr;gap:80px}.about-copy h2{font-size:clamp(30px,4vw,49px);line-height:1.35;letter-spacing:-.065em;margin:0}.about-copy>p:last-child{max-width:480px;color:var(--muted);font-size:16px;line-height:1.87;word-break:keep-all}.promise-list{display:flex;flex-direction:column;gap:12px;justify-content:center}.promise-list>div{display:grid;grid-template-columns:36px 1fr;align-items:start;gap:2px 15px;border:1px solid var(--line);border-radius:15px;padding:18px;background:var(--surface)}.promise-list span{grid-row:span 2;font-size:13px;font-weight:850;color:var(--accent);background:var(--accent-soft);height:34px;display:grid;place-items:center;border-radius:10px}.promise-list strong{font-size:16px}.promise-list p{margin:5px 0 0;color:var(--muted);font-size:14px;line-height:1.6}.site-footer{border-top:1px solid var(--line);padding:50px 0 65px}.footer-inner{display:flex;justify-content:space-between;gap:25px}.footer-logo{font-size:25px;font-weight:900;letter-spacing:-.07em}.footer-logo span{color:var(--accent)}.site-footer p{color:var(--muted);font-size:13px;line-height:1.7;margin:7px 0}
+.article-view{padding-top:18px;padding-bottom:100px}.article-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0 32px}.article-toolbar-actions{display:flex;gap:8px;flex-wrap:wrap}.article-wrap{width:min(780px,100%);margin:0 auto}.article-kicker{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:14px 0 23px;color:var(--muted);font-size:13px}.article-wrap h1{font-size:clamp(35px,5vw,57px);letter-spacing:-.07em;line-height:1.35;word-break:keep-all;margin:0 0 21px}.article-lead{font-size:19px;line-height:1.82;color:var(--muted);margin:0 0 26px;word-break:keep-all}.article-meta{display:flex;flex-wrap:wrap;gap:13px;font-size:13px;color:var(--muted);margin-bottom:34px}.article-cover{min-height:310px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-radius:20px;background:var(--cover);color:white}.article-cover:before{content:"";position:absolute;width:320px;height:320px;border:1px solid #ffffff88;border-radius:50%;box-shadow:0 0 0 35px #ffffff22,0 0 0 77px #ffffff18}.article-cover span{font-size:clamp(48px,7vw,83px);letter-spacing:-.08em;font-weight:850;z-index:2;transform:rotate(-6deg)}.article-cover-label{position:absolute;bottom:17px;left:24px;color:#fff;font-size:12px;font-weight:800;letter-spacing:.12em;z-index:2}.article-intro{margin:43px 0 32px;padding:25px 27px;background:var(--surface);border:1px solid var(--line);border-radius:18px}.article-intro span{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.1em}.article-intro p{font-size:21px;line-height:1.66;font-weight:800;letter-spacing:-.04em;margin:10px 0 0;word-break:keep-all}.article-body{font-size:17px;line-height:1.85;word-break:keep-all}.article-block{margin:46px 0}.article-block-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}.article-block-label{font-size:12px;border-radius:9px;padding:8px 11px;font-weight:850;white-space:nowrap}.label-story{background:var(--story-soft);color:var(--story)}.label-evidence{background:var(--accent-soft);color:var(--accent)}.label-interpretation{background:var(--surface-soft);color:var(--ink)}.article-block h2{font-size:25px;line-height:1.42;letter-spacing:-.045em;margin:0}.article-block p{margin:0;white-space:pre-line}.source-facts{padding:18px 21px;margin:25px 0;border:1px solid var(--line);background:var(--surface);border-radius:15px;display:grid;grid-template-columns:1fr 1fr;gap:13px;font-size:14px}.source-facts div{display:flex;flex-direction:column;gap:6px}.source-facts small{font-size:12px;font-weight:750;color:var(--muted)}.source-facts strong{font-weight:700;line-height:1.5}.caution{margin:42px 0;padding:24px 25px;border:1px solid #d7c398;border-left:5px solid var(--warning);background:var(--warning-soft);border-radius:11px}.caution strong{color:var(--warning);font-size:15px}.caution p{font-size:15px;line-height:1.8;margin:12px 0 0;white-space:pre-line}.references{border-top:1px solid var(--line);margin:58px 0 28px;padding-top:30px}.references h2{font-size:19px;letter-spacing:-.025em;margin:0 0 20px}.references p{font-size:14px;line-height:1.75;padding-left:1.5em;text-indent:-1.5em;overflow-wrap:anywhere;margin:0 0 18px}.references a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.article-end{border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;padding-top:25px;margin-top:30px;font-size:14px;color:var(--muted)}.danger-button{min-height:44px;background:none;border:1px solid #bf7373;border-radius:11px;padding:10px 15px;color:var(--story);font-weight:750}
+.modal-layer{position:fixed;inset:0;z-index:70;display:grid;place-items:center;padding:25px}.modal-shade{position:absolute;inset:0;background:#081811b0;backdrop-filter:blur(3px)}.editor-dialog{position:relative;background:var(--surface);color:var(--ink);width:min(890px,100%);max-height:min(92dvh,950px);overflow:auto;border-radius:22px;box-shadow:0 30px 110px #0005;padding:28px 34px}.editor-head{display:flex;align-items:start;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:23px}.editor-head h2{font-size:27px;letter-spacing:-.05em;margin:0}.editor-head p:last-child{font-size:14px;line-height:1.6;color:var(--muted);margin:8px 0 0}.editor-columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}.editor-fields{display:flex;flex-direction:column;gap:18px}.editor-fields label{display:block;font-size:14px;font-weight:750}.editor-fields label span{color:var(--story)}.editor-fields input,.editor-fields textarea,.editor-fields select{display:block;margin-top:8px;padding:12px 14px;border:1px solid var(--line);background:var(--bg);border-radius:10px;width:100%;color:var(--ink);font-size:15px;line-height:1.55;resize:vertical}.editor-fields input{min-height:46px}.editor-fields select{min-height:46px}.editor-fields textarea{min-height:77px}.editor-fields input::placeholder,.editor-fields textarea::placeholder{color:var(--muted)}.editor-notice{background:var(--accent-soft);border-radius:12px;padding:17px;font-size:14px;line-height:1.6;color:var(--ink)}.editor-notice p{margin:7px 0 0;font-size:13px;color:var(--muted)}.editor-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;padding-top:21px;border-top:1px solid var(--line)}.editor-footer span{color:var(--muted);font-size:13px}.editor-buttons{display:flex;gap:8px;flex-wrap:wrap}.toast{position:fixed;z-index:100;bottom:25px;left:50%;transform:translateX(-50%);min-width:180px;text-align:center;max-width:calc(100% - 30px);background:var(--ink);color:var(--bg);padding:13px 23px;border-radius:14px;font-size:14px;box-shadow:var(--shadow)}
+@media(max-width:1020px){.hero{gap:28px}.process-intro{display:none}.process-content{justify-content:center}.main-nav{gap:14px}.logo small{display:none}.search-field input{width:150px}.feature-copy{padding:35px}.about-inner{gap:35px}}
+@media(max-width:760px){.shell{width:min(100% - 38px,570px)}.header-inner{min-height:68px;gap:5px}.logo{font-size:21px}.logo-glyph{transform:scale(.9);transform-origin:left center;width:24px}.main-nav{margin-left:auto;gap:11px}.main-nav a{font-size:12px}.main-nav a#nav-about{display:none}.header-actions{gap:0}.header-actions .icon-button{width:40px;height:44px}.header-write{min-width:44px;padding:0 12px;font-size:0;margin:0}.header-write span{display:none}.header-write svg{width:20px;height:20px}.count{display:none}.hero{grid-template-columns:1fr;padding-top:45px;padding-bottom:58px;gap:33px}.hero h1{font-size:clamp(40px,9vw,58px);margin:23px 0 17px}.hero-description{font-size:16px}.hero-actions{margin:25px 0 23px;gap:13px}.hero-footnote{font-size:12px}.hero-scene{height:370px}.scene-page{top:85px}.scene-research{top:74px}.scene-index{top:22px}.scene-label{bottom:20px}.process-content{min-height:auto;padding-block:18px;flex-wrap:wrap;justify-content:flex-start;gap:10px}.process-arrow{display:none}.process-step{font-size:12px}.step-index{width:28px;height:28px}.featured{padding-block:68px}.section-heading{align-items:start}.section-trail{display:none}.featured-story{grid-template-columns:1fr}.feature-cover{min-height:255px}.feature-copy{padding:28px 26px}.feature-copy h3{font-size:29px;margin-top:16px}.feature-copy>p{font-size:15px}.library{padding-bottom:72px}.post-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 14px}.post-card h3{font-size:17px}.post-card>p{font-size:13px}.cover-name{font-size:27px}.filter-right{width:100%}.search-field{flex:1}.search-field input{width:100%}.about-section{padding:63px 0}.about-inner{grid-template-columns:1fr;gap:25px}.footer-inner{display:block}.article-toolbar{align-items:start;flex-wrap:wrap}.article-toolbar-actions{width:100%}.article-wrap h1{font-size:38px}.article-lead{font-size:17px}.article-intro p{font-size:19px}.article-body{font-size:16px}.article-cover{min-height:245px}.editor-dialog{padding:24px;max-height:95dvh}.editor-columns{grid-template-columns:1fr;gap:18px}.editor-footer{flex-direction:column;align-items:stretch}.editor-buttons .button{flex:1}}
+@media(max-width:470px){.shell{width:calc(100% - 32px)}.logo{font-size:20px}.main-nav{gap:4px}.main-nav a{padding-inline:4px;font-size:12px}.main-nav a#nav-saved{display:none}.header-actions .icon-button{width:40px}.hero-scene{height:328px}.scene-page{width:143px;height:205px;top:74px;padding:15px}.scene-fiction{left:calc(50% - 123px)}.scene-research{left:calc(50% - 15px);top:69px}.page-symbol{font-size:84px}.page-caption{font-size:16px}.scene-index{left:20px;right:20px;font-size:10px}.scene-label{left:20px;right:20px;font-size:10px}.hero-actions .button{width:100%}.hero-actions .text-link{padding:0 4px}.process-content{gap:9px}.process-step{gap:5px;font-size:11px}.step-index{width:23px;height:26px}.section-heading h2{font-size:30px}.post-grid{grid-template-columns:1fr;gap:38px}.card-cover{aspect-ratio:1.65}.cover-name{font-size:40px}.post-card h3{font-size:19px}.post-card>p{font-size:14px}.chip-row{gap:6px}.chip{font-size:12px;padding-inline:11px}.library-bottom{flex-direction:column;align-items:start}.source-facts{grid-template-columns:1fr}.article-toolbar-actions .button{padding:10px 12px;font-size:13px}.article-block h2{font-size:22px}.article-block-head{align-items:start;flex-wrap:wrap}.editor-dialog{padding:20px 16px}.editor-head h2{font-size:24px}.editor-buttons{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">본문으로 바로가기</a>
+<div id="read-progress" class="read-progress" hidden><div id="read-progress-fill"></div></div>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="logo" href="#home" aria-label="사이, 첫 화면으로"><span class="logo-glyph" aria-hidden="true"><span></span><span></span></span><span>사이<span class="logo-dot">.</span></span><small>생각과 근거 사이</small></a>
+    <nav class="main-nav" aria-label="주요 탐색"><a href="#library" id="nav-library">읽을거리</a><a href="#saved" id="nav-saved">저장한 글 <span id="saved-count" class="count" aria-label="저장한 글 수">0</span></a><a href="#about" id="nav-about">소개</a></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="open-search" aria-label="글 검색창으로 이동" title="검색"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button" id="theme-toggle" aria-label="다크 모드로 변경" title="화면 모드 전환"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 16A8.5 8.5 0 0 1 8 4 8.5 8.5 0 1 0 20 16Z"/></svg></button>
+      <button id="new-post" class="button button-primary header-write"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>글 작성</span></button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+ <div id="home-view">
+  <section class="hero shell" id="home" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-line"></span> A JOURNAL OF CULTURE & RESEARCH</div>
+      <h1 id="hero-title">재밌는 이야기는<br><span>좋은 질문</span>에서<br>시작되니까.</h1>
+      <p class="hero-description">만화 속 능력, 애니메이션의 한 장면, 모두가 당연하게 믿는 이야기. 한 번 더 질문하고, 논문으로 확인하고, 우리만의 시선을 더해 봅니다.</p>
+      <div class="hero-actions"><a href="#post/memory" class="button button-primary button-big">첫 이야기 읽기 <span aria-hidden="true">↗</span></a><a href="#library" class="text-link">다른 주제 둘러보기 <span aria-hidden="true">→</span></a></div>
+      <div class="hero-footnote"><span class="small-icon" aria-hidden="true">✳</span> 익숙한 이야기에서 출발해, 근거와 해석을 구분하며 읽는 곳</div>
+    </div>
+    <div class="hero-scene" aria-label="이야기와 연구가 만나 하나의 질문이 되는 추상 일러스트" role="img">
+      <div class="scene-grid" aria-hidden="true"></div>
+      <div class="scene-index">ISSUE 001 <span>THE CURIOUS MIND</span></div>
+      <div class="scene-ring ring-a"></div><div class="scene-ring ring-b"></div>
+      <div class="scene-page scene-fiction"><div class="page-kicker">01 — STORY</div><div class="page-symbol">?</div><div class="page-caption">이야기의<br>가능성</div></div>
+      <div class="scene-page scene-research"><div class="page-kicker">02 — RESEARCH</div><div class="page-wave"></div><div class="page-caption">논문이<br>말하는 것</div></div>
+      <div class="scene-label">WHERE IDEAS MEET <span aria-hidden="true">↗</span></div>
+    </div>
+  </section>
+  <section class="process-band" aria-label="사이에서 글을 읽는 방식"><div class="shell process-content"><div class="process-intro">한 편을 읽는 방식</div><div class="process-step"><span class="step-index">01</span><span>작품에서 질문 발견</span></div><span class="process-arrow" aria-hidden="true">→</span><div class="process-step"><span class="step-index">02</span><span>연구 결과 확인</span></div><span class="process-arrow" aria-hidden="true">→</span><div class="process-step"><span class="step-index">03</span><span>해석과 한계 구분</span></div></div></section>
+  <section class="featured shell" aria-labelledby="featured-heading">
+    <div class="section-heading"><div><p class="overline">EDITOR’S NOTE / 001</p><h2 id="featured-heading">지금 펼쳐볼 이야기</h2></div><span class="section-trail">호기심이 연구를 만나는 순간</span></div>
+    <article class="featured-story">
+      <div class="feature-cover feature-memory" aria-hidden="true"><div class="feature-orbit"></div><div class="feature-core"></div><span class="feature-cover-top">CASE 001 / MEMORY</span><span class="feature-cover-bottom">WHAT MAKES US, US?</span></div>
+      <div class="feature-copy"><div class="meta-label"><span class="pill pill-story">애니메이션 × 기억</span><span>7분 읽기</span></div><h3>기억을 지우는 캐릭터들,<br>과학은 어디까지 왔을까?</h3><p>드라마틱한 기억 삭제 장면을 보고 문득 궁금해졌다면. 실제 기억 재고착 연구가 보여준 가능성과 넘을 수 없는 경계를 함께 읽어봅니다.</p><div class="featured-bottom"><span class="evidence-small"><span class="evidence-mark"></span> 실험 연구에서 출발한 해설</span><a href="#post/memory" class="inline-link">이야기 읽기 <span aria-hidden="true">↗</span></a></div></div>
+    </article>
+  </section>
+  <section class="library shell" id="library" aria-labelledby="library-heading">
+    <div class="section-heading"><div><p class="overline">THE READING ROOM</p><h2 id="library-heading">호기심의 서재</h2><p class="section-summary">관심 있는 이야기부터 골라 읽어봐. 논문과 연결되는 지점은 글 안에서 자세히 설명해 둘게.</p></div></div>
+    <div class="library-controls"><div class="chip-row" id="category-tabs" role="group" aria-label="글 주제 선택"></div><div class="filter-right"><label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><span class="visually-hidden">제목, 주제, 본문 검색</span><input id="post-search" type="search" placeholder="궁금한 키워드 찾기" autocomplete="off"></label><label class="visually-hidden" for="post-sort">글 정렬</label><select id="post-sort"><option value="recent">최신순</option><option value="oldest">오래된순</option><option value="title">제목순</option></select></div></div>
+    <p id="result-status" class="result-status" role="status" aria-live="polite"></p>
+    <div class="post-grid" id="post-grid"></div>
+    <div class="library-bottom"><span>다음 이야기는 어떤 질문에서 시작될까?</span><button id="library-compose" class="inline-link">내 이야기 써보기 <span aria-hidden="true">↗</span></button></div>
+  </section>
+  <section class="about-section" id="about" aria-labelledby="about-heading"><div class="shell about-inner"><div class="about-copy"><p class="overline">OUR EDITORIAL PROMISE</p><h2 id="about-heading">재미있게 읽고,<br>쉽게 단정하지 않기.</h2><p>논문 한 편이 모든 질문의 정답을 주지는 않아요. ‘사이’에서는 작품의 상상력과 연구에서 실제로 관찰된 사실을 구분하고, 연구 대상·방법·한계를 독자에게 보여줍니다.</p></div><div class="promise-list"><div><span>01</span><strong>흥미를 만드는 질문</strong><p>웹툰, 애니메이션, 사회의 통념을 관찰해요.</p></div><div><span>02</span><strong>연구가 확인한 범위</strong><p>논문의 설계와 근거 수준을 표시해요.</p></div><div><span>03</span><strong>해석의 경계까지</strong><p>저자의 주장과 우리의 생각이 섞이지 않게 해요.</p></div></div></div></section>
+ </div>
+ <section id="article-view" class="article-view" hidden aria-labelledby="article-title"><div class="shell"><div class="article-toolbar"><a href="#library" id="back-to-library" class="subtle-link">← 읽을거리로 돌아가기</a><div class="article-toolbar-actions"><button id="edit-article" class="button button-outline" hidden>내 글 수정</button><button id="bookmark-article" class="button button-outline" aria-pressed="false">☆ 글 저장</button><button id="copy-link" class="button button-outline">↗ 링크 복사</button></div></div><div id="article-slot"></div></div></section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><div><div class="footer-logo">사이<span>.</span></div><p>이야기에서 시작해, 근거까지.</p></div><div><p>개인 블로그 UI/UX 프로토타입 · v0.2</p><p>예시 글은 교육용 요약이며 논문 원문의 전체 분석을 대체하지 않습니다.</p></div></div></footer>
+<div class="modal-layer" id="editor-layer" hidden><div class="modal-shade" data-close-editor></div><section class="editor-dialog" role="dialog" aria-modal="true" aria-labelledby="editor-title"><div class="editor-head"><div><p class="overline">WRITE YOUR CURIOSITY</p><h2 id="editor-title">나만의 글 쓰기</h2><p>질문 · 근거 · 해석 · 한계를 나눠 적어봐. 저장하기 전까지 기존 글은 바뀌지 않아.</p></div><button id="close-editor" class="icon-button" aria-label="글 작성 창 닫기">✕</button></div><form id="editor-form"><div class="editor-columns"><div class="editor-fields"><label>제목 <span>*</span><input id="form-title" required maxlength="120" placeholder="예: 웹툰 속 천재는 정말 모든 걸 기억할까?"></label><label>주제 <span>*</span><select id="form-category"><option>애니메이션</option><option>웹툰</option><option>사회·인식</option><option>일상·과학</option></select></label><label>짧은 소개 <span>*</span><textarea id="form-excerpt" rows="2" maxlength="220" required placeholder="독자에게 던질 질문을 한두 문장으로"></textarea></label><label>작품이나 일상에서 시작한 질문 <span>*</span><textarea id="form-story" rows="4" maxlength="5000" required placeholder="어떤 장면, 어떤 상식에서 이 질문이 나왔나요?"></textarea></label><label>논문에서 확인한 것 <span>*</span><textarea id="form-evidence" rows="5" maxlength="5000" required placeholder="연구 설계·연구 대상·실제 결과를 구분해 적어봐"></textarea></label></div><div class="editor-fields"><label>나의 연결과 해석 <span>*</span><textarea id="form-interpretation" rows="5" maxlength="5000" required placeholder="여기부터는 연구 결과가 아닌 나의 해석임을 밝혀봐"></textarea></label><label>주의할 점 · 연구의 한계 <span>*</span><textarea id="form-limitations" rows="4" maxlength="4000" required placeholder="무엇을 아직 결론 내릴 수 없을까?"></textarea></label><label>APA 7 참고문헌 (선택)<textarea id="form-reference" rows="3" maxlength="1300" placeholder="저자. (연도). 논문 제목. 학술지, 권(호), 페이지. DOI"></textarea></label><div class="editor-notice"><strong>어디에 저장되나요?</strong><p>글은 이 브라우저 안에만 저장됩니다. 온라인 게시·다른 기기 공유는 되지 않으며 브라우저 데이터를 지우면 사라질 수 있습니다.</p></div></div></div><div class="editor-footer"><span id="editor-state" role="status" aria-live="polite">새 글 작성 중 · 저장 전</span><div class="editor-buttons"><button type="button" class="button button-outline" id="cancel-editor">작성 취소</button><button type="submit" class="button button-primary" id="submit-editor">내 브라우저에 글 저장</button></div></div></form></section></div>
+<div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+<script>
+window.SAI_SEED_POSTS = [
+  {
+    "id": "memory",
+    "category": "애니메이션",
+    "cover": "memory",
+    "coverText": "MEMORY",
+    "coverTag": "THE SCIENCE OF REMEMBERING",
+    "title": "기억을 지우는 캐릭터들, 과학은 어디까지 왔을까?",
+    "excerpt": "사라진 기억을 되찾거나 특정 기억만 없앤다는 설정. 기억 재고착 연구를 통해 현실과 상상의 거리를 살펴봅니다.",
+    "date": "2026-10-12",
+    "minutes": 7,
+    "lead": "우리는 추억을 파일처럼 저장하고 삭제할 수 있을까? 애니메이션에서 자주 등장하는 ‘기억 조작’ 장면을 기억 재고착이라는 개념으로 읽어봅니다.",
+    "question": "기억은 한 번 저장되면 영원히 고정되는 것일까?",
+    "sections": [
+      [
+        "장면에서 시작한 질문",
+        "기억을 잃고 과거의 관계를 잊어버린 인물은 많은 작품에서 이야기의 긴장을 이끕니다. 그렇다면 현실의 기억도 완성된 영상 파일처럼 꺼내거나 삭제할 수 있을까요? 기억은 단순한 저장보다 훨씬 역동적인 과정입니다."
+      ],
+      [
+        "논문이 실제로 관찰한 것",
+        "Nader, Schafe와 Le Doux(2000)는 쥐의 공포 기억을 다시 활성화한 뒤 편도체의 단백질 합성을 방해하면 이후의 공포 반응이 달라질 수 있음을 보였습니다. 기억을 떠올리는 순간 기존 기억이 일시적으로 변화에 취약해지는 재고착(reconsolidation) 개념을 뒷받침한 고전적 실험입니다."
+      ],
+      [
+        "작품에 적용하면?",
+        "연구는 기억이 불변의 기록물은 아니라는 사실을 시사합니다. 그러나 이 결과가 사람의 자전적 기억을 특정 장면만 골라 ‘깔끔하게 삭제’할 기술이 존재한다는 의미는 아닙니다. 실험에서 다룬 것은 설치류의 특정 공포 학습과 이후 반응입니다."
+      ],
+      [
+        "읽고 남는 질문",
+        "기억을 바꾸는 행위는 고통을 줄이는 치료일까요, 아니면 자아의 일부를 바꾸는 선택일까요? 과학이 답하는 ‘가능성’과 작품이 던지는 ‘윤리’를 나란히 읽을 때 이야기가 더 깊어집니다."
+      ]
+    ],
+    "limitation": "동물의 조건화된 공포 기억 연구를 인간의 복합적 경험·자전적 기억 삭제로 일반화할 수 없습니다. 이 글은 작품의 과학적 배경을 이해하기 위한 교육용 해설입니다.",
+    "reference": "Nader, K., Schafe, G. E., & Le Doux, J. E. (2000). Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval. Nature, 406, 722–726.",
+    "doi": "https://doi.org/10.1038/35021052",
+    "evidenceType": "동물 실험",
+    "scope": "설치류의 공포 조건화 기억"
+  },
+  {
+    "id": "breath",
+    "category": "애니메이션",
+    "cover": "breath",
+    "coverText": "BREATHE",
+    "coverTag": "BODY & MIND",
+    "title": "‘전집중 호흡’은 실제로 몸을 바꿀 수 있을까?",
+    "excerpt": "애니메이션의 초인적인 호흡법. 느린 호흡과 자율신경계에 관한 연구를 통해 현실적 효과를 살펴봅니다.",
+    "date": "2026-10-10",
+    "minutes": 6,
+    "lead": "숨을 잘 쉬는 것만으로 초인적인 능력을 얻을 수 있을까? 느린 호흡에 관한 체계적 문헌고찰에서 우리가 확인할 수 있는 효과와 한계를 정리했습니다.",
+    "question": "호흡 조절은 실제 생리 반응에 어떤 영향을 줄까?",
+    "sections": [
+      [
+        "작품 속 호흡의 힘",
+        "호흡을 바꾸자 집중력이 높아지고 신체 능력이 놀랍게 달라지는 연출은 직관적입니다. 현실에서도 호흡은 자율신경 활동 및 정서 상태와 관계가 있습니다. 하지만 두 세계는 엄격하게 구분할 필요가 있습니다."
+      ],
+      [
+        "근거: 느린 호흡에 대한 문헌고찰",
+        "Zaccaro 등(2018)은 느린 호흡을 다룬 기존 연구를 체계적으로 검토했습니다. 느린 호흡은 심박변이도 등 일부 생리 지표와 심리적 이완·각성 조절에 관련된 변화를 보여줄 수 있습니다. 다만 연구 간 호흡 기법, 참여자, 평가 방법이 다양했습니다."
+      ],
+      [
+        "애니메이션과 현실의 경계",
+        "현재의 근거는 호흡만으로 비현실적인 근력이나 치유 능력을 발휘한다는 주장을 뒷받침하지 않습니다. 호흡 조절은 스트레스 대응과 주의 조절의 한 요소로 이해하는 편이 타당합니다."
+      ],
+      [
+        "한 문장 결론",
+        "호흡이 ‘마법’은 아니지만 신체와 마음의 상태에 영향을 주는, 연구할 가치가 있는 행동이라는 사실은 충분히 흥미롭습니다."
+      ]
+    ],
+    "limitation": "문헌고찰은 포함 연구의 질·이질성에 영향을 받습니다. 특정 호흡법의 치료 효과나 개인별 안전성을 확정하는 근거로 사용해서는 안 됩니다.",
+    "reference": "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B., & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, Article 353.",
+    "doi": "https://doi.org/10.3389/fnhum.2018.00353",
+    "evidenceType": "체계적 문헌고찰",
+    "scope": "느린 호흡과 심리·생리 지표"
+  },
+  {
+    "id": "sleep",
+    "category": "일상·과학",
+    "cover": "sleep",
+    "coverText": "SLEEP",
+    "coverTag": "REST & LEARNING",
+    "title": "밤새우며 공부하면 정말 더 잘 기억할까?",
+    "excerpt": "시험 전 밤샘과 애니메이션 속 벼락치기. 수면과 기억 공고화의 관계를 연구로 되짚어 봅니다.",
+    "date": "2026-10-08",
+    "minutes": 5,
+    "lead": "시험 전날의 선택. 한 시간 더 읽을까, 잠을 잘까? 수면은 단순히 공부를 방해하는 시간이 아닌 학습 과정의 한 축일 수 있습니다.",
+    "question": "수면은 이미 학습한 내용을 기억하는 데 어떤 역할을 할까?",
+    "sections": [
+      [
+        "가장 익숙한 장면",
+        "시험 전날 책상에 앉아 밤을 새우는 주인공의 모습은 낯설지 않습니다. ‘깨어 있는 시간이 길수록 많이 배운다’는 생각은 과연 옳을까요?"
+      ],
+      [
+        "수면과 기억 공고화",
+        "Rasch와 Born(2013)은 수면과 기억의 관계를 종합한 리뷰에서 수면 중 일어나는 신경 활동이 여러 유형의 기억을 공고화하는 데 기여한다는 근거를 다뤘습니다. 수면 단계에 따라 관련 과정이 다르게 설명됩니다."
+      ],
+      [
+        "이 연구를 어떻게 읽을까",
+        "실제 성적은 사전 학습 정도, 수면 부족의 크기, 과제 종류, 개인차에도 영향을 받습니다. 한 편의 리뷰만으로 ‘몇 시간을 자야 누구나 몇 점 오른다’는 식의 수치화는 할 수 없습니다."
+      ],
+      [
+        "현실적인 해석",
+        "공부 시간을 늘리는 일과 배운 내용을 보존하는 일은 항상 같은 방향이 아닙니다. 잠을 줄이면 얻는 시간뿐 아니라 잃는 기능도 함께 고려해야 합니다."
+      ]
+    ],
+    "limitation": "일반적인 수면·기억 메커니즘을 설명하는 리뷰입니다. 개인의 수면장애 진단이나 학습 성적 개선 효과를 직접 예측하지 않습니다.",
+    "reference": "Rasch, B., & Born, J. (2013). About sleep’s role in memory. Physiological Reviews, 93(2), 681–766.",
+    "doi": "https://doi.org/10.1152/physrev.00032.2012",
+    "evidenceType": "서술적 리뷰",
+    "scope": "수면 중 기억 공고화"
+  },
+  {
+    "id": "media",
+    "category": "사회·인식",
+    "cover": "media",
+    "coverText": "FOCUS?",
+    "coverTag": "THE ATTENTION ECONOMY",
+    "title": "멀티태스킹을 잘한다는 말, 정말 실력일까?",
+    "excerpt": "영상·메신저·과제를 동시에 하는 시대. 주의 집중과 미디어 사용의 관계를, 재현 연구까지 함께 읽습니다.",
+    "date": "2026-10-06",
+    "minutes": 8,
+    "lead": "메시지에 답하고 영상을 보며 공부까지 하는 시대입니다. ‘여러 일을 동시에 잘한다’는 믿음에 관해 연구는 무엇을 말하고 있을까요?",
+    "question": "미디어 멀티태스킹과 주의 통제는 어떤 관계일까?",
+    "sections": [
+      [
+        "널리 알려진 연구",
+        "Ophir, Nass와 Wagner(2009)는 미디어 멀티태스킹 수준이 높은 집단에서 관련 없는 정보의 간섭을 억제하는 과제 수행 차이를 보고했습니다. 이 결과는 많은 관심을 받았습니다."
+      ],
+      [
+        "하지만 후속 연구까지 봐야 한다",
+        "2017년 발표된 재현 연구와 메타분석에서는 원래 결과가 일관되게 재현되지 않았고, 관련성의 크기와 신뢰성에 신중해야 한다고 결론 내렸습니다. 연구 하나만 인용하면 과도하게 단정할 위험이 있습니다."
+      ],
+      [
+        "상관관계와 인과관계",
+        "특정 사용 습관과 수행 능력 사이의 차이가 관찰되어도, 멀티태스킹이 곧바로 뇌 기능 저하를 일으킨다고 확정할 수는 없습니다. 측정도구, 집단 선정, 잠재적 교란요인을 함께 검토해야 합니다."
+      ],
+      [
+        "결론보다 태도",
+        "유명한 주장일수록 재현성과 후속 검증을 확인하는 습관이 필요합니다. 흥미로운 연구보다 더 흥미로운 것은 연구가 수정되는 과정입니다."
+      ]
+    ],
+    "limitation": "초기 연구의 집단 차이와 후속 재현 결과가 엇갈립니다. 인과적 결론이나 개인의 인지 능력 진단으로 해석할 수 없습니다.",
+    "reference": "Ophir, E., Nass, C., & Wagner, A. D. (2009). Cognitive control in media multitaskers. Proceedings of the National Academy of Sciences, 106(37), 15583–15587.",
+    "doi": "https://doi.org/10.1073/pnas.0903620106",
+    "extraRef": "Wiradhany, W., & Nieuwenstein, M. R. (2017). Cognitive control in media multitaskers: Two replication studies and a meta-analysis. Attention, Perception, & Psychophysics, 79(8), 2620–2641.",
+    "extraDoi": "https://doi.org/10.3758/s13414-017-1408-4",
+    "evidenceType": "실험·재현 연구",
+    "scope": "미디어 이용 습관과 주의 통제 과제"
+  },
+  {
+    "id": "webtoon",
+    "category": "웹툰",
+    "cover": "webtoon",
+    "coverText": "WHAT IF",
+    "coverTag": "STORY × SCIENCE",
+    "title": "웹툰 속 천재는 어떻게 만들어질까?",
+    "excerpt": "타고난 재능과 노력의 대결이라는 익숙한 서사. 학습과 기억을 바라보는 과학적 질문을 던집니다.",
+    "date": "2026-10-03",
+    "minutes": 5,
+    "lead": "주인공은 한 번 본 내용을 전부 기억합니다. 우리는 종종 이런 능력을 ‘천재성’이라고 부르죠. 하지만 기억은 단순히 저장하는 능력일까요?",
+    "question": "뛰어난 학습 능력을 이해할 때 어떤 과정을 구분해야 할까?",
+    "sections": [
+      [
+        "완벽한 기억이라는 설정",
+        "웹툰의 천재 캐릭터는 정보 입력부터 인출까지 빠르고 정확하게 해냅니다. 현실의 기억은 부호화·공고화·인출처럼 구별되는 단계와 주의, 수면, 경험의 영향을 받습니다."
+      ],
+      [
+        "논문에서 빌린 한 가지 관점",
+        "Rasch와 Born(2013)의 수면과 기억 리뷰를 출발점으로 생각하면, 공부는 단지 정보를 많이 접하는 시간이 아니라 학습 이후의 공고화까지 포함하는 과정임을 이해할 수 있습니다."
+      ],
+      [
+        "작품 해석은 어디까지?",
+        "이 설명은 웹툰 속 초능력을 과학적으로 입증하는 것이 아닙니다. 작품의 설정은 창작이고, 현실의 연구는 실제 관찰 가능한 학습 과정에 대한 설명입니다."
+      ],
+      [
+        "독자에게 남기는 질문",
+        "능력의 차이를 단지 ‘타고남’으로 설명하면 환경·학습 전략·휴식의 영향은 쉽게 지워집니다. 그 사이에 이야깃거리가 숨어 있습니다."
+      ]
+    ],
+    "limitation": "특정 웹툰 작품이나 인물의 실존 능력을 검증한 연구가 아닙니다. 학습 과정에 대한 리뷰를 이야기 해석의 관점으로 사용했습니다.",
+    "reference": "Rasch, B., & Born, J. (2013). About sleep’s role in memory. Physiological Reviews, 93(2), 681–766.",
+    "doi": "https://doi.org/10.1152/physrev.00032.2012",
+    "evidenceType": "서술적 리뷰",
+    "scope": "수면·기억 메커니즘"
+  },
+  {
+    "id": "social",
+    "category": "사회·인식",
+    "cover": "social",
+    "coverText": "BIAS",
+    "coverTag": "THINKING IN PUBLIC",
+    "title": "‘나는 편향되지 않았어’라는 가장 흔한 착각",
+    "excerpt": "인터넷 논쟁과 확신에 찬 댓글들. 판단의 지름길이 어떻게 오해와 편견을 만들 수 있는지 탐구합니다.",
+    "date": "2026-09-30",
+    "minutes": 6,
+    "lead": "온라인에서는 사람마다 자신이 더 객관적이라고 생각합니다. 그런데 판단이 늘 신중하게 이루어지는 것은 아닙니다.",
+    "question": "우리의 빠른 판단은 언제 도움이 되고 언제 실수를 낳을까?",
+    "sections": [
+      [
+        "인터넷 논쟁의 한 장면",
+        "한 사건을 보고 사람들은 제한된 정보만으로 빠르게 결론에 도달합니다. 경험과 직관은 유용하지만 자주 체계적인 오판을 낳기도 합니다."
+      ],
+      [
+        "고전 연구를 읽는 관점",
+        "Tversky와 Kahneman(1974)은 대표성, 가용성, 기준점과 조정 같은 휴리스틱을 소개하며 불확실한 상황에서의 판단 편향을 설명했습니다. 이 연구는 판단이 언제나 완전한 통계적 계산의 결과는 아니라는 문제를 제기합니다."
+      ],
+      [
+        "현대의 댓글에 바로 대입해도 될까?",
+        "고전적 실험의 편향 개념을 개별 댓글 작성자의 심리나 동기로 단정할 수는 없습니다. 실제 온라인 갈등에는 정보 환경, 집단 정체성, 플랫폼 구조 등 추가 맥락이 존재합니다."
+      ],
+      [
+        "실천적 질문",
+        "어떤 주장을 듣고 강하게 확신할수록, 나와 반대되는 설명이 무엇인지 탐색하는 태도가 유용할 수 있습니다."
+      ]
+    ],
+    "limitation": "특정 댓글이나 개인의 인지적 편향을 측정한 자료는 아닙니다. 고전적 이론과 현대 온라인 문화의 연결은 설명적 해석입니다.",
+    "reference": "Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131.",
+    "doi": "https://doi.org/10.1126/science.185.4157.1124",
+    "evidenceType": "고전 실험 연구",
+    "scope": "불확실성 아래 판단 과제"
+  }
+];
+
+</script>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id);
+const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const store={get:(key,def)=>{try{const x=localStorage.getItem(key);return x===null?def:JSON.parse(x)}catch{return def}},set:(key,value)=>{try{localStorage.setItem(key,JSON.stringify(value));return true}catch{return false}}};
+const BOOKMARK_KEY='sai_v2_bookmarks';const POST_KEY='sai_v2_posts';const THEME_KEY='sai_v2_theme';
+const categories=['전체','애니메이션','웹툰','사회·인식','일상·과학','저장한 글','내 글'];
+const themes=['light','dark'];
+const today=()=>new Date().toLocaleDateString('sv-SE');
+const prettyDate=(s)=>String(s||'').replaceAll('-','.');
+const safeDoi=value=>{try{const url=new URL(value);return url.protocol==='https:'&&url.hostname==='doi.org'&&url.pathname.startsWith('/10.')?url.href:null}catch{return null}};
+let ownPosts=store.get(POST_KEY,[]);if(!Array.isArray(ownPosts))ownPosts=[];ownPosts=ownPosts.filter(p=>p&&typeof p.id==='string'&&p.custom===true&&typeof p.title==='string'&&typeof p.story==='string');
+let bookmarks=store.get(BOOKMARK_KEY,[]);if(!Array.isArray(bookmarks))bookmarks=[];bookmarks=bookmarks.filter(x=>typeof x==='string');
+let category='전체',search='',sorting='recent',activeId=null,editorId=null,editorInitial='',returnFocus=null,toastTimer=null,homeScroll=0;
+const all=()=>[...ownPosts,...window.SAI_SEED_POSTS];
+const findPost=id=>all().find(post=>post.id===id);
+function msg(text){const box=$('toast');box.textContent=text;box.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>box.hidden=true,3000)}
+function setTheme(next){const theme=themes.includes(next)?next:'light';document.documentElement.dataset.theme=theme;$('theme-toggle').setAttribute('aria-label',theme==='dark'?'라이트 모드로 변경':'다크 모드로 변경');store.set(THEME_KEY,theme)}
+function updateSavedCount(){$('saved-count').textContent=bookmarks.length;$('saved-count').setAttribute('aria-label','저장한 글 '+bookmarks.length+'편')}
+function coverClass(p){return ['memory','breath','sleep','media','webtoon','social'].includes(p.cover)?p.cover:'custom'}
+function bookmarkButton(p){const saved=bookmarks.includes(p.id);return `<button class="bookmark-icon" type="button" data-bookmark="${esc(p.id)}" aria-label="${esc(p.title)} ${saved?'저장 해제':'북마크에 저장'}" aria-pressed="${saved}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg></button>`}
+function updateChips(){$('category-tabs').innerHTML=categories.map(item=>`<button type="button" class="chip" data-cat="${esc(item)}" aria-pressed="${item===category}">${esc(item)}</button>`).join('')}
+function filtered(){let rows=all().filter(p=>{if(category==='저장한 글'&&!bookmarks.includes(p.id))return false;if(category==='내 글'&&!p.custom)return false;if(category!=='전체'&&category!=='저장한 글'&&category!=='내 글'&&p.category!==category)return false;const searchable=[p.title,p.excerpt,p.category,p.story,p.evidence,p.interpretation,p.lead,...(p.sections||[]).flat()].join(' ').toLocaleLowerCase('ko-KR');return searchable.includes(search.toLocaleLowerCase('ko-KR'))});rows.sort((a,b)=>sorting==='title'?a.title.localeCompare(b.title,'ko'):sorting==='oldest'?a.date.localeCompare(b.date):b.date.localeCompare(a.date));return rows}
+function renderGrid(){updateChips();updateSavedCount();const data=filtered();$('result-status').textContent=`${category==='전체'?'전체 이야기':category} · ${data.length}편${search?' · ‘'+search+'’ 검색 결과':''}`;$('post-grid').innerHTML=data.length?data.map(p=>`<article class="post-card"><a class="card-cover cover-${coverClass(p)}" href="#post/${encodeURIComponent(p.id)}" aria-label="${esc(p.title)} 글 읽기"><span class="cover-caption">SAI / ${esc(p.category)}</span><span class="cover-name">${esc(p.coverText||'MY STORY')}</span></a><div class="card-detail"><span class="card-tagline">${esc(p.category)}${p.custom?' · 내 글':' · 연구 연결'}</span><span class="card-time">${Number(p.minutes)||5}분 읽기</span></div><h3><a href="#post/${encodeURIComponent(p.id)}">${esc(p.title)}</a></h3><p>${esc(p.excerpt)}</p><div class="card-foot"><time datetime="${esc(p.date)}">${esc(prettyDate(p.date))}</time>${bookmarkButton(p)}</div></article>`).join(''):`<div class="empty-state"><h3>아직 일치하는 글이 없어요.</h3><p>검색어를 바꾸거나 다른 주제를 선택해 봐.</p><button type="button" id="show-all" class="button button-outline">전체 이야기 보기</button></div>`}
+function toggleBookmark(id){if(!findPost(id))return;bookmarks=bookmarks.includes(id)?bookmarks.filter(x=>x!==id):[...bookmarks,id];if(!store.set(BOOKMARK_KEY,bookmarks)){msg('브라우저 저장이 차단되어 북마크를 보관하지 못했어요.');return}renderGrid();updateArticleBookmark();msg(bookmarks.includes(id)?'읽기 목록에 글을 저장했어.':'읽기 목록에서 글을 뺐어.')}
+function updateArticleBookmark(){if(!activeId)return;const active=bookmarks.includes(activeId);$('bookmark-article').textContent=active?'★ 저장됨':'☆ 글 저장';$('bookmark-article').setAttribute('aria-pressed',String(active))}
+const APA_FORMAT={
+ memory:['Nader, K., Schafe, G. E., &amp; Le Doux, J. E. (2000). Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval. <em>Nature, 406</em>, 722–726.'],
+ breath:['Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B., &amp; Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. <em>Frontiers in Human Neuroscience, 12</em>, Article 353.'],
+ sleep:['Rasch, B., &amp; Born, J. (2013). About sleep’s role in memory. <em>Physiological Reviews, 93</em>(2), 681–766.'],
+ media:['Ophir, E., Nass, C., &amp; Wagner, A. D. (2009). Cognitive control in media multitaskers. <em>Proceedings of the National Academy of Sciences, 106</em>(37), 15583–15587.','Wiradhany, W., &amp; Nieuwenstein, M. R. (2017). Cognitive control in media multitaskers: Two replication studies and a meta-analysis. <em>Attention, Perception, &amp; Psychophysics, 79</em>(8), 2620–2641.'],
+ webtoon:['Rasch, B., &amp; Born, J. (2013). About sleep’s role in memory. <em>Physiological Reviews, 93</em>(2), 681–766.'],
+ social:['Tversky, A., &amp; Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. <em>Science, 185</em>(4157), 1124–1131.']
+};
+function citationParts(p){const refs=[];if(p.reference)refs.push([p.reference,p.doi]);if(p.extraRef)refs.push([p.extraRef,p.extraDoi]);return refs.map(([label,doi],i)=>`<p>${p.custom?esc(label):(APA_FORMAT[p.id]?.[i]||esc(label))}${safeDoi(doi)?` <a href="${esc(safeDoi(doi))}" target="_blank" rel="noopener noreferrer" aria-label="DOI 원문 링크(새 창)">${esc(safeDoi(doi))}</a>`:''}</p>`).join('')}
+function block(label,kind,heading,text){return `<section class="article-block"><div class="article-block-head"><span class="article-block-label label-${kind}">${esc(label)}</span><h2>${esc(heading)}</h2></div><p>${esc(text)}</p></section>`}
+function articleHTML(p){const custom=Boolean(p.custom);const sections=custom?[
+ ['01 · 질문','story','어디에서 시작한 이야기일까?',p.story],
+ ['02 · 연구 근거','evidence','논문이 실제로 확인한 것',p.evidence],
+ ['03 · 나의 해석','interpretation','그럼 이 이야기에 적용하면?',p.interpretation]
+ ]:[
+ ['01 · 질문','story',p.sections[0][0],p.sections[0][1]],
+ ['02 · 연구 근거','evidence',p.sections[1][0],p.sections[1][1]],
+ ['03 · 연결과 해석','interpretation',p.sections[2][0],p.sections[2][1]],
+ ['04 · 함께 생각해요','interpretation',p.sections[3][0],p.sections[3][1]]
+ ];
+ const c=coverClass(p);const paragraphs=sections.map(s=>block(...s)).join('');
+ return `<article class="article-wrap"><div class="article-kicker"><span class="pill pill-story">${esc(p.category)}</span><span>${custom?'내가 작성한 로컬 글':'연구를 연결한 교육용 예시 글'}</span></div><h1 id="article-title" tabindex="-1">${esc(p.title)}</h1><p class="article-lead">${esc(p.lead||p.excerpt)}</p><div class="article-meta"><time datetime="${esc(p.date)}">${esc(prettyDate(p.date))}</time><span>·</span><span>${Number(p.minutes)||5}분 읽기</span><span>·</span><span>${custom?'브라우저 내 보관':'근거와 해석을 구분한 글'}</span></div><div class="article-cover cover-${c}" role="img" aria-label="${esc(p.title)}을 상징하는 추상 그래픽"><span>${esc(p.coverText||'MY STORY')}</span><div class="article-cover-label">SAI. / ${esc(p.category)}</div></div><div class="article-intro"><span>THE QUESTION</span><p>${esc(p.question||p.excerpt)}</p></div><div class="article-body">${paragraphs}${!custom?`<div class="source-facts"><div><small>원 연구 유형</small><strong>${esc(p.evidenceType)}</strong></div><div><small>주요 연구 범위</small><strong>${esc(p.scope)}</strong></div></div>`:''}<aside class="caution"><strong>주의 · 연구의 한계</strong><p>${esc(p.limitation||'작성자가 연구의 한계를 추가하지 않았습니다.')}</p></aside><section class="references" aria-label="참고문헌"><h2>참고문헌 · APA 7</h2>${citationParts(p)||'<p>입력된 참고문헌이 없습니다. 연구 근거를 확인한 후 추가해 주세요.</p>'}</section><div class="article-end"><span>${custom?'작성한 글은 현재 브라우저에서만 볼 수 있어요.':'논문 원문 및 후속 연구를 확인하면 더 정확하게 이해할 수 있어요.'}</span>${custom?'<button class="danger-button" id="delete-article" type="button">내 글 삭제</button>':'<a class="inline-link" href="#library">다른 이야기 보기 →</a>'}</div></div></article>`}
+function showHome(scrollTarget){activeId=null;$('home-view').hidden=false;$('article-view').hidden=true;$('read-progress').hidden=true;document.title='사이 — 이야기에서 시작해, 근거까지.';document.querySelectorAll('.main-nav a').forEach(a=>a.removeAttribute('aria-current'));if(scrollTarget==='saved'||scrollTarget==='library')$('nav-'+(scrollTarget==='saved'?'saved':'library')).setAttribute('aria-current','page');if(scrollTarget==='saved'){category='저장한 글';renderGrid()}else if(scrollTarget==='library'){if(category==='저장한 글')category='전체';renderGrid()}requestAnimationFrame(()=>{if(scrollTarget==='home'||!scrollTarget)window.scrollTo({top:0,behavior:'instant'});else {const target=scrollTarget==='saved'?$('library'):$(scrollTarget);if(target)target.scrollIntoView({block:'start',behavior:'instant'})}})}
+function showArticle(id){const p=findPost(id);if(!p){msg('해당 글을 찾을 수 없어 목록을 열었어.');location.hash='#library';return}if(!activeId)homeScroll=window.scrollY;activeId=p.id;$('home-view').hidden=true;$('article-view').hidden=false;$('article-slot').innerHTML=articleHTML(p);$('read-progress').hidden=false;$('edit-article').hidden=!p.custom;updateArticleBookmark();document.title=p.title+' | 사이';requestAnimationFrame(()=>{window.scrollTo({top:0,behavior:'instant'});$('article-title').focus({preventScroll:true});updateProgress()})}
+function route(){let h=location.hash||'#home';try{h=decodeURIComponent(h)}catch{h='#home'}if(h.startsWith('#post/')){showArticle(h.slice(6));return}if(['#home','#library','#saved','#about'].includes(h))showHome(h.slice(1));else showHome('home')}
+function updateProgress(){if(!activeId)return;const y=Math.max(0,scrollY),total=Math.max(1,document.documentElement.scrollHeight-innerHeight);$('read-progress-fill').style.width=Math.min(100,Math.round(y/total*100))+'%'}
+const fields=['title','category','excerpt','story','evidence','interpretation','limitations','reference'];
+const field=id=>$('form-'+id);
+function values(){return Object.fromEntries(fields.map(name=>[name,field(name).value.trim()]))}
+function fingerprint(){return JSON.stringify(values())}
+function openEditor(id=null){const p=id?ownPosts.find(x=>x.id===id):null;if(id&&!p)return;editorId=p?.id||null;returnFocus=document.activeElement;$('editor-title').textContent=p?'내 글 수정하기':'나만의 글 쓰기';$('submit-editor').textContent=p?'수정한 글 저장':'내 브라우저에 글 저장';$('editor-form').reset();for(const name of fields)if(p)field(name).value=String(p[name]??(name==='limitations'?p.limitation:''));editorInitial=fingerprint();$('editor-state').textContent=p?'기존 글은 저장 전까지 변경되지 않음':'새 글 작성 중 · 저장 전';$('editor-layer').hidden=false;document.body.classList.add('modal-open');field('title').focus()}
+function closeEditor(force=false){if(!force&&fingerprint()!==editorInitial&&!confirm('작성 중인 변경 사항을 버릴까요? 저장하지 않은 내용은 사라집니다.'))return;$('editor-layer').hidden=true;document.body.classList.remove('modal-open');editorId=null;if(returnFocus&&returnFocus.isConnected)returnFocus.focus();else $('new-post').focus()}
+function saveEditor(ev){ev.preventDefault();if(!$('editor-form').reportValidity())return;const val=values();if(!val.title||!val.excerpt||!val.story||!val.evidence||!val.interpretation||!val.limitations){msg('필수 항목을 모두 작성해 줘.');return}const original=ownPosts.find(x=>x.id===editorId);const id=original?.id||'own-'+Date.now()+'-'+Math.random().toString(36).slice(2,7);const text=[val.story,val.evidence,val.interpretation].join(' ');const post={...original,...val,id,custom:true,cover:'custom',coverText:'MY STORY',date:original?.date||today(),updated:today(),minutes:Math.max(1,Math.ceil(text.length/550)),lead:val.excerpt,question:val.excerpt,limitation:val.limitations};const next=original?ownPosts.map(x=>x.id===id?post:x):[post,...ownPosts];if(!store.set(POST_KEY,next)){msg('저장소에 접근할 수 없어 글을 저장하지 못했어.');return}ownPosts=next;closeEditor(true);renderGrid();location.hash='#post/'+encodeURIComponent(id);if(activeId===id)showArticle(id);msg(original?'수정한 글을 저장했어.':'새 글을 이 브라우저에 저장했어.')}
+function deleteCurrent(){const p=ownPosts.find(x=>x.id===activeId);if(!p)return;if(!confirm('이 글을 삭제할까요? 브라우저 안에서 복원할 수 없습니다.'))return;const next=ownPosts.filter(x=>x.id!==activeId);if(!store.set(POST_KEY,next)){msg('삭제 결과를 저장하지 못했어.');return}ownPosts=next;bookmarks=bookmarks.filter(x=>x!==p.id);store.set(BOOKMARK_KEY,bookmarks);category='내 글';renderGrid();location.hash='#library';showHome('library');msg('내 글을 삭제했어.')}
+function copyLink(){const p=findPost(activeId);if(!p)return;if(p.custom){msg('내 글은 현재 브라우저에만 저장되어 다른 사람에게 링크로 공유할 수 없어.');return}if(location.protocol==='file:'){msg('로컬 HTML은 공유 주소가 아니야. GitHub Pages에 배포하면 글 링크를 복사할 수 있어.');return}const url=new URL(location.href);navigator.clipboard?.writeText(url.href).then(()=>msg('글 링크를 복사했어.'),()=>msg('복사가 제한되어 주소창에서 직접 복사해 줘.'))||msg('이 브라우저에서는 주소창의 링크를 복사해 줘.')}
+$('post-grid').addEventListener('click',e=>{const btn=e.target.closest('[data-bookmark]');if(btn){toggleBookmark(btn.dataset.bookmark)}});
+$('category-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;category=b.dataset.cat;renderGrid()});
+$('post-grid').addEventListener('click',e=>{if(e.target.id==='show-all'){category='전체';search='';$('post-search').value='';renderGrid()}});
+$('post-search').addEventListener('input',e=>{search=e.target.value.trim();renderGrid()});
+$('post-sort').addEventListener('change',e=>{sorting=e.target.value;renderGrid()});
+$('theme-toggle').addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'));
+$('open-search').addEventListener('click',()=>{if(location.hash!=='#library')location.hash='#library';else showHome('library');requestAnimationFrame(()=>$('post-search').focus())});
+$('new-post').addEventListener('click',()=>openEditor());$('library-compose').addEventListener('click',()=>openEditor());
+$('close-editor').addEventListener('click',()=>closeEditor());$('cancel-editor').addEventListener('click',()=>closeEditor());
+$('editor-layer').addEventListener('click',e=>{if(e.target.matches('[data-close-editor]'))closeEditor()});
+$('editor-form').addEventListener('input',()=>{$('editor-state').textContent=fingerprint()===editorInitial?'변경 사항 없음':'저장하지 않은 변경 사항 있음'});
+$('editor-form').addEventListener('submit',saveEditor);
+$('edit-article').addEventListener('click',()=>openEditor(activeId));
+$('bookmark-article').addEventListener('click',()=>toggleBookmark(activeId));
+$('copy-link').addEventListener('click',copyLink);
+$('article-slot').addEventListener('click',e=>{if(e.target.closest('#delete-article'))deleteCurrent()});
+$('back-to-library').addEventListener('click',()=>{category=category==='저장한 글'?'저장한 글':'전체';renderGrid()});
+function trapTab(e){const focusable=[...$('editor-layer').querySelectorAll('button:not([disabled]),input:not([disabled]),textarea:not([disabled]),select:not([disabled]),a[href]')].filter(x=>x.getClientRects().length);if(!focusable.length)return;const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}
+document.addEventListener('keydown',e=>{if(!$('editor-layer').hidden){if(e.key==='Escape'){e.preventDefault();closeEditor()}else if(e.key==='Tab')trapTab(e);return}if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!e.ctrlKey&&!e.metaKey){e.preventDefault();if(location.hash!=='#library')location.hash='#library';else showHome('library');requestAnimationFrame(()=>$('post-search').focus())}});
+window.addEventListener('hashchange',route);window.addEventListener('scroll',updateProgress,{passive:true});
+setTheme(store.get(THEME_KEY,'light'));renderGrid();route();
+})();
+
+</script>
+</body>
+</html>

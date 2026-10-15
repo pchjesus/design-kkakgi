@@ -1,0 +1,85 @@
+[
+  {
+    "width": 1440,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "color_text": true,
+    "bg_same": true,
+    "reset_after_drag": true,
+    "reset_hidden": true,
+    "keyboard_rotation": true,
+    "drawer_open": true,
+    "cart_count": "2",
+    "cart_total": "₩ 39,600",
+    "drawer_close": true,
+    "cart_removed": true,
+    "faq": true,
+    "errors_after": []
+  },
+  {
+    "width": 1024,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "errors_after": []
+  },
+  {
+    "width": 790,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "errors_after": []
+  },
+  {
+    "width": 390,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "color_text": true,
+    "bg_same": true,
+    "reset_after_drag": true,
+    "reset_hidden": true,
+    "keyboard_rotation": true,
+    "drawer_open": true,
+    "cart_count": "2",
+    "cart_total": "₩ 39,600",
+    "drawer_close": true,
+    "cart_removed": true,
+    "faq": true,
+    "menu_open": true,
+    "errors_after": []
+  },
+  {
+    "width": 360,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "errors_after": []
+  },
+  {
+    "width": 320,
+    "overflow": 0,
+    "errors": [],
+    "canvas": 1,
+    "color_text": true,
+    "bg_same": true,
+    "reset_after_drag": true,
+    "reset_hidden": true,
+    "keyboard_rotation": true,
+    "drawer_open": true,
+    "cart_count": "2",
+    "cart_total": "₩ 39,600",
+    "drawer_close": true,
+    "cart_removed": true,
+    "faq": true,
+    "menu_open": true,
+    "errors_after": []
+  },
+  {
+    "reduced_animation": "none"
+  },
+  {
+    "text_200pct_overflow": 0
+  }
+]
