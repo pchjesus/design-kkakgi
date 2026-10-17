@@ -1,15 +1,28 @@
 {
   "release_id": "E6-C5-HERO",
   "title": "MUL. E6-C5 HERO integrated",
-  "full_source": "MUL_E6C5_HERO_APPROVED_INTEGRATED.html (conversation-local full-fidelity source, not in GitHub)",
+  "full_source": "MUL_E6C5_HERO_APPROVED_INTEGRATED.html (approved local source; original PNG bytes kept out of GitHub)",
   "public_html": "cases/mul-cup/latest/index.html",
   "public_route": "/design-kkakgi/cases/mul-cup/latest/",
   "images_embedded_in_local_original": 2,
-  "image_policy": "photos-omitted-from-github",
+  "image_policy": "MUL-project-generated-images-approved-for-public-latest-only",
   "has_approved_hero_motion": true,
   "has_current_E6C5_details": true,
   "three_d_experiment": "rejected; 2.5D retained",
   "published_date": "2026-10-17",
   "guideline": "Universal Visual Design UI/UX v1.2 DRAFT",
-  "html_release_tag": "E6-C5 HERO Integrated"
+  "html_release_tag": "E6-C5 HERO Integrated",
+  "images_embedded_in_online": 2,
+  "image_format": "image/webp (quality 95; original PNG compressed without changing content or layout)",
+  "image_sha256": [
+    "56001b79ad25ca06baa77b684520423fdd33ae7b7f3723e3ea87e0cdd46b63d2",
+    "1380c2f05d539e50ee67f813de5042bd6d9b7a464f842ce88e45cd3f423cccf4"
+  ],
+  "original_png_sha256": [
+    "700625f29cc7a5cf5b77653a91ac8a419c2cb9562d986d841df0edc36baf48fb",
+    "65eab169a3f210baee1dded216132c1edd42a49fe85fc8a5f394aa6b0ae297f2"
+  ],
+  "image_provenance": "MUL project-specific AI-generated artwork; user confirmed and approved 2026-10-17",
+  "media_status": "Two approved images embedded in GitHub Pages HTML as optimized WebP data URIs",
+  "original_archive_policy": "Five historic versions remain unchanged; only stable latest path updated"
 }
