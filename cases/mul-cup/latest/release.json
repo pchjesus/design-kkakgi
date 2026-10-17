@@ -1,9 +1,9 @@
 {
-  "release_id": "E6-C5-HERO",
-  "title": "MUL. E6-C5 HERO integrated",
-  "full_source": "MUL_E6C5_HERO_APPROVED_INTEGRATED.html (approved local source; original PNG bytes kept out of GitHub)",
+  "release_id": "E7-MATERIAL-STUDY",
+  "title": "MUL. E7 material and composition study",
+  "full_source": "E6-C5-HERO approved GitHub HTML + scoped E7 material refinement",
   "public_html": "cases/mul-cup/latest/index.html",
-  "public_route": "/design-kkakgi/cases/mul-cup/latest/",
+  "public_route": null,
   "images_embedded_in_local_original": 2,
   "image_policy": "MUL-project-generated-images-approved-for-public-latest-only",
   "has_approved_hero_motion": true,
@@ -11,7 +11,7 @@
   "three_d_experiment": "rejected; 2.5D retained",
   "published_date": "2026-10-17",
   "guideline": "Universal Visual Design UI/UX v1.2 DRAFT",
-  "html_release_tag": "E6-C5 HERO Integrated",
+  "html_release_tag": "E7 Material Study",
   "images_embedded_in_online": 2,
   "image_format": "image/webp (quality 95; original PNG compressed without changing content or layout)",
   "image_sha256": [
@@ -24,5 +24,9 @@
   ],
   "image_provenance": "MUL project-specific AI-generated artwork; user confirmed and approved 2026-10-17",
   "media_status": "Two approved images embedded in GitHub Pages HTML as optimized WebP data URIs",
-  "original_archive_policy": "Five historic versions remain unchanged; only stable latest path updated"
+  "original_archive_policy": "Five historic versions remain unchanged; only stable latest path updated",
+  "experiment": true,
+  "baseline_release": "E6-C5-HERO",
+  "approval_status": "awaiting-user-review",
+  "branch": "experiment/mul-material-softness"
 }
