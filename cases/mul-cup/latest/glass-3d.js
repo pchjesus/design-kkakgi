@@ -60,25 +60,28 @@
   scene.add(new T.HemisphereLight(0xf5fbff,0x56798e,.7));
   const key=new T.DirectionalLight(0xffffff,1.1);key.position.set(-3,5,4);scene.add(key);
   model=new T.Group();scene.add(model);
-  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.07,transmission:1,thickness:.26,ior:1.47,clearcoat:1,clearcoatRoughness:.055,envMapIntensity:.95,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
+  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.075,transparent:true,opacity:.35,depthWrite:false,transmission:.78,thickness:.08,ior:1.47,clearcoat:.8,clearcoatRoughness:.055,envMapIntensity:.75,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
   // Revolved closed profile: outer wall -> rounded lip -> inner wall -> thick bottom.
   const profile=[[0,-1.45],[.65,-1.45],[.77,-1.43],[.83,-1.34],[.91,-.9],[.98,-.1],[.97,.7],[.935,1.36],[.93,1.43],[.91,1.45],[.887,1.43],[.884,1.36],[.92,.7],[.925,-.1],[.85,-.9],[.78,-1.21],[.66,-1.27],[0,-1.27]];
   const curve=new T.CatmullRomCurve3(profile.map(([x,y])=>new T.Vector3(x,y,0)),false,'centripetal');
   const points=curve.getPoints(90).map(v=>new T.Vector2(Math.max(0,v.x),v.y));
-  const shell=new T.Mesh(new T.LatheGeometry(points,112),glass);shell.name='hollow-glass';model.add(shell);
-  const rim=new T.Mesh(new T.TorusGeometry(.909,.014,10,112),glass);rim.rotation.x=Math.PI/2;rim.position.y=1.435;model.add(rim);
+  const shell=new T.Mesh(new T.LatheGeometry(points,112),glass);shell.name='hollow-glass';shell.renderOrder=2;model.add(shell);
+  const rim=new T.Mesh(new T.TorusGeometry(.909,.014,10,112),glass);rim.rotation.x=Math.PI/2;rim.position.y=1.435;rim.renderOrder=3;model.add(rim);
   const foot=new T.Mesh(new T.TorusGeometry(.725,.034,12,96),glass);foot.rotation.x=Math.PI/2;foot.position.y=-1.395;model.add(foot);
-  const waterMaterial=new T.MeshPhysicalMaterial({color:'#d5edf1',metalness:0,roughness:.055,transmission:.95,thickness:.65,ior:1.333,envMapIntensity:.55,attenuationColor:new T.Color('#9acfd9'),attenuationDistance:3,side:T.DoubleSide});
+  const edgeMaterial=new T.MeshBasicMaterial({color:'#708d9c',transparent:true,opacity:.34,depthWrite:false});
+  const lipEdge=new T.Mesh(new T.TorusGeometry(.911,.006,8,112),edgeMaterial);lipEdge.rotation.x=Math.PI/2;lipEdge.position.y=1.448;lipEdge.renderOrder=4;model.add(lipEdge);
+  const baseEdge=new T.Mesh(new T.TorusGeometry(.74,.008,8,96),edgeMaterial);baseEdge.rotation.x=Math.PI/2;baseEdge.position.y=-1.42;baseEdge.renderOrder=4;model.add(baseEdge);
+  const waterMaterial=new T.MeshPhysicalMaterial({color:'#a7d6e2',metalness:0,roughness:.06,transparent:true,opacity:.35,depthWrite:false,transmission:.65,thickness:.22,ior:1.333,envMapIntensity:.55,attenuationColor:new T.Color('#9acfd9'),attenuationDistance:3,side:T.DoubleSide});
   const waterProfile=[[0,-1.25],[.65,-1.25],[.77,-1.19],[.84,-.9],[.925,.03],[.923,.09],[0,.09]].map(([x,y])=>new T.Vector2(x,y));
-  const water=new T.Mesh(new T.LatheGeometry(waterProfile,96),waterMaterial);water.name='water-volume';model.add(water);
+  const water=new T.Mesh(new T.LatheGeometry(waterProfile,96),waterMaterial);water.name='water-volume';water.renderOrder=1;model.add(water);
   const meniscus=new T.Mesh(new T.TorusGeometry(.914,.009,8,96),waterMaterial);meniscus.rotation.x=Math.PI/2;meniscus.position.y=.09;model.add(meniscus);
   const labelCanvas=document.createElement('canvas');labelCanvas.width=512;labelCanvas.height=256;
   const ctx=labelCanvas.getContext('2d');ctx.strokeStyle='#386377';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(256,20);ctx.bezierCurveTo(210,83,207,111,256,112);ctx.bezierCurveTo(305,111,302,83,256,20);ctx.stroke();ctx.fillStyle='#386377';ctx.font='38px sans-serif';ctx.textAlign='center';ctx.fillText('M U L.',256,188);
   const labelTexture=new T.CanvasTexture(labelCanvas);labelTexture.colorSpace=T.SRGBColorSpace;
-  const label=new T.Mesh(new T.CylinderGeometry(.987,.987,.38,48,1,true,-.28,.56),new T.MeshBasicMaterial({map:labelTexture,transparent:true,opacity:.72,depthWrite:false,side:T.DoubleSide}));label.position.y=.63;model.add(label);
+  const label=new T.Mesh(new T.CylinderGeometry(.987,.987,.38,48,1,true,-.28,.56),new T.MeshBasicMaterial({map:labelTexture,transparent:true,opacity:.72,depthWrite:false,side:T.DoubleSide}));label.position.y=.63;label.renderOrder=4;model.add(label);
   function color(){
    const name=document.querySelector('#colors .swatch.selected')?.dataset.color||'clear';
-   const values={clear:['#effaff','#c7e8ef',2.7],amber:['#d9b07c','#a66b34',1.3],smoke:['#b2c2ce','#6e859a',1.8]}[name];
+   const values={clear:['#effaff','#c7e8ef',2.7],amber:['#e6b67b','#c59354',2.5],smoke:['#a3b7c6','#8da3b5',2.4]}[name];
    scene.background.set(({clear:'#f7fbff',amber:'#fff1e3',smoke:'#e8f0f6'})[name]);glass.color.set(values[0]);glass.attenuationColor.set(values[1]);glass.attenuationDistance=values[2];host.dataset.color=name;requestDraw();
   }
   // Observe the existing selection state so drawer and stage remain one contract.
