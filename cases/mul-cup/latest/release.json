@@ -1,0 +1,14 @@
+{
+  "release_id": "E6-C5-HERO",
+  "title": "MUL. E6-C5 HERO integrated",
+  "full_source": "MUL_E6C5_HERO_APPROVED_INTEGRATED.html (conversation-local full-fidelity source, not in GitHub)",
+  "public_html": "cases/mul-cup/latest/index.html",
+  "public_route": "/design-kkakgi/cases/mul-cup/latest/",
+  "images_embedded_in_local_original": 2,
+  "image_policy": "photos-omitted-from-github",
+  "has_approved_hero_motion": true,
+  "has_current_E6C5_details": true,
+  "three_d_experiment": "rejected; 2.5D retained",
+  "published_date": "2026-10-17",
+  "guideline": "Universal Visual Design UI/UX v1.2 DRAFT"
+}
