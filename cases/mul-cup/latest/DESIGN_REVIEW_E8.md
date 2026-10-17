@@ -87,3 +87,14 @@ three.js Authors. (n.d.). *MeshPhysicalMaterial*. three.js documentation. Retrie
 three.js Authors. (n.d.). *three.js* (Version 0.160.1) [Computer software]. https://www.npmjs.com/package/three/v/0.160.1
 
 이전의 Apple·Behance 레퍼런스와 사용자 철학은 DESIGN_REVIEW_E7.md에 기록되어 있으며, 이번에도 제품 감상 우선·절제된 조작·페이지 통합 원칙을 유지한다.
+
+## main 승인 배포 후 확인 (2026-10-17)
+
+- 승인 소스 bff90ca의 제품 HTML·3D controller·라이브러리 바이트를 유지한 채 main 병합 커밋 `1ef7174126c180c5c2b90cb2984bfba992ce27ce`로 게시.
+- Verify MUL latest release: **PASS** — https://github.com/pchjesus/design-kkakgi/actions/runs/39029876118
+- GitHub Pages build and deployment: **PASS** — https://github.com/pchjesus/design-kkakgi/actions/runs/39029875645
+- 실제 고정 사이트 HTML HTTP 200, E8 Spatial Glass 태그, 사진 2장 정상 표시, 가로 넘침 없음: **PASS**.
+- 정식 Pages origin에서 WebGL renderer=three, 위쪽 방향키로 quaternion 변화, 초기화 후 기본 quaternion 복귀: **PASS**.
+- glass-3d.js 및 고정 ES module HTTP 200 / application/javascript 확인: **PASS**.
+- 배포 진행 중 이전 E6-C5 캐시를 관찰했으나, 배포 완료 후 버전 쿼리로 다시 열어 E8을 확인함. 이전 화면을 최종 배포 성공의 증거로 사용하지 않음.
+- 일반화할 디자인 판단과 범용 지침 적용 기록: `../DESIGN_LEARNINGS_E7_E8.md`.

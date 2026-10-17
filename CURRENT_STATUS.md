@@ -60,3 +60,7 @@
 - 디자인 학습: `cases/mul-cup/DESIGN_LEARNINGS_E7_E8.md`.
 - 원래 SIDE-001 메뉴 슬롯 카드/문서와 SAI 링크는 보존.
 - 소스 병합 후 검사·Pages 실행 결과는 최종 작업 보고에서 확인. 기존의 미실행 검증을 자동 PASS로 승격하지 않음.
+
+### E8 배포 확인 완료
+
+main 병합 커밋 `1ef7174`의 자동 검사와 GitHub Pages 배포가 성공했다. 정식 latest 주소에서 E8 태그·사진 2장·실제 3D 회전/초기화를 확인했고, 3D 모듈 파일도 HTTP 200으로 제공된다. 자세한 근거는 `cases/mul-cup/latest/DESIGN_REVIEW_E8.md`의 main 배포 확인 절을 따른다. 실물 모바일 등 앞서 미실행한 항목은 그대로 미검증이다.
