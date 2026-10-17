@@ -8,23 +8,25 @@
  const section=document.querySelector('#colors');
  const hint=host.querySelector('.drag-prompt');
  const reset=document.querySelector('#colors .reset-angle');
+ let THREE;
  let booting=false,renderer=null,scene=null,camera=null,model=null,envTarget=null;
  let visible=true,frame=0,resizeObserver=null,visibilityObserver=null,pointer=null,oldPoint=null;
  const mq=matchMedia('(prefers-reduced-motion: reduce)');
  const fallback=()=>{
+  if(frame){cancelAnimationFrame(frame);frame=0;}resizeObserver?.disconnect();visibilityObserver?.disconnect();renderer?.dispose();renderer=null;
   host.dataset.renderer='fallback';figure.classList.remove('mul-3d-ready');
   host.setAttribute('role','slider');host.setAttribute('aria-label','컵 좌우 회전');
   host.setAttribute('aria-valuemin','-85');host.setAttribute('aria-valuemax','85');host.setAttribute('aria-valuenow','0');
   hint.innerHTML='<span aria-hidden="true">↔</span> 기본 보기 · 좌우로 돌려보기';
  };
  const draw=()=>{frame=0;if(renderer&&visible&&!document.hidden)renderer.render(scene,camera);};
- const requestDraw=()=>{if(!frame&&renderer&&visible&&!document.hidden)frame=requestAnimationFrame(draw);};
+ const requestDraw=()=>{if(!frame&&renderer&&host.dataset.renderer==='three'&&visible&&!document.hidden)frame=requestAnimationFrame(draw);};
  function syncAccessible(){
   host.removeAttribute('aria-valuemin');host.removeAttribute('aria-valuemax');host.removeAttribute('aria-valuenow');host.removeAttribute('aria-valuetext');
   if(model)host.dataset.orientation=model.quaternion.toArray().map(n=>n.toFixed(3)).join(',');
  }
  function restoreView(){
-  if(!model)return;
+  if(!model||host.dataset.renderer!=='three')return;
   model.rotation.set(.12,-.28,0);syncAccessible();requestDraw();
  }
  function point(e){
@@ -36,30 +38,29 @@
  }
  function activate(){
   if(booting)return;booting=true;
-  const loader=document.createElement('script');
-  loader.src=new URL('vendor/three-0.160.1.min.js',document.baseURI).href;
-  loader.onload=()=>{try{build();}catch(error){console.warn('MUL 3D fallback:',error.message);fallback();renderer?.dispose();}};
-  loader.onerror=fallback;document.head.append(loader);
+  import(new URL('vendor/three-0.160.1.module.min.js',document.baseURI).href)
+   .then(module=>{THREE=module;build();})
+   .catch(error=>{console.warn('MUL 3D fallback:',error.message);fallback();renderer?.dispose();});
  }
  function build(){
   const T=THREE;
   renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});
   renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.6));
-  renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
+  renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=.88;
   renderer.setClearColor(0x000000,0);
   const canvas=renderer.domElement;canvas.className='glass-webgl';canvas.setAttribute('aria-hidden','true');
-  scene=new T.Scene();camera=new T.PerspectiveCamera(35,1,.1,40);camera.position.set(0,.35,7.6);camera.lookAt(0,0,0);
+  scene=new T.Scene();scene.background=new T.Color('#f7fbff');camera=new T.PerspectiveCamera(35,1,.1,40);camera.position.set(0,.35,7.6);camera.lookAt(0,0,0);
   // Real studio geometry produces reflections, without fetching an HDR photograph.
-  const room=new T.Scene();room.background=new T.Color('#c9dde8');
-  room.add(new T.Mesh(new T.BoxGeometry(12,10,12),new T.MeshBasicMaterial({color:'#b9d0df',side:T.BackSide})));
+  const room=new T.Scene();room.background=new T.Color('#4b6378');
+  room.add(new T.Mesh(new T.BoxGeometry(12,10,12),new T.MeshBasicMaterial({color:'#7a94a8',side:T.BackSide})));
   function softbox(x,y,z,w,h,color,intensity){const p=new T.Mesh(new T.PlaneGeometry(w,h),new T.MeshBasicMaterial({color:new T.Color(color).multiplyScalar(intensity),side:T.DoubleSide}));p.position.set(x,y,z);p.lookAt(0,0,0);room.add(p);}
-  softbox(-3,1,3,1.3,5,'#ffffff',3.2);softbox(3,1,1,1,4,'#e2f3ff',2.2);softbox(0,4,0,5,3,'#ffffff',2);softbox(0,0,-4,4,5,'#66879e',.6);
-  const pmrem=new T.PMREMGenerator(renderer);envTarget=pmrem.fromScene(room,.08);scene.environment=envTarget.texture;pmrem.dispose();
+  softbox(-3,1,3,1.3,5,'#ffffff',1.6);softbox(3,1,1,1,4,'#e2f3ff',1.1);softbox(0,4,0,5,3,'#ffffff',.85);softbox(0,0,-4,4,5,'#66879e',.6);
+  const pmrem=new T.PMREMGenerator(renderer);envTarget=pmrem.fromScene(room,.025);scene.environment=envTarget.texture;pmrem.dispose();
   room.traverse(o=>{o.geometry?.dispose();o.material?.dispose();});
-  scene.add(new T.HemisphereLight(0xf5fbff,0x56798e,2));
-  const key=new T.DirectionalLight(0xffffff,2.8);key.position.set(-3,5,4);scene.add(key);
+  scene.add(new T.HemisphereLight(0xf5fbff,0x56798e,.7));
+  const key=new T.DirectionalLight(0xffffff,1.1);key.position.set(-3,5,4);scene.add(key);
   model=new T.Group();scene.add(model);
-  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.095,transmission:.97,thickness:.12,ior:1.47,clearcoat:1,clearcoatRoughness:.055,envMapIntensity:.95,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
+  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.07,transmission:1,thickness:.26,ior:1.47,clearcoat:1,clearcoatRoughness:.055,envMapIntensity:.95,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
   // Revolved closed profile: outer wall -> rounded lip -> inner wall -> thick bottom.
   const profile=[[0,-1.45],[.65,-1.45],[.77,-1.43],[.83,-1.34],[.91,-.9],[.98,-.1],[.97,.7],[.935,1.36],[.93,1.43],[.91,1.45],[.887,1.43],[.884,1.36],[.92,.7],[.925,-.1],[.85,-.9],[.78,-1.21],[.66,-1.27],[0,-1.27]];
   const curve=new T.CatmullRomCurve3(profile.map(([x,y])=>new T.Vector3(x,y,0)),false,'centripetal');
@@ -78,7 +79,7 @@
   function color(){
    const name=document.querySelector('#colors .swatch.selected')?.dataset.color||'clear';
    const values={clear:['#effaff','#c7e8ef',2.7],amber:['#d9b07c','#a66b34',1.3],smoke:['#b2c2ce','#6e859a',1.8]}[name];
-   glass.color.set(values[0]);glass.attenuationColor.set(values[1]);glass.attenuationDistance=values[2];host.dataset.color=name;requestDraw();
+   scene.background.set(({clear:'#f7fbff',amber:'#fff1e3',smoke:'#e8f0f6'})[name]);glass.color.set(values[0]);glass.attenuationColor.set(values[1]);glass.attenuationDistance=values[2];host.dataset.color=name;requestDraw();
   }
   // Observe the existing selection state so drawer and stage remain one contract.
   const colorObserver=new MutationObserver(color);colorObserver.observe(document.querySelector('#colors .swatches'),{subtree:true,attributes:true,attributeFilter:['aria-pressed']});
@@ -86,13 +87,13 @@
   hint.innerHTML='<span class="orbit-symbol" aria-hidden="true">⤢</span> 드래그로 자유롭게 돌려보세요';
   host.title='드래그: 자유 회전 · 방향키: 상하좌우 회전 · Home: 처음 각도';
   reset.textContent='처음 각도로';
-  host.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button!==0)return;e.stopImmediatePropagation();pointer=e.pointerId;oldPoint=point(e);host.setPointerCapture(pointer);host.classList.add('is-rotating');},{capture:true});
-  host.addEventListener('pointermove',e=>{if(pointer!==e.pointerId||!oldPoint)return;e.stopImmediatePropagation();const next=point(e);const q=new T.Quaternion().setFromUnitVectors(oldPoint,next);model.quaternion.premultiply(q).normalize();oldPoint=next;syncAccessible();requestDraw();},{capture:true});
-  const release=e=>{if(pointer!==e.pointerId)return;e.stopImmediatePropagation();pointer=null;oldPoint=null;host.classList.remove('is-rotating');};
+  host.addEventListener('pointerdown',e=>{if(host.dataset.renderer!=='three')return;if(e.pointerType==='mouse'&&e.button!==0)return;e.stopImmediatePropagation();pointer=e.pointerId;oldPoint=point(e);host.setPointerCapture(pointer);host.classList.add('is-rotating');},{capture:true});
+  host.addEventListener('pointermove',e=>{if(host.dataset.renderer!=='three')return;if(pointer!==e.pointerId||!oldPoint)return;e.stopImmediatePropagation();const next=point(e);const q=new T.Quaternion().setFromUnitVectors(oldPoint,next);model.quaternion.premultiply(q).normalize();oldPoint=next;syncAccessible();requestDraw();},{capture:true});
+  const release=e=>{if(host.dataset.renderer!=='three')return;if(pointer!==e.pointerId)return;e.stopImmediatePropagation();pointer=null;oldPoint=null;host.classList.remove('is-rotating');};
   host.addEventListener('pointerup',release,{capture:true});host.addEventListener('pointercancel',release,{capture:true});host.addEventListener('lostpointercapture',()=>{pointer=null;oldPoint=null;host.classList.remove('is-rotating');});
-  host.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home'].includes(e.key))return;e.preventDefault();e.stopImmediatePropagation();if(e.key==='Home'){restoreView();return;}const axis=e.key==='ArrowLeft'||e.key==='ArrowRight'?new T.Vector3(0,1,0):new T.Vector3(1,0,0);const sign=e.key==='ArrowRight'||e.key==='ArrowDown'?1:-1;model.quaternion.premultiply(new T.Quaternion().setFromAxisAngle(axis,sign*Math.PI/18));syncAccessible();requestDraw();},{capture:true});
+  host.addEventListener('keydown',e=>{if(host.dataset.renderer!=='three')return;if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home'].includes(e.key))return;e.preventDefault();e.stopImmediatePropagation();if(e.key==='Home'){restoreView();return;}const axis=e.key==='ArrowLeft'||e.key==='ArrowRight'?new T.Vector3(0,1,0):new T.Vector3(1,0,0);const sign=e.key==='ArrowRight'||e.key==='ArrowDown'?1:-1;model.quaternion.premultiply(new T.Quaternion().setFromAxisAngle(axis,sign*Math.PI/18));syncAccessible();requestDraw();},{capture:true});
   host.addEventListener('dblclick',restoreView);reset.addEventListener('click',restoreView);
-  const size=()=>{const r=figure.getBoundingClientRect();const w=figure.clientWidth,h=figure.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();requestDraw();};
+  const size=()=>{const r=figure.getBoundingClientRect();const w=figure.clientWidth,h=figure.clientHeight;if(!w||!h||!renderer)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();requestDraw();};
   resizeObserver=new ResizeObserver(size);resizeObserver.observe(figure);
   visibilityObserver=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)requestDraw();});visibilityObserver.observe(host);
   document.addEventListener('visibilitychange',requestDraw);
