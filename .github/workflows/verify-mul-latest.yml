@@ -1,4 +1,4 @@
-name: Verify MUL latest preview
+name: Verify MUL latest release
 
 on:
   push:
@@ -6,6 +6,8 @@ on:
       - 'index.html'
       - 'cases/mul-cup/**'
       - 'scripts/check_mul_latest.py'
+      - 'IMAGE_POLICY.md'
+      - 'AGENTS.md'
       - '.github/workflows/verify-mul-latest.yml'
   pull_request:
     paths:
@@ -19,7 +21,7 @@ permissions:
 
 jobs:
   check:
-    name: Check stable URL and image policy
+    name: Check stable route and approved generated media
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
