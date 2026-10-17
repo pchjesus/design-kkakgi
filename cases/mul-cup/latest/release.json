@@ -1,17 +1,17 @@
 {
-  "release_id": "E7-MATERIAL-STUDY",
-  "title": "MUL. E7 material and composition study",
-  "full_source": "E6-C5-HERO approved GitHub HTML + scoped E7 material refinement",
+  "release_id": "E8-SPATIAL-GLASS",
+  "title": "MUL. E8 spatial glass and open editorial layout",
+  "full_source": "E7 material study + scoped E8 layout/motion + glass-3d.js and vendored Three.js r160.1",
   "public_html": "cases/mul-cup/latest/index.html",
   "public_route": null,
   "images_embedded_in_local_original": 2,
   "image_policy": "MUL-project-generated-images-approved-for-public-latest-only",
   "has_approved_hero_motion": true,
   "has_current_E6C5_details": true,
-  "three_d_experiment": "rejected; 2.5D retained",
+  "three_d_experiment": "user requested actual 3D 2026-10-17; procedural hollow mesh with SVG fallback",
   "published_date": "2026-10-17",
   "guideline": "Universal Visual Design UI/UX v1.2 DRAFT",
-  "html_release_tag": "E7 Material Study",
+  "html_release_tag": "E8 Spatial Glass",
   "images_embedded_in_online": 2,
   "image_format": "image/webp (quality 95; original PNG compressed without changing content or layout)",
   "image_sha256": [
@@ -28,5 +28,6 @@
   "experiment": true,
   "baseline_release": "E6-C5-HERO",
   "approval_status": "awaiting-user-review",
-  "branch": "experiment/mul-material-softness"
+  "branch": "experiment/mul-material-softness",
+  "previous_experiment": "E7-MATERIAL-STUDY"
 }

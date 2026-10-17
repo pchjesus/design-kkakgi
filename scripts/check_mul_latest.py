@@ -35,7 +35,7 @@ checks = {
     "html_matches_manifest": (
         f'name="mul-release" content="{manifest.get("html_release_tag", "")}"' in site
     ),
-    "release_identity_valid": (manifest.get("release_id") == "E6-C5-HERO" or (manifest.get("release_id") == "E7-MATERIAL-STUDY" and manifest.get("experiment") is True and manifest.get("baseline_release") == "E6-C5-HERO" and manifest.get("approval_status") == "awaiting-user-review")),
+    "release_identity_valid": (manifest.get("release_id") == "E6-C5-HERO" or (manifest.get("release_id") in {"E7-MATERIAL-STUDY", "E8-SPATIAL-GLASS"} and manifest.get("experiment") is True and manifest.get("baseline_release") == "E6-C5-HERO" and manifest.get("approval_status") == "awaiting-user-review")),
     "approved_media_scope": (
         manifest.get("image_policy") == "MUL-project-generated-images-approved-for-public-latest-only"
         and manifest.get("images_embedded_in_online") == 2
