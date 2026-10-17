@@ -16,6 +16,7 @@
 - `cases/mul-cup/`: EXP-001 제품·홍보형 MUL. 물컵 사이트의 다섯 버전
 - `cases/sai-blog/`: EXP-002 정보·콘텐츠형 SAI 블로그 v0.1·v0.2
 - `cases/work-app/`: EXP-003 작업·도구형 사례의 계획 문서
+- `cases/menu-roulette/`: SIDE-001 점메추·저메추 메뉴 슬롯 UI의 디자인 피드백·비교·교훈 (앱은 별도 저장소에서 실행)
 - `decisions/`: 사용자 승인 운영 결정
 - 루트 운영 문서: `AGENTS.md`, `DEVLOG.md`, `CURRENT_STATUS.md`, `IMAGE_POLICY.md`
 

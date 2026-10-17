@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="디자인 깎기 SIDE-001 뭐먹지? 메뉴 슬롯 웹앱의 디자인 판단과 개선 기록">
+  <title>SIDE-001 · 뭐먹지? — 디자인 깎기</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;color:#242424;background:#f7f3ea;color-scheme:light}
+    *{box-sizing:border-box}
+    body{margin:0}
+    main{max-width:800px;margin:0 auto;padding:32px 22px 72px}
+    header{border-bottom:1px solid #d8d0c5;padding-bottom:27px}
+    a{color:#94401a;text-underline-offset:3px}
+    .back{font-size:14px;font-weight:650}
+    .eyebrow{color:#995020;font-size:12px;font-weight:750;letter-spacing:.06em;margin:30px 0 10px}
+    h1{font-size:clamp(32px,6vw,52px);line-height:1.18;letter-spacing:-.05em;margin:0 0 14px}
+    h2{font-size:22px;letter-spacing:-.025em;margin:0 0 14px}
+    p,li{line-height:1.8}
+    .lead{font-size:16px;color:#62584e;margin:0;max-width:650px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0}
+    .actions a{display:inline-flex;min-height:46px;align-items:center;padding:0 19px;border-radius:9px;border:1px solid #bb6a3a;text-decoration:none;font-size:14px;font-weight:750}
+    .actions a:first-child{background:#f47736;color:#242424;border-color:#b74f22}
+    section{padding:30px 0;border-bottom:1px solid #d8d0c5}
+    ul{padding-left:20px;margin:0}
+    .note{font-size:13px;color:#695d51;margin-top:20px}
+    footer{margin-top:28px;font-size:13px;color:#665e54}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="back" href="../../">← 디자인 깎기 돌아가기</a>
+      <p class="eyebrow">SIDE-001 · TOOL-BASED DESIGN STUDY</p>
+      <h1>뭐먹지?</h1>
+      <p class="lead">메뉴를 빠르게 결정하는 작은 슬롯머신 웹앱. 색채의 맥락과 핵심 오브젝트의 비율, 화면 정렬, 작은 상호작용이 디자인의 인상을 어떻게 바꾸는지 살펴본 사례입니다.</p>
+      <nav class="actions" aria-label="사례 관련 링크">
+        <a href="https://pchjesus.github.io/menu-roulette/">메뉴 추천 실행하기 ↗</a>
+        <a href="https://github.com/pchjesus/menu-roulette">앱 소스코드</a>
+        <a href="https://github.com/pchjesus/design-kkakgi/blob/main/cases/menu-roulette/LESSONS.md">비교·교훈 전문</a>
+      </nav>
+    </header>
+    <section>
+      <h2>현재 채택한 디자인</h2>
+      <p>아이보리·오렌지·차콜의 따뜻한 팔레트, 중앙 집중형 컨테이너, 슬롯과 설정 패널의 조화로운 비율을 유지합니다. 데스크톱에서는 패널의 하단을 정렬하고, 사용법 토글은 +가 ×로 회전하며 열림·닫힘 애니메이션을 제공합니다.</p>
+    </section>
+    <section>
+      <h2>관찰과 배운 점</h2>
+      <ul>
+        <li>주인공인 슬롯머신과 배경 색채의 관계가 개별 색상의 선명함보다 중요했습니다.</li>
+        <li>넓은 화면을 무조건 채우거나 왼쪽 정렬하는 대신, 작은 도구의 작업 규모에 맞춰 중앙 배치를 검토했습니다.</li>
+        <li>사용자는 슬롯과 설정의 상대 비율은 긍정하면서 차가운 배경 실험은 선호하지 않았습니다.</li>
+        <li>다른 요소를 모두 바꾸기보다 하단 기준선과 설명창 모션처럼 작게 마감하는 개선도 중요했습니다.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>운영 원칙</h2>
+      <p>실행 가능한 최신 앱은 별도 <a href="https://github.com/pchjesus/menu-roulette">menu-roulette 저장소의 main</a> 하나에서 관리합니다. 이 페이지는 연구 요약과 이동 경로만 제공합니다. 개인의 취향과 실험에서 얻은 판단을 범용 디자인 지침의 의무 규칙으로 자동 승격하지 않습니다.</p>
+      <p class="note">이 사례는 제작자 피드백을 정리한 정성적 기록이며, 일반 사용자 대상 실험이나 성능 개선을 증명하는 자료는 아닙니다.</p>
+    </section>
+    <footer>디자인 깎기 · SIDE-001 · 2026-10-17</footer>
+  </main>
+</body>
+</html>

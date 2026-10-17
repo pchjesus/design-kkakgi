@@ -33,3 +33,10 @@
 - **매번 함께 갱신:** EXP-001 MUL.의 새 승인 HTML을 GitHub에 게시하거나 버전을 갱신할 때 `cases/mul-cup/latest/index.html`(실행 가능한 공개용 전체 HTML)과 `cases/mul-cup/latest/release.json`을 같은 작업에서 반드시 동기화한다. 이전 버전의 스냅샷은 보존한다.
 - **배포 전 점검:** `python scripts/check_mul_latest.py`, 관련 기능 회귀, PC·모바일, 저장·복원, 접근성, Pages 실제 공개 URL을 확인한다. 미실행 사항은 `NOT RUN`으로 기록한다. 게시 절차는 `cases/mul-cup/PUBLISHING.md` 참고.
 - **자체 생성 이미지 승인 예외:** 사용자가 MUL. 자체 제작 사진 2장의 공개를 승인했으므로 `cases/mul-cup/latest/index.html`에는 해당 사진을 최적화한 WebP 내장 이미지를 허용한다. `release.json`에 SHA-256·출처를 기록하고 `scripts/check_mul_latest.py`로 검사한다. 외부 레퍼런스, 스크린샷, 이미지 ZIP 및 다른 프로젝트까지 자동 허용하지 않는다. 원본 로컬 HTML은 별도로 보존한다.
+
+
+## SIDE-001 메뉴 슬롯 운영
+
+- `cases/menu-roulette/`는 연구용 사례 문서·소개 페이지이며, 실행 앱 코드의 복제본이 아니다.
+- 앱의 **단일 진실 원본은 `pchjesus/menu-roulette` main**; 디자인 깎기 홈페이지의 SIDE-001 카드는 정식 GitHub Pages 실행 URL로 연결한다.
+- 이후 발견하는 디자인 교훈은 사용자 관찰·설계 가설·검증 결과를 구분하여 `LESSONS.md`에 적는다. Universal v1.2 규칙은 사용자가 별도 승인하지 않는 한 변경하지 않는다.

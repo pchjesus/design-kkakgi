@@ -33,3 +33,13 @@
 - 루트 `index.html`은 고정 `latest/` 경로를 사용. 원본 아카이브 5개를 수정하지 않음.
 - 검증 스크립트·릴리스 메타·워크플로·정책을 새 이미지 예외에 맞게 갱신함. 실제 Pages 서비스 검증 상태는 별도 확인하며 미검증은 PASS로 처리하지 않는다.
 - **이전 섹션의 ‘사진 제한/사진 없는 공개 미리보기’는 이 갱신 이전의 역사적 상태임. 현재 적용 정책은 위 기록과 `IMAGE_POLICY.md` 참조.**
+
+
+## SIDE-001 · 뭐먹지? 메뉴 슬롯 (2026-10-17)
+
+- **상태:** 디자인 최종안 채택 · 별도 정식 사이트 운영. 디자인 깎기의 경량 서브 사례.
+- 사용자 검토: 청백색 실험의 배경-슬롯 조화 부족, 좌측 정렬 관성, 중앙 집중형과 1.3:.82 비율의 장점, 마지막 패널 높이/아코디언 모션 요구를 기록.
+- 현행 앱: [menu-roulette/main](https://github.com/pchjesus/menu-roulette) v0.1.5 / [실행 사이트](https://pchjesus.github.io/menu-roulette/).
+- 연구 노트: [cases/menu-roulette/LESSONS.md](cases/menu-roulette/LESSONS.md); 디자인 깎기 루트 GitHub Pages에 실행 링크 카드 추가.
+- 동일 기능의 코드 복사본을 별도로 두지 않음. 현행 앱은 메뉴 저장소 main에서만 유지.
+- Universal Design v1.2는 **DRAFT 유지**, 연구 사례가 범용 규칙을 자동 개정하지 않는다.
