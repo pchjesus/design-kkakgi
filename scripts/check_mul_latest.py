@@ -35,7 +35,18 @@ checks = {
     "html_matches_manifest": (
         f'name="mul-release" content="{manifest.get("html_release_tag", "")}"' in site
     ),
-    "release_id_is_approved": manifest.get("release_id") == "E6-C5-HERO",
+    "release_identity_valid": (
+        manifest.get("release_id") == "E6-C5-HERO"
+        or (manifest.get("release_id") in {"E7-MATERIAL-STUDY", "E8-SPATIAL-GLASS"}
+            and manifest.get("experiment") is True
+            and manifest.get("baseline_release") == "E6-C5-HERO"
+            and manifest.get("approval_status") == "awaiting-user-review")
+        or (manifest.get("release_id") == "E8-SPATIAL-GLASS"
+            and manifest.get("experiment") is False
+            and manifest.get("approval_status") == "approved"
+            and manifest.get("branch") == "main"
+            and manifest.get("public_route") == "/design-kkakgi/cases/mul-cup/latest/")
+    ),
     "approved_media_scope": (
         manifest.get("image_policy") == "MUL-project-generated-images-approved-for-public-latest-only"
         and manifest.get("images_embedded_in_online") == 2
@@ -58,6 +69,16 @@ checks = {
     "reduced_motion_present": "prefers-reduced-motion" in site,
     "no_old_photo_omission_notice": 'data-github-image-omitted="true"' not in site,
 }
+if manifest.get("release_id") == "E8-SPATIAL-GLASS":
+    assets = manifest.get("three_d_assets", {})
+    checks["three_d_dependency_hashes"] = len(assets) == 3 and all(
+        (site_path.parent / path).is_file()
+        and hashlib.sha256((site_path.parent / path).read_bytes()).hexdigest() == digest
+        for path, digest in assets.items()
+    )
+    checks["three_d_controller_linked"] = 'src="glass-3d.js"' in site
+    viewer = (site_path.parent / "glass-3d.js").read_text()
+    checks["three_d_geometry_and_fallback"] = all(x in viewer for x in ["LatheGeometry", "setFromUnitVectors", "webglcontextlost", "fallback", "IntersectionObserver"])
 for name, passed in checks.items():
     print(f'{"PASS" if passed else "FAIL"}: {name}')
 if not all(checks.values()):

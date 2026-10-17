@@ -43,3 +43,20 @@
 - 연구 노트: [cases/menu-roulette/LESSONS.md](cases/menu-roulette/LESSONS.md); 디자인 깎기 루트 GitHub Pages에 실행 링크 카드 추가.
 - 동일 기능의 코드 복사본을 별도로 두지 않음. 현행 앱은 메뉴 저장소 main에서만 유지.
 - Universal Design v1.2는 **DRAFT 유지**, 연구 사례가 범용 규칙을 자동 개정하지 않는다.
+
+## 브랜치 전용 실험 — E7
+
+`experiment/mul-material-softness`의 latest는 E7-MATERIAL-STUDY 검토 후보이다. main의 E6-C5-HERO와 기존 Pages는 유지한다. 사용자 승인 전 main에 병합하지 않는다. 진단·검증은 `cases/mul-cup/latest/DESIGN_REVIEW_E7.md` 참조.
+
+## 브랜치 전용 후속 실험 — E8
+
+같은 `experiment/mul-material-softness` 브랜치의 검토 후보를 E8-SPATIAL-GLASS로 발전시켰다. 사용자가 실제 3D와 전체 방향 회전을 이번에 명시적으로 요청했으며, 큰 별도 패널 대신 기존 페이지 안에 통합했다. 우측 정보 폭과 조작부를 수정하고 기존 반동 높이는 보존했다. `cases/mul-cup/latest/DESIGN_REVIEW_E8.md` 참고. main의 승인본은 변경하지 않는다.
+
+## 현재 승인본 — MUL. E8-SPATIAL-GLASS (2026-10-17)
+
+사용자가 E8의 main 반영을 명시적으로 승인했다. 앞의 E7/E8 ‘브랜치 전용/병합 대기’ 문구는 실험 당시의 기록이다. 현재 적용 기준은 E8 승인 소스와 `latest/release.json`이다.
+
+- 현행 경로: `cases/mul-cup/latest/`. 홈페이지 카드도 E8로 갱신.
+- 디자인 학습: `cases/mul-cup/DESIGN_LEARNINGS_E7_E8.md`.
+- 원래 SIDE-001 메뉴 슬롯 카드/문서와 SAI 링크는 보존.
+- 소스 병합 후 검사·Pages 실행 결과는 최종 작업 보고에서 확인. 기존의 미실행 검증을 자동 PASS로 승격하지 않음.

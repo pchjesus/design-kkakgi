@@ -1,6 +1,16 @@
 # EXP-001 MUL. — GitHub Pages 최신본 배포·보존 계약
 
-## 현재 배포 기준 (2026-10-17)
+## 현재 승인 배포 기준 — E8 (2026-10-17)
+
+- 사용자가 E8-SPATIAL-GLASS를 main에 올리도록 명시적으로 승인했다.
+- 실행 경로는 `latest/index.html`로 유지한다. E7/E8 브랜치 비교·개발·검증 기록은 Git 이력과 해당 검토 문서에 보존한다.
+- 필수 배포 파일은 `latest/index.html`, `latest/release.json`, `latest/glass-3d.js`, `latest/vendor/three-0.160.1.module.min.js`, `latest/vendor/THREE-LICENSE.txt`다. HTML만 복사하면 3D가 누락되므로 전체 파일을 함께 동기화한다.
+- `release.json`의 승인 상태·route·태그, 사진 2개와 3D 의존 파일 해시를 `scripts/check_mul_latest.py`로 검사한다.
+- 예전에 거절한 큰 별도 3D 패널은 도입하지 않는다. 이번에 사용자가 요청·승인한 페이지 내 통합 3D 컵과 SVG fallback은 현재 계약에 포함한다.
+- 디자인 철학·지침 적용·수정 경험: `DESIGN_LEARNINGS_E7_E8.md`. 범용 v1.2는 DRAFT를 유지한다.
+- E6-C5 단일 HTML만으로 되돌리는 롤백은 의존 파일/메타데이터와 함께 검토한다. 과거의 2.5D 유지 기록을 현재 3D 금지로 해석하지 않는다.
+
+## 이전 배포 기준 — E6-C5 (역사적 기록)
 
 - **최신 승인 원본:** `MUL_E6C5_HERO_APPROVED_INTEGRATED.html` (로컬 원본 별도 보존).
 - **온라인 실행 경로:** `cases/mul-cup/latest/index.html`, URL: https://pchjesus.github.io/design-kkakgi/cases/mul-cup/latest/

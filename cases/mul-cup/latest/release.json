@@ -1,17 +1,17 @@
 {
-  "release_id": "E6-C5-HERO",
-  "title": "MUL. E6-C5 HERO integrated",
-  "full_source": "MUL_E6C5_HERO_APPROVED_INTEGRATED.html (approved local source; original PNG bytes kept out of GitHub)",
+  "release_id": "E8-SPATIAL-GLASS",
+  "title": "MUL. E8 spatial glass and open editorial layout",
+  "full_source": "E7 material study + scoped E8 layout/motion + glass-3d.js and vendored Three.js r160.1",
   "public_html": "cases/mul-cup/latest/index.html",
   "public_route": "/design-kkakgi/cases/mul-cup/latest/",
   "images_embedded_in_local_original": 2,
   "image_policy": "MUL-project-generated-images-approved-for-public-latest-only",
   "has_approved_hero_motion": true,
   "has_current_E6C5_details": true,
-  "three_d_experiment": "rejected; 2.5D retained",
+  "three_d_experiment": "E8 actual 3D approved for main; earlier rejected oversized separate-panel prototype remains excluded",
   "published_date": "2026-10-17",
   "guideline": "Universal Visual Design UI/UX v1.2 DRAFT",
-  "html_release_tag": "E6-C5 HERO Integrated",
+  "html_release_tag": "E8 Spatial Glass",
   "images_embedded_in_online": 2,
   "image_format": "image/webp (quality 95; original PNG compressed without changing content or layout)",
   "image_sha256": [
@@ -24,5 +24,21 @@
   ],
   "image_provenance": "MUL project-specific AI-generated artwork; user confirmed and approved 2026-10-17",
   "media_status": "Two approved images embedded in GitHub Pages HTML as optimized WebP data URIs",
-  "original_archive_policy": "Five historic versions remain unchanged; only stable latest path updated"
+  "original_archive_policy": "Five historic versions remain unchanged; only stable latest path updated",
+  "experiment": false,
+  "baseline_release": "E6-C5-HERO",
+  "approval_status": "approved",
+  "branch": "main",
+  "previous_experiment": "E7-MATERIAL-STUDY",
+  "three_d_assets": {
+    "glass-3d.js": "a25c39c795458ce9c79038e658ebe43c07e68f3f4ec96da5ed1795ff0dcec1aa",
+    "vendor/three-0.160.1.module.min.js": "3e690ac7d180b0aadf0891bea39eec643e29e2d3e75c99b18689518665f69ba6",
+    "vendor/THREE-LICENSE.txt": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+  },
+  "three_d_renderer": "Three.js r160.1, local ES module, lazy on view, render on demand",
+  "model_limit": "Procedural concept geometry and stylized water volume; no scanned product and no fluid simulation",
+  "approved_date": "2026-10-17",
+  "approval_note": "User explicitly approved E8 for main at 20:40 Asia/Seoul, with design learning documentation requested.",
+  "approved_source_commit": "bff90ca9a25be2ba1c61a540746b7cecc7d80c3c",
+  "source_experiment_branch": "experiment/mul-material-softness"
 }

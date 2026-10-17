@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-font-study="role-balanced" data-palette="blue" data-title-style="clear" lang="ko"><head><meta name="mul-release" content="E6-C5 HERO Integrated"/><script>document.documentElement.classList.add("mul-hero-study-js")</script><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><script>document.documentElement.classList.add("mul-e6c2-js");</script><meta content="light" name="color-scheme"/><title>MUL. — 데일리 글라스</title><style>
+<html data-font-study="role-balanced" data-palette="blue" data-title-style="clear" lang="ko"><head><meta name="mul-release" content="E8 Spatial Glass"/><script>document.documentElement.classList.add("mul-hero-study-js")</script><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><script>document.documentElement.classList.add("mul-e6c2-js");</script><meta content="light" name="color-scheme"/><title>MUL. — 데일리 글라스</title><style>
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap');
 
 :root{font-synthesis:none;color-scheme:light;--ink:#173442;--muted:#617582;--accent:#236b83;--line:#d5e0e2;--paper:#fff;--cup-tint:#cfebee;--cup-ink:#416c7b;--stage:#ffffff;--ease:cubic-bezier(.22,1,.36,1)}
@@ -665,7 +665,167 @@ html.mul-hero-study-js:not(.mul-hero-motion-reduced) #top.hero.mul-hero-returnin
 }
 
 </style>
-</head>
+<style id="mul-e7-material-study">
+/* E7 material study: bounded compositions, rigid glass and readable editorial type. */
+:root{--mul-display:'Gowun Dodum','Apple SD Gothic Neo','Malgun Gothic',sans-serif;--mul-body:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;--mul-text:#254c60;--mul-secondary:#466576;--e2-content:var(--mul-body);--e2-display:var(--mul-display)}
+html{scroll-padding-top:24px}body{font-family:var(--mul-body);color:var(--mul-text)}
+.site-header{height:80px;background:#f1f8fc;padding-inline:clamp(24px,7vw,120px)}
+.site-header .brand{font-family:var(--mul-display);font-weight:400;font-size:31px}
+.site-header .nav{font-size:14px;font-weight:500;gap:30px}
+.site-header .nav button{font-weight:500;min-height:44px;background:#ffffff80}
+.hero.e5-hero{height:clamp(620px,calc(100svh - 80px),780px);min-height:0;grid-template-columns:minmax(0,1fr) minmax(0,1.06fr)}
+.e5-hero .hero-copy{max-width:760px;padding:56px 30px 60px clamp(28px,7vw,120px)}
+html[data-title-style="clear"] .e5-hero h1{font-family:var(--mul-display);font-size:clamp(38px,3.65vw,61px);font-weight:400;letter-spacing:-.045em;line-height:1.48;margin-top:24px;text-wrap:balance}
+.e5-hero .hero-photo{height:100%;min-height:0}
+.e5-hero .hero-photo img{position:absolute;inset:0;width:100%;height:100%;min-height:0;object-fit:cover;object-position:50% 56%;filter:saturate(.86) contrast(.98)}
+.e5-hero .hero-photo::before{background:linear-gradient(90deg,#eff8fc, #eff8fccc 6%, #eff8fc25 27%,transparent 42%)}
+.e5-hero .hero-photo::after{background:linear-gradient(0deg,#eef7fb9c,transparent 17%);opacity:.42}
+.e5-hero .hero-lead{font-family:var(--mul-body);font-size:16px;font-weight:400;color:var(--mul-secondary);line-height:1.9;margin-top:24px}
+.e5-hero .hero-actions{gap:22px;margin-top:30px}
+.e5-hero .hero-actions .primary-action{background:#296b83;border-color:#296b83;font-weight:500;box-shadow:0 4px 12px #26546b0d}
+.e5-hero .hero-actions .primary-action:hover{background:#205a70;border-color:#205a70}
+.e5-hero .hero-actions .text-link{font-weight:500;font-size:14px;min-height:44px}
+.e5-hero .hero-underline{border:0;height:3px;width:180px;background:linear-gradient(90deg,#8dc4d0,#b3d8e3 76%,transparent);margin-top:24px}
+.e5-hero .hero-photo-caption{font-size:11px;letter-spacing:.09em;color:#345a70;bottom:28px}
+.section{padding-block:clamp(80px,8vw,128px)}
+.story{min-height:480px;background:linear-gradient(180deg,#f1f8fc,#f8fbfd 68%,#fff)}
+.story .story-ghost{font-family:var(--mul-display);font-weight:400;color:#dbeaf0;opacity:.62;top:7%;left:0;font-size:clamp(260px,30vw,440px)}
+.story .story-content{max-width:650px}
+.story h2,.stage h2,html[data-title-style="clear"] .e5-details .features-head h2,.faq .faq-left h2,.e6c-stage .e53-story-title{font-family:var(--mul-display);font-weight:400;letter-spacing:-.035em;text-wrap:balance}
+.story h2{font-size:clamp(31px,3.1vw,45px);line-height:1.5}
+.story .story-content>p{font-family:var(--mul-body);font-size:16px;line-height:1.95;color:var(--mul-secondary)}
+.eyebrow,.stage-meta,.material-kicker{font-size:12px;letter-spacing:.13em;color:#496c7f}
+.stage h2{font-size:clamp(32px,3.5vw,48px)}
+.e6c-stage .stage-top p{font-size:16px;color:var(--mul-secondary)}
+.e6c-stage .e53-story-title{font-size:clamp(29px,2.8vw,40px)}
+.e6c-stage .stage-story-lead{font-size:16px;line-height:1.85;color:var(--mul-secondary)}
+.e6c-stage .e6c2-fact dt,.e6c-stage .e6c2-fact--volume dt{font-family:var(--mul-display);font-weight:400;font-size:clamp(23px,2.2vw,29px);letter-spacing:-.02em}
+.e6c-stage .e6c2-fact dd{font-family:var(--mul-body);font-size:14px;color:var(--mul-secondary)}
+.e6c-stage .stage-scene .color-description{font-size:14px;color:var(--mul-secondary);min-height:48px}
+.e6c-stage .stage-scene .swatch{font-weight:500;min-height:46px;transition:background .2s ease,border-color .2s ease,box-shadow .2s ease}
+.e6c-stage .stage-scene .swatch.selected{background:#fff;border-color:#32667d;box-shadow:inset 0 0 0 1px #32667d,0 3px 12px #29566b12}
+.e6c-stage .stage-purchase-wrap .outline-action{font-weight:500;font-size:14px;background:#ffffff80}
+.e6c-stage .stage-purchase-caption{font-size:14px;color:var(--mul-secondary)}
+/* A rotationally symmetric glass keeps its silhouette; reflections and the mark travel. */
+.glass-turn{transform:none;transition:none}.glass-glint{transition:transform 90ms linear}.cup-logo{transition:transform 90ms linear,opacity 90ms linear}
+.cup-svg .glass-wall{stroke:#648994;stroke-opacity:.48;stroke-width:1.5}
+.cup-svg .glass-rim{stroke:#6a8b96;stroke-width:2.3;stroke-opacity:.65}
+.cup-svg .glass-glint{stroke-width:12;opacity:.62}
+.cup-svg .water-meniscus{fill-opacity:.18;stroke:#557e8b;stroke-width:1;stroke-opacity:.30}
+.cup-svg .water-light{fill:none;stroke:#fff;stroke-width:1.5;opacity:.48}
+.cup-svg .glass-foot{fill:none;stroke:#7ca1ad;stroke-opacity:.33;stroke-width:1.5}
+/* Keep the photo crisp centrally; a single soft boundary blends it into its section. */
+.e5-details .features-head h2{font-size:clamp(32px,3.5vw,50px);line-height:1.48}
+.e5-details .material-figure::before,.e5-details .material-figure::after{display:none}
+.e5-details .material-figure img{filter:saturate(.88) contrast(.99);mask-image:radial-gradient(ellipse 65% 67% at 50% 49%,#000 52%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 65% 67% at 50% 49%,#000 52%,transparent 100%);mask-composite:add;-webkit-mask-composite:source-over}
+.e5-details .material-intro{font-family:var(--mul-display);font-size:clamp(22px,2.2vw,29px);line-height:1.8;color:#2e566a;letter-spacing:-.025em}
+.e53-observations{margin-top:34px;gap:27px}
+.e53-observation span{font-size:12px;color:#4c6e80}
+.e53-observation p{font-size:15px;color:var(--mul-secondary);line-height:1.85}
+.e5-details .material-figure figcaption{font-size:12px;letter-spacing:0;color:#466576}
+.faq-items summary{font-size:16px;font-weight:500;min-height:64px}
+.faq-items details p{font-size:15px;color:var(--mul-secondary)}
+.footer .footer-logo{font-family:var(--mul-display);font-weight:400}.footer p,.footer-end{font-size:13px}
+/* JS adds pending only to offscreen, noninteractive editorial elements. Failure stays visible. */
+.mul-compose{transition:transform 680ms cubic-bezier(.22,1,.36,1);transition-delay:var(--compose-delay,0ms)}
+.mul-compose.is-pending{transform:translate3d(var(--compose-x,0px),22px,0)}
+@media(min-width:901px){.material-figure.mul-compose{--compose-x:-18px}.material-detail-copy.mul-compose{--compose-x:16px}}
+@media(max-width:1100px) and (min-width:701px){.hero.e5-hero{height:660px}.e5-hero .hero-copy{padding-left:38px;padding-right:10px}.e5-hero .hero-actions{gap:10px}.e5-hero .hero-actions .primary-action{padding:12px 16px}.e5-hero .hero-photo-caption{flex-direction:column;align-items:flex-end;gap:3px}}
+@media(max-width:900px){.section{padding-block:80px}.story .story-ghost{opacity:.35}.stage-meta{display:none}.e6c-stage .stage-top p{white-space:normal}.story{min-height:0}}
+@media(max-width:700px){
+ .site-header{height:70px;padding-inline:22px}.site-header .nav{gap:14px}.site-header .nav button{font-size:13px;padding:9px 14px}
+ .hero.e5-hero{height:auto;min-height:0;display:flex;flex-direction:column}
+ .e5-hero .hero-copy{padding:44px 24px 26px;max-width:none;background:transparent}
+ html[data-title-style="clear"] .e5-hero h1{font-size:clamp(33px,8.4vw,48px);line-height:1.5;margin-top:18px;max-width:13em}
+ .e5-hero .hero-lead{font-size:15px;margin-top:21px}.e5-hero .hero-actions{margin-top:24px;gap:16px}
+ .e5-hero .hero-actions .primary-action{font-size:14px;padding:12px 17px;gap:12px}
+ .e5-hero .hero-actions .text-link{font-size:14px}.e5-hero .hero-underline{margin-top:20px;width:140px}
+ .e5-hero .hero-photo{flex:none;min-height:0;height:clamp(340px,97vw,510px);aspect-ratio:auto;margin-top:0}
+ .e5-hero .hero-photo img{position:absolute;height:100%;object-position:50% 60%}
+ .e5-hero .hero-photo::before{background:linear-gradient(180deg,#eff8fc, #eff8fc50 12%,transparent 30%)}
+ .e5-hero .hero-photo-caption{font-size:10px;bottom:18px;right:23px;gap:12px}
+ .section{padding-block:68px}.story h2{font-size:31px}.story .story-content>p{font-size:16px;line-height:1.9}.story .story-ghost{left:-28%;top:6%;opacity:.22}
+ .e6c-stage .stage-top p{font-size:15px}.e6c-stage .e53-story-title{font-size:30px}
+ .e6c-stage .e6c2-fact dt,.e6c-stage .e6c2-fact--volume dt{font-size:23px}
+ .e6c-stage .stage-scene .swatches{gap:7px}.e6c-stage .stage-scene .swatch{padding:9px 12px;font-size:13px}
+ .e5-details .features-head h2{font-size:33px}.e5-details .material-intro{font-size:23px}
+ .e5-details .material-figure img{height:clamp(350px,100vw,510px)}
+ .e5-details .material-figure figcaption{gap:6px;font-size:11px}
+}
+@media(max-width:355px){.e5-hero .hero-copy{padding-inline:20px}.e5-hero .hero-actions{gap:10px}.e5-hero .hero-actions .text-link{font-size:13px}.e5-hero .hero-actions .primary-action{padding-inline:13px;font-size:13px}.e6c-stage .stage-scene .swatch{padding-inline:9px}.e5-hero .hero-photo-caption{flex-direction:column;align-items:flex-end;gap:2px}}
+@media(prefers-reduced-motion:reduce){.mul-compose,.mul-compose.is-pending{transform:none!important;transition:none!important}}
+@media(forced-colors:active){.swatch.selected{outline:2px solid Highlight}.hero-underline{background:CanvasText}}
+</style><style id="mul-e8-spatial-glass">
+.glass-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+/* E8: an open spread, with controls belonging to the object rather than a panel. */
+@media(min-width:1101px){
+ #colors.e6c-stage{padding-inline:max(48px,calc((100% - 1440px)/2))}
+ .e6c-stage .stage-top{max-width:none}
+ .e6c-stage .stage-layout{grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:clamp(72px,7vw,120px);align-items:center}
+ .e6c-stage .stage-info{padding:8px 0 8px 0!important;max-width:none}
+ .e6c-stage .e53-story-title{font-size:clamp(36px,3vw,46px);max-width:none;margin-bottom:24px}
+ .e6c-stage .stage-story-lead{max-width:40em;line-height:1.9}
+ .e6c-stage .e6c2-facts{display:flex;flex-direction:column;gap:32px;margin-top:48px;padding:0;width:100%}
+ .e6c-stage .e6c2-fact{display:flex;align-items:baseline;justify-content:space-between;gap:24px;max-width:none;width:100%;padding:0;text-align:left}
+ .e6c-stage .e6c2-fact dt,.e6c-stage .e6c2-fact--volume dt{font-size:clamp(22px,1.9vw,27px);white-space:nowrap}
+ .e6c-stage .e6c2-fact dd{margin:0;text-align:right;max-width:230px;line-height:1.8}
+}
+#colors .stage-layout{margin-top:48px}
+.e6c-stage .stage-scene .turn-control{width:min(100%,420px);margin:0 auto;position:relative}
+.e6-cup-entrance{position:relative;z-index:1}
+.glass-webgl{position:absolute;inset:0;width:100%;height:100%;display:block;mask-image:radial-gradient(ellipse 70% 75% at 50% 50%,#000 65%,transparent 100%)}
+.mul-3d-ready>.cup-svg{visibility:hidden}
+.turn-control[data-renderer="three"]{touch-action:none;cursor:grab}
+.turn-control[data-renderer="three"].is-rotating{cursor:grabbing}
+.turn-control:focus-visible{outline:none}.turn-control:focus-visible .drag-prompt{outline:2px solid #467387;outline-offset:5px;border-radius:4px;width:fit-content;margin-inline:auto}
+.cup-contact-shadow{position:absolute;left:25%;bottom:65px;width:48%;height:12px;background:radial-gradient(ellipse,#41697e3d,transparent 70%);filter:blur(7px);opacity:.5;pointer-events:none;transform:rotate(-2deg)}
+.e6c-stage .stage-scene .drag-prompt{font-size:12px;line-height:1.7;letter-spacing:.015em;color:#4b6c7e;margin:4px 0 0}
+.e6c-stage .stage-scene .drag-prompt .orbit-symbol{font-size:20px;vertical-align:-2px;margin-right:7px;font-weight:400}
+.e6c-stage .stage-scene .reset-angle{padding:5px 14px;min-height:44px;font-size:12px;font-weight:400;letter-spacing:.02em;margin:0 0 4px;color:#42697c;border:0;background:none;border-radius:0;display:flex;align-items:center;gap:7px}
+.e6c-stage .stage-scene .reset-angle:before{content:'↺';font-size:19px}
+.e6c-stage .stage-scene .reset-angle:hover{background:none;color:#1b4d65;text-decoration:underline;text-underline-offset:5px}
+.e6c-stage .viewer-controls{width:100%;max-width:480px;padding-top:4px}
+.e6c-stage .stage-scene .swatches{gap:24px;margin:6px auto 14px}
+.e6c-stage .stage-scene .swatch,.e6c-stage .stage-scene .swatch.selected{background:none;border:0;box-shadow:none;padding:6px 0;min-height:48px;border-radius:0;gap:9px;color:#4a6a7b;font-size:13px;font-weight:400;position:relative}
+.e6c-stage .stage-scene .swatch.selected{color:#183f54}
+.e6c-stage .stage-scene .swatch-dot{width:21px;height:21px;box-shadow:inset 1px 1px 3px #ffffffb3,1px 2px 4px #31546b12;border:1px solid #7e9dab;position:relative}
+.e6c-stage .stage-scene .swatch.selected .swatch-dot:after{content:'';position:absolute;inset:-5px;border:1px solid #51788b;border-radius:50%}
+.e6c-stage .stage-scene .color-description{max-width:340px;font-size:13px;line-height:1.8;margin-top:0;color:#506d7c;min-height:48px}
+/* Rigid impact: accelerate into contact, rebound immediately to the same 19px height. */
+@keyframes e6c2-glass-arrival{
+ 0%{opacity:0;transform:translate3d(0,-112px,0) rotate(16deg);animation-timing-function:cubic-bezier(.48,.02,.82,.72)}
+ 10%{opacity:1}
+ 54%{opacity:1;transform:translate3d(0,0,0) rotate(16deg);animation-timing-function:cubic-bezier(.08,.72,.28,1)}
+ 76%{transform:translate3d(0,-19px,0) rotate(16deg);animation-timing-function:cubic-bezier(.48,.03,.8,.8)}
+ 100%{opacity:1;transform:translate3d(0,0,0) rotate(16deg)}
+}
+.e6c-stage.e6-playing .e6-cup-entrance{animation-duration:880ms}
+.e6c-stage.e6-pending .cup-contact-shadow{opacity:0}
+.e6c-stage.e6-playing .cup-contact-shadow{animation:e8-contact 880ms both}
+@keyframes e8-contact{0%,10%{opacity:0;transform:scale(.65)}54%{opacity:.9;transform:scale(1.1)}76%{opacity:.35;transform:scale(.86)}100%{opacity:.5;transform:scale(1)}}
+@media(min-width:901px) and (max-width:1100px){
+ .e6c-stage .stage-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px}
+ .e6c-stage .stage-info{padding:8px 0!important}
+ .e6c-stage .e6c2-facts{row-gap:24px}
+ .e6c-stage .e6c2-fact--colors{padding-right:0}
+}
+@media(max-width:900px){
+ #colors .stage-layout{margin-top:30px;gap:30px}
+ .e6c-stage .stage-scene .turn-control{width:min(85%,380px)}
+ .e6c-stage .stage-info{max-width:none;padding-inline:0!important}
+ .e6c-stage .e6c2-facts{max-width:none}
+ .e6c-stage .e6c2-fact--colors{padding-right:0}
+}
+@media(max-width:700px){
+ .e6c-stage .stage-scene .turn-control{width:min(100%,330px)}
+ .e6c-stage .stage-scene .swatches{gap:22px}
+ .e6c-stage .stage-scene .swatch,.e6c-stage .stage-scene .swatch.selected{padding:6px 0;font-size:13px}
+ .e6c-stage .stage-info{padding-top:8px!important}
+ .e6c-stage .e6c2-facts{row-gap:26px;margin-top:30px}
+ .cup-contact-shadow{bottom:61px}
+}
+@media(prefers-reduced-motion:reduce){.cup-contact-shadow{animation:none!important;opacity:.5!important}.e6c-stage .stage-scene .swatch{transition:none!important}}
+</style></head>
 <body><div class="site" data-app="" data-mode="B"><header class="site-header"><a aria-label="MUL. 처음으로" class="brand" href="#top">MUL<span class="dot">.</span></a><nav aria-label="주요 메뉴" class="nav"><a href="#story">브랜드</a><a href="#colors">색상</a><a href="#faq">FAQ</a><button data-open-drawer="" type="button">구매 정보<span class="nav-count"></span></button></nav></header><main><section aria-labelledby="hero-title" class="hero e5-hero" id="top">
 <div class="hero-copy">
 <span class="eyebrow">MUL. / EVERYDAY GLASS</span>
@@ -680,32 +840,32 @@ html.mul-hero-study-js:not(.mul-hero-motion-reduced) #top.hero.mul-hero-returnin
 </figure>
 </section><section class="story section" id="story"><div class="story-ghost">M.</div><div class="story-content"><span class="eyebrow">ABOUT MUL.</span><h2>매일 쓰는 물건일수록 편안한 인상이 좋으니까.</h2><p>물을 마시는 컵은 가장 가까운 일상 도구 중 하나입니다. MUL.은 투명한 재질의 인상, 손에 들어올 듯한 둥근 형태, 공간과 자연스럽게 어울리는 색을 하나의 컵에 담아보려 했습니다.</p><p>눈에 띄기 위해 더하기보다, 자꾸 바라보고 싶은 작은 균형을 찾는 것. 이것이 MUL. 데일리 글라스의 출발점입니다.</p></div></section><section aria-labelledby="stage-title" class="stage section e6-stage e6c-stage" id="colors">
 <div class="stage-top"><div><div class="eyebrow">THE COLORS</div><h2 id="stage-title">하나의 컵, 세 가지 빛.</h2><p>같은 컵을 돌려보고 색을 바꾸며, 마음에 드는 빛을 찾아보세요.</p></div><span class="stage-meta">THREE SHADES · ONE GLASS</span></div>
-<div class="stage-layout"><div class="stage-scene e6c-scene"><div aria-label="컵 회전 각도" aria-valuemax="90" aria-valuemin="-90" aria-valuenow="0" aria-valuetext="정면 0도" class="turn-control" role="slider" tabindex="0" title="좌우로 드래그하거나 방향키로 돌려보세요"><div aria-label="데일리 글라스 — 선택된 색상은 클리어" class="cup-figure e6-cup-entrance" data-cup="stage" role="img">
+<div class="stage-layout"><div class="stage-scene e6c-scene"><div aria-label="컵 회전 각도" aria-valuemax="85" aria-valuemin="-85" aria-valuenow="0" aria-valuetext="정면 0도" class="turn-control" role="slider" tabindex="0" title="좌우로 드래그하거나 방향키로 돌려보세요"><div aria-label="데일리 글라스 — 선택된 색상은 클리어" class="cup-figure e6-cup-entrance" data-cup="stage" role="img">
 <svg aria-hidden="true" class="cup-svg" focusable="false" viewbox="0 0 440 510" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<lineargradient id="glass-stage" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".83"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".72"></stop></lineargradient>
-<lineargradient id="drink-stage" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".72"></stop></lineargradient>
+<lineargradient id="glass-stage" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".55"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="drink-stage" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".5"></stop></lineargradient>
 <lineargradient id="light-stage" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".05"></stop><stop offset=".5" stop-color="#fff" stop-opacity=".85"></stop><stop offset="1" stop-color="#fff" stop-opacity=".04"></stop></lineargradient>
 <filter height="300%" id="shadow-stage" width="220%" x="-60%" y="-100%"><fegaussianblur stddeviation="16"></fegaussianblur></filter>
 <clippath id="clip-stage"><path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z"></path></clippath>
 </defs>
 <ellipse cx="220" cy="468" fill="#254b57" filter="url(#shadow-stage)" opacity=".13" rx="122" ry="16"></ellipse>
 <g class="glass-turn">
-<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#glass-stage)" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
-<g clip-path="url(#clip-stage)">
+<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#glass-stage)" class="glass-wall" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
+<g clip-path="url(#clip-stage)"><path class="glass-foot" d="M139 415 Q220 441 302 415"/>
 <path d="M122 268 Q210 282 318 266 L304 428 Q280 447 219 448 Q157 445 140 426Z" fill="url(#drink-stage)" opacity=".54"></path>
-<ellipse cx="220" cy="268" fill="var(--cup-tint)" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
-<path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#light-stage)" stroke-linecap="round" stroke-width="19"></path>
+<ellipse cx="220" cy="268" fill="var(--cup-tint)" class="water-meniscus" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
+<path class="water-light" d="M132 267 Q220 288 308 267"/><path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#light-stage)" stroke-linecap="round" stroke-width="19"></path>
 <path d="M289 143 Q285 299 277 390" fill="none" opacity=".42" stroke="#fff" stroke-linecap="round" stroke-width="7"></path>
 <path d="M151 427 Q220 451 291 425" fill="none" opacity=".64" stroke="#fff" stroke-width="5"></path>
 <g class="cup-logo" opacity=".68"><path d="M211 197C211 190 220 177 220 177S229 190 229 197A9 9 0 0 1 211 197Z" fill="none" stroke="var(--cup-ink)" stroke-width="1.8"></path><text fill="var(--cup-ink)" font-size="11" font-weight="600" letter-spacing="2.5" text-anchor="middle" x="220" y="225">MUL.</text></g>
 </g>
-<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" class="glass-rim" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
 <ellipse cx="220" cy="88" fill="#fff" fill-opacity=".23" rx="104" ry="12" stroke="#fff" stroke-opacity=".85" stroke-width="2"></ellipse>
 <path d="M141 422 Q146 444 220 449 Q292 446 300 420" fill="none" opacity=".55" stroke="#fff" stroke-width="5"></path>
 </g>
 </svg>
-</div><div class="drag-prompt"><span aria-hidden="true">↔</span> 좌우로 돌려보기</div></div><button class="reset-angle e6c-reveal" type="button">각도 초기화 ↺</button>
+</div><span id="glass-key-hint" class="glass-sr-only">방향키로 상하좌우 회전, Home 키로 처음 각도. 화면의 컵 밖에서는 페이지를 스크롤할 수 있습니다.</span><div class="cup-contact-shadow" aria-hidden="true"></div><div class="drag-prompt" id="glass-control-hint"><span aria-hidden="true">↔</span> 좌우로 돌려보기</div></div><button class="reset-angle e6c-reveal" type="button">처음 각도로</button>
 <div class="viewer-controls e6c-reveal">
 
 <div aria-label="컵 색상 선택" class="swatches" role="group"><button aria-pressed="true" class="swatch selected" data-color="clear" type="button"><span class="swatch-dot clear"></span><span>클리어</span></button><button aria-pressed="false" class="swatch" data-color="amber" type="button"><span class="swatch-dot amber"></span><span>앰버</span></button><button aria-pressed="false" class="swatch" data-color="smoke" type="button"><span class="swatch-dot smoke"></span><span>스모크</span></button></div>
@@ -732,29 +892,29 @@ html.mul-hero-study-js:not(.mul-hero-motion-reduced) #top.hero.mul-hero-returnin
 </div>
 </section><section class="faq section" id="faq"><div class="faq-left"><span class="eyebrow">INFORMATION</span><h2>사용에 관해 궁금한 점.</h2></div><div class="faq-items">
 <details><summary>선택한 색은 어떻게 확인하나요?<span aria-hidden="true">+</span></summary><p>THE COLORS의 색상 선택 버튼에서 현재 선택된 색이 표시됩니다. 구매 패널에서도 같은 색이 유지됩니다.</p></details>
-<details><summary>컵을 돌려볼 수 있나요?<span aria-hidden="true">+</span></summary><p>컵을 좌우로 드래그하거나 방향키를 눌러 형태를 살펴보세요. 각도 초기화를 누르면 정면으로 돌아옵니다.</p></details>
+<details><summary>컵을 돌려볼 수 있나요?<span aria-hidden="true">+</span></summary><p>컵을 드래그하거나 방향키를 눌러 상하좌우로 살펴보세요. ‘처음 각도로’를 누르거나 Home 키를 누르면 기본 구도로 돌아옵니다.</p></details>
 <details><summary>세 가지 색은 어떤 분위기인가요?<span aria-hidden="true">+</span></summary><p>클리어는 물의 맑은 인상을, 앰버는 따뜻한 분위기를, 스모크는 차분한 색감을 보여줍니다.</p></details>
-<details><summary>선택한 컵은 어디서 확인하나요?<span aria-hidden="true">+</span></summary><p>색상과 수량을 선택한 뒤 장바구니에 담으면 선택 목록과 합계를 확인할 수 있어요.</p></details></div></section><div class="between"><strong>오늘도, 물 한 잔.</strong></div></main><footer class="footer"><div class="footer-grid"><div class="footer-logo">MUL.</div><p>매일의 한 잔을 조금 더 산뜻하게.<br/>물과 빛을 담는 데일리 글라스.</p></div><div class="footer-end">MUL. / EVERYDAY GLASS</div></footer></div><div class="backdrop" data-close-drawer="" hidden=""></div><aside aria-hidden="true" aria-label="제품과 구매 안내" aria-modal="true" class="drawer" id="purchase-panel" role="dialog" tabindex="-1"><div class="drawer-head"><span class="eyebrow">YOUR GLASS</span><button aria-label="구매 패널 닫기" class="icon-close" data-close-drawer="" type="button">×</button></div><h2>제품·구매 정보</h2><p class="drawer-desc">색상과 수량을 골라 마음에 드는 한 잔을 담아보세요.</p><div class="drawer-item"><div class="mini-cup-wrap"><div aria-label="데일리 글라스 — 선택된 색상은 클리어" class="cup-figure" data-cup="drawer" role="img">
+<details><summary>선택한 컵은 어디서 확인하나요?<span aria-hidden="true">+</span></summary><p>색상과 수량을 선택한 뒤 장바구니에 담으면 선택 목록과 합계를 확인할 수 있어요.</p></details></div></section><div class="between"><strong>오늘도, 물 한 잔.</strong></div></main><footer class="footer"><div class="footer-grid"><div class="footer-logo">MUL.</div><p>매일의 한 잔을 조금 더 산뜻하게.<br/>물과 빛을 담는 데일리 글라스.</p></div><div class="footer-end">MUL. / EVERYDAY GLASS · 콘셉트 디자인 · 이미지와 제품 정보는 시연용입니다.</div></footer></div><div class="backdrop" data-close-drawer="" hidden=""></div><aside aria-hidden="true" aria-label="제품과 구매 안내" aria-modal="true" class="drawer" id="purchase-panel" role="dialog" tabindex="-1"><div class="drawer-head"><span class="eyebrow">YOUR GLASS</span><button aria-label="구매 패널 닫기" class="icon-close" data-close-drawer="" type="button">×</button></div><h2>제품·구매 정보</h2><p class="drawer-desc">색상과 수량을 골라 마음에 드는 한 잔을 담아보세요.</p><div class="drawer-item"><div class="mini-cup-wrap"><div aria-label="데일리 글라스 — 선택된 색상은 클리어" class="cup-figure" data-cup="drawer" role="img">
 <svg aria-hidden="true" class="cup-svg" focusable="false" viewbox="0 0 440 510" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<lineargradient id="glass-drawer" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".83"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".72"></stop></lineargradient>
-<lineargradient id="drink-drawer" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".72"></stop></lineargradient>
+<lineargradient id="glass-drawer" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".55"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="drink-drawer" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".5"></stop></lineargradient>
 <lineargradient id="light-drawer" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".05"></stop><stop offset=".5" stop-color="#fff" stop-opacity=".85"></stop><stop offset="1" stop-color="#fff" stop-opacity=".04"></stop></lineargradient>
 <filter height="300%" id="shadow-drawer" width="220%" x="-60%" y="-100%"><fegaussianblur stddeviation="16"></fegaussianblur></filter>
 <clippath id="clip-drawer"><path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z"></path></clippath>
 </defs>
 <ellipse cx="220" cy="468" fill="#254b57" filter="url(#shadow-drawer)" opacity=".13" rx="122" ry="16"></ellipse>
 <g class="glass-turn">
-<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#glass-drawer)" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
-<g clip-path="url(#clip-drawer)">
+<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#glass-drawer)" class="glass-wall" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
+<g clip-path="url(#clip-drawer)"><path class="glass-foot" d="M139 415 Q220 441 302 415"/>
 <path d="M122 268 Q210 282 318 266 L304 428 Q280 447 219 448 Q157 445 140 426Z" fill="url(#drink-drawer)" opacity=".54"></path>
-<ellipse cx="220" cy="268" fill="var(--cup-tint)" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
-<path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#light-drawer)" stroke-linecap="round" stroke-width="19"></path>
+<ellipse cx="220" cy="268" fill="var(--cup-tint)" class="water-meniscus" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
+<path class="water-light" d="M132 267 Q220 288 308 267"/><path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#light-drawer)" stroke-linecap="round" stroke-width="19"></path>
 <path d="M289 143 Q285 299 277 390" fill="none" opacity=".42" stroke="#fff" stroke-linecap="round" stroke-width="7"></path>
 <path d="M151 427 Q220 451 291 425" fill="none" opacity=".64" stroke="#fff" stroke-width="5"></path>
 <g class="cup-logo" opacity=".68"><path d="M211 197C211 190 220 177 220 177S229 190 229 197A9 9 0 0 1 211 197Z" fill="none" stroke="var(--cup-ink)" stroke-width="1.8"></path><text fill="var(--cup-ink)" font-size="11" font-weight="600" letter-spacing="2.5" text-anchor="middle" x="220" y="225">MUL.</text></g>
 </g>
-<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" class="glass-rim" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
 <ellipse cx="220" cy="88" fill="#fff" fill-opacity=".23" rx="104" ry="12" stroke="#fff" stroke-opacity=".85" stroke-width="2"></ellipse>
 <path d="M141 422 Q146 444 220 449 Q292 446 300 420" fill="none" opacity=".55" stroke="#fff" stroke-width="5"></path>
 </g>
@@ -772,12 +932,12 @@ html.mul-hero-study-js:not(.mul-hero-motion-reduced) #top.hero.mul-hero-returnin
   const announce=(v)=>{ const el=$('.toast'); if(el) el.textContent=v; };
   function restore(){try{const arr=JSON.parse(localStorage.getItem(key)||'[]');if(Array.isArray(arr)){cart=arr.filter(x=>x&&colorInfo[x.color]&&Number.isInteger(x.qty)&&x.qty>0&&x.qty<=99).map(x=>({color:x.color,qty:x.qty}));}}catch(e){cart=[];}}
   function persist(){try{localStorage.setItem(key,JSON.stringify(cart));}catch(e){announce('브라우저 저장소를 사용할 수 없어 이번 세션에만 유지돼요.');}}
-  function changeColor(c){if(!colorInfo[c])return;color=c;const data=colorInfo[c];$$('.cup-figure').forEach(node=>{node.style.setProperty('--cup-tint',data.tint);node.style.setProperty('--cup-ink',data.ink);node.setAttribute('aria-label','데일리 글라스 — 선택된 색상은 '+data.name);});$$('.swatch').forEach(b=>{b.classList.toggle('selected',b.dataset.color===c);b.setAttribute('aria-pressed',b.dataset.color===c?'true':'false');});const desc=$('#color-description');if(desc)desc.textContent=data.description;}
-  function changeAngle(next){angle=Math.max(-85,Math.min(85,next));const cos=Math.cos(angle*Math.PI/180);const scale=Math.max(.58,.58+(Math.abs(cos)*.42));$$('.glass-turn').forEach(e=>e.style.setProperty('--turn-scale',String(scale)));$$('.glass-glint').forEach(e=>e.style.setProperty('--glint-x',(angle*.44)+'px'));$$('.cup-logo').forEach(e=>{e.style.setProperty('--logo-x',(-angle*.52)+'px');e.style.opacity=String(Math.max(.32,.42+(Math.abs(cos)*.58)));});const ctl=$('.turn-control');ctl.setAttribute('aria-valuenow',String(angle));ctl.setAttribute('aria-valuetext',(angle===0?'정면 ':angle<0?'왼쪽 ':'오른쪽 ')+Math.abs(angle)+'도');}
+  function changeColor(c){if(!colorInfo[c])return;color=c;const data=colorInfo[c];$$('.cup-figure').forEach(node=>{node.style.setProperty('--cup-tint',data.tint);node.style.setProperty('--cup-ink',data.ink);node.setAttribute('aria-label','데일리 글라스 — 선택된 색상은 '+data.name);});$$('.swatch').forEach(b=>{b.classList.toggle('selected',b.dataset.color===c);b.setAttribute('aria-pressed',b.dataset.color===c?'true':'false');});const desc=$('#color-description');if(desc)desc.textContent=data.description;const stage=$('#colors');if(stage)stage.style.setProperty('--e6-tone',({clear:'#f7fbff',amber:'#fff1e3',smoke:'#e8f0f6'})[c]);}
+  function changeAngle(next){if($('.turn-control').dataset.renderer==='three')return;angle=Math.max(-85,Math.min(85,next));const cos=Math.cos(angle*Math.PI/180);const scale=1;$$('.glass-turn').forEach(e=>e.style.setProperty('--turn-scale',String(scale)));$$('.glass-glint').forEach(e=>e.style.setProperty('--glint-x',(angle*.44)+'px'));$$('.cup-logo').forEach(e=>{e.style.setProperty('--logo-x',(-angle*.52)+'px');e.style.opacity=String(Math.max(.32,.42+(Math.abs(cos)*.58)));});const ctl=$('.turn-control');ctl.setAttribute('aria-valuenow',String(angle));ctl.setAttribute('aria-valuetext',(angle===0?'정면 ':angle<0?'왼쪽 ':'오른쪽 ')+Math.abs(angle)+'도');}
   function renderCart(){const list=$('.cart-list');const count=cart.reduce((s,x)=>s+x.qty,0);$$('.cart-count').forEach(x=>x.textContent='('+count+')');$$('.nav-count').forEach(x=>x.textContent=count>0?' ('+count+')':'');$('.cart-total').textContent=currency(count*price);if(cart.length===0){list.innerHTML='<p class="empty">아직 담은 컵이 없어요.</p>';return;}list.innerHTML=cart.map((x,i)=>'<div class="cart-item"><span>'+colorInfo[x.color].name+' × '+x.qty+' · '+currency(x.qty*price)+'</span><button type="button" data-remove="'+i+'" aria-label="'+colorInfo[x.color].name+' 장바구니에서 삭제">삭제</button></div>').join('');}
   function updateQty(v){qty=Math.max(1,Math.min(99,qty+v));$('#qty-output').textContent=qty;}
-  function openDrawer(){const d=$('.drawer'),b=$('.backdrop');previousFocus=document.activeElement;b.hidden=false;d.classList.add('open');d.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';d.querySelector('.icon-close').focus();}
-  function closeDrawer(){const d=$('.drawer'),b=$('.backdrop');d.classList.remove('open');d.setAttribute('aria-hidden','true');b.hidden=true;document.body.style.overflow='';if(previousFocus&&previousFocus.focus)previousFocus.focus();}
+  function openDrawer(){const d=$('.drawer'),b=$('.backdrop');previousFocus=document.activeElement;b.hidden=false;d.classList.add('open');d.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';app.inert=true;d.querySelector('.icon-close').focus();}
+  function closeDrawer(){const d=$('.drawer'),b=$('.backdrop');d.classList.remove('open');d.setAttribute('aria-hidden','true');b.hidden=true;document.body.style.overflow='';app.inert=false;if(previousFocus&&previousFocus.focus)previousFocus.focus();}
   async function copy(text){try{if(!navigator.clipboard||!navigator.clipboard.writeText)throw Error('unsupported');await navigator.clipboard.writeText(text);announce('복사했어요.');}catch(e){announce('클립보드 복사를 사용할 수 없어요.');}}
   $$('[data-open-drawer]').forEach(el=>el.addEventListener('click',openDrawer));$$('[data-close-drawer]').forEach(el=>el.addEventListener('click',closeDrawer));
   document.addEventListener('keydown',(ev)=>{if(ev.key==='Escape'&&$('.drawer').classList.contains('open'))closeDrawer();if(ev.key==='Tab'&&$('.drawer').classList.contains('open')){const f=$$('.drawer button:not(:disabled), .drawer a[href], .drawer [tabindex="0"]');if(f.length){if(ev.shiftKey&&document.activeElement===f[0]){ev.preventDefault();f.at(-1).focus();}else if(!ev.shiftKey&&document.activeElement===f.at(-1)){ev.preventDefault();f[0].focus();}}}});
@@ -941,4 +1101,25 @@ html.mul-hero-study-js:not(.mul-hero-motion-reduced) #top.hero.mul-hero-returnin
   };
 })();
 
-</script></body></html>
+</script><script id="mul-e7-composition">
+/* Short, one-time recomposition: existing content stays readable throughout. */
+(()=>{
+ const mq=matchMedia('(prefers-reduced-motion: reduce)');
+ const turn=document.querySelector('.turn-control');
+ let waterAnimation=null,gestureX=null;
+ const water=document.querySelector('#colors .water-light');
+ const ripple=()=>{if(mq.matches||!water?.animate)return;waterAnimation?.cancel();waterAnimation=water.animate([{transform:'translateY(0)',opacity:.45},{transform:'translateY(-2px)',opacity:.65,offset:.24},{transform:'translateY(1px)',opacity:.38,offset:.55},{transform:'translateY(0)',opacity:.48}],{duration:620,easing:'ease-out'});};
+ turn?.addEventListener('pointerdown',e=>{gestureX=e.clientX;});
+ turn?.addEventListener('pointerup',e=>{if(gestureX!==null&&Math.abs(e.clientX-gestureX)>5)ripple();gestureX=null;});
+ turn?.addEventListener('pointercancel',()=>{gestureX=null;});
+ turn?.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight')ripple();});
+ mq.addEventListener?.('change',e=>{if(e.matches)waterAnimation?.cancel();});
+ const nodes=[...document.querySelectorAll('.story-content > *, .material-figure, .material-detail-copy')];
+ if(mq.matches||!('IntersectionObserver' in window))return;
+ const observer=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>{
+  if(!isIntersecting)return;target.classList.remove('is-pending');observer.unobserve(target);
+ }),{threshold:0,rootMargin:'0px 0px -32px 0px'});
+ nodes.forEach((n,i)=>{n.classList.add('mul-compose');n.style.setProperty('--compose-delay',Math.min(i%4*55,165)+'ms');if(n.getBoundingClientRect().top>innerHeight){n.classList.add('is-pending');observer.observe(n);}});
+ mq.addEventListener?.('change',e=>{if(e.matches){observer.disconnect();nodes.forEach(n=>n.classList.remove('is-pending'));}});
+})();
+</script><script src="glass-3d.js" defer></script></body></html>
