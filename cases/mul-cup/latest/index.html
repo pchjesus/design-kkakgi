@@ -756,6 +756,7 @@ html[data-title-style="clear"] .e5-hero h1{font-family:var(--mul-display);font-s
 @media(prefers-reduced-motion:reduce){.mul-compose,.mul-compose.is-pending{transform:none!important;transition:none!important}}
 @media(forced-colors:active){.swatch.selected{outline:2px solid Highlight}.hero-underline{background:CanvasText}}
 </style><style id="mul-e8-spatial-glass">
+.glass-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 /* E8: an open spread, with controls belonging to the object rather than a panel. */
 @media(min-width:1101px){
  #colors.e6c-stage{padding-inline:max(48px,calc((100% - 1440px)/2))}
@@ -864,7 +865,7 @@ html[data-title-style="clear"] .e5-hero h1{font-family:var(--mul-display);font-s
 <path d="M141 422 Q146 444 220 449 Q292 446 300 420" fill="none" opacity=".55" stroke="#fff" stroke-width="5"></path>
 </g>
 </svg>
-</div><div class="cup-contact-shadow" aria-hidden="true"></div><div class="drag-prompt" id="glass-control-hint"><span aria-hidden="true">↔</span> 좌우로 돌려보기</div></div><button class="reset-angle e6c-reveal" type="button">각도 초기화 ↺</button>
+</div><span id="glass-key-hint" class="glass-sr-only">방향키로 상하좌우 회전, Home 키로 처음 각도. 화면의 컵 밖에서는 페이지를 스크롤할 수 있습니다.</span><div class="cup-contact-shadow" aria-hidden="true"></div><div class="drag-prompt" id="glass-control-hint"><span aria-hidden="true">↔</span> 좌우로 돌려보기</div></div><button class="reset-angle e6c-reveal" type="button">처음 각도로</button>
 <div class="viewer-controls e6c-reveal">
 
 <div aria-label="컵 색상 선택" class="swatches" role="group"><button aria-pressed="true" class="swatch selected" data-color="clear" type="button"><span class="swatch-dot clear"></span><span>클리어</span></button><button aria-pressed="false" class="swatch" data-color="amber" type="button"><span class="swatch-dot amber"></span><span>앰버</span></button><button aria-pressed="false" class="swatch" data-color="smoke" type="button"><span class="swatch-dot smoke"></span><span>스모크</span></button></div>
@@ -891,7 +892,7 @@ html[data-title-style="clear"] .e5-hero h1{font-family:var(--mul-display);font-s
 </div>
 </section><section class="faq section" id="faq"><div class="faq-left"><span class="eyebrow">INFORMATION</span><h2>사용에 관해 궁금한 점.</h2></div><div class="faq-items">
 <details><summary>선택한 색은 어떻게 확인하나요?<span aria-hidden="true">+</span></summary><p>THE COLORS의 색상 선택 버튼에서 현재 선택된 색이 표시됩니다. 구매 패널에서도 같은 색이 유지됩니다.</p></details>
-<details><summary>컵을 돌려볼 수 있나요?<span aria-hidden="true">+</span></summary><p>컵을 좌우로 드래그하거나 방향키를 눌러 형태를 살펴보세요. 각도 초기화를 누르면 정면으로 돌아옵니다.</p></details>
+<details><summary>컵을 돌려볼 수 있나요?<span aria-hidden="true">+</span></summary><p>컵을 드래그하거나 방향키를 눌러 상하좌우로 살펴보세요. 처음 각도로를 누르거나 Home 키를 누르면 기본 구도로 돌아옵니다.</p></details>
 <details><summary>세 가지 색은 어떤 분위기인가요?<span aria-hidden="true">+</span></summary><p>클리어는 물의 맑은 인상을, 앰버는 따뜻한 분위기를, 스모크는 차분한 색감을 보여줍니다.</p></details>
 <details><summary>선택한 컵은 어디서 확인하나요?<span aria-hidden="true">+</span></summary><p>색상과 수량을 선택한 뒤 장바구니에 담으면 선택 목록과 합계를 확인할 수 있어요.</p></details></div></section><div class="between"><strong>오늘도, 물 한 잔.</strong></div></main><footer class="footer"><div class="footer-grid"><div class="footer-logo">MUL.</div><p>매일의 한 잔을 조금 더 산뜻하게.<br/>물과 빛을 담는 데일리 글라스.</p></div><div class="footer-end">MUL. / EVERYDAY GLASS · 콘셉트 디자인 · 이미지와 제품 정보는 시연용입니다.</div></footer></div><div class="backdrop" data-close-drawer="" hidden=""></div><aside aria-hidden="true" aria-label="제품과 구매 안내" aria-modal="true" class="drawer" id="purchase-panel" role="dialog" tabindex="-1"><div class="drawer-head"><span class="eyebrow">YOUR GLASS</span><button aria-label="구매 패널 닫기" class="icon-close" data-close-drawer="" type="button">×</button></div><h2>제품·구매 정보</h2><p class="drawer-desc">색상과 수량을 골라 마음에 드는 한 잔을 담아보세요.</p><div class="drawer-item"><div class="mini-cup-wrap"><div aria-label="데일리 글라스 — 선택된 색상은 클리어" class="cup-figure" data-cup="drawer" role="img">
 <svg aria-hidden="true" class="cup-svg" focusable="false" viewbox="0 0 440 510" xmlns="http://www.w3.org/2000/svg">

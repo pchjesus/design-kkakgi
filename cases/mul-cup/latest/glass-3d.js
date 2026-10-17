@@ -14,6 +14,7 @@
  const mq=matchMedia('(prefers-reduced-motion: reduce)');
  const fallback=()=>{
   if(frame){cancelAnimationFrame(frame);frame=0;}resizeObserver?.disconnect();visibilityObserver?.disconnect();renderer?.dispose();renderer=null;
+  figure.querySelector('.glass-webgl')?.remove();
   host.dataset.renderer='fallback';figure.classList.remove('mul-3d-ready');
   host.setAttribute('role','slider');host.setAttribute('aria-label','컵 좌우 회전');
   host.setAttribute('aria-valuemin','-85');host.setAttribute('aria-valuemax','85');host.setAttribute('aria-valuenow','0');
@@ -27,7 +28,7 @@
  }
  function restoreView(){
   if(!model||host.dataset.renderer!=='three')return;
-  model.rotation.set(.12,-.28,0);syncAccessible();requestDraw();
+  model.rotation.set(.22,-.28,0);syncAccessible();requestDraw();
  }
  function point(e){
   const r=host.getBoundingClientRect();
@@ -60,7 +61,7 @@
   scene.add(new T.HemisphereLight(0xf5fbff,0x56798e,.7));
   const key=new T.DirectionalLight(0xffffff,1.1);key.position.set(-3,5,4);scene.add(key);
   model=new T.Group();scene.add(model);
-  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.075,transparent:true,opacity:.35,depthWrite:false,transmission:.78,thickness:.08,ior:1.47,clearcoat:.8,clearcoatRoughness:.055,envMapIntensity:.75,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
+  const glass=new T.MeshPhysicalMaterial({color:'#effaff',metalness:0,roughness:.075,transparent:true,opacity:.28,depthWrite:false,transmission:.78,thickness:.08,ior:1.47,clearcoat:.8,clearcoatRoughness:.055,envMapIntensity:.75,attenuationColor:new T.Color('#d2edf1'),attenuationDistance:2.7,side:T.DoubleSide});
   // Revolved closed profile: outer wall -> rounded lip -> inner wall -> thick bottom.
   const profile=[[0,-1.45],[.65,-1.45],[.77,-1.43],[.83,-1.34],[.91,-.9],[.98,-.1],[.97,.7],[.935,1.36],[.93,1.43],[.91,1.45],[.887,1.43],[.884,1.36],[.92,.7],[.925,-.1],[.85,-.9],[.78,-1.21],[.66,-1.27],[0,-1.27]];
   const curve=new T.CatmullRomCurve3(profile.map(([x,y])=>new T.Vector3(x,y,0)),false,'centripetal');
@@ -71,7 +72,7 @@
   const edgeMaterial=new T.MeshBasicMaterial({color:'#708d9c',transparent:true,opacity:.34,depthWrite:false});
   const lipEdge=new T.Mesh(new T.TorusGeometry(.911,.006,8,112),edgeMaterial);lipEdge.rotation.x=Math.PI/2;lipEdge.position.y=1.448;lipEdge.renderOrder=4;model.add(lipEdge);
   const baseEdge=new T.Mesh(new T.TorusGeometry(.74,.008,8,96),edgeMaterial);baseEdge.rotation.x=Math.PI/2;baseEdge.position.y=-1.42;baseEdge.renderOrder=4;model.add(baseEdge);
-  const waterMaterial=new T.MeshPhysicalMaterial({color:'#a7d6e2',metalness:0,roughness:.06,transparent:true,opacity:.35,depthWrite:false,transmission:.65,thickness:.22,ior:1.333,envMapIntensity:.55,attenuationColor:new T.Color('#9acfd9'),attenuationDistance:3,side:T.DoubleSide});
+  const waterMaterial=new T.MeshPhysicalMaterial({color:'#c0e6f0',metalness:0,roughness:.06,transparent:true,opacity:.24,depthWrite:false,transmission:.65,thickness:.22,ior:1.333,envMapIntensity:.55,attenuationColor:new T.Color('#9acfd9'),attenuationDistance:3,side:T.DoubleSide});
   const waterProfile=[[0,-1.25],[.65,-1.25],[.77,-1.19],[.84,-.9],[.925,.03],[.923,.09],[0,.09]].map(([x,y])=>new T.Vector2(x,y));
   const water=new T.Mesh(new T.LatheGeometry(waterProfile,96),waterMaterial);water.name='water-volume';water.renderOrder=1;model.add(water);
   const meniscus=new T.Mesh(new T.TorusGeometry(.914,.009,8,96),waterMaterial);meniscus.rotation.x=Math.PI/2;meniscus.position.y=.09;model.add(meniscus);
@@ -86,7 +87,7 @@
   }
   // Observe the existing selection state so drawer and stage remain one contract.
   const colorObserver=new MutationObserver(color);colorObserver.observe(document.querySelector('#colors .swatches'),{subtree:true,attributes:true,attributeFilter:['aria-pressed']});
-  figure.append(canvas);figure.classList.add('mul-3d-ready');host.dataset.renderer='three';host.setAttribute('role','group');host.setAttribute('aria-label','컵 3차원 보기');host.setAttribute('aria-describedby','glass-control-hint');host.setAttribute('aria-keyshortcuts','ArrowUp ArrowDown ArrowLeft ArrowRight Home');
+  figure.append(canvas);figure.classList.add('mul-3d-ready');host.dataset.renderer='three';host.setAttribute('role','group');host.setAttribute('aria-label','컵 3차원 보기');host.setAttribute('aria-describedby','glass-control-hint glass-key-hint');host.setAttribute('aria-keyshortcuts','ArrowUp ArrowDown ArrowLeft ArrowRight Home');
   hint.innerHTML='<span class="orbit-symbol" aria-hidden="true">⤢</span> 드래그로 자유롭게 돌려보세요';
   host.title='드래그: 자유 회전 · 방향키: 상하좌우 회전 · Home: 처음 각도';
   reset.textContent='처음 각도로';
@@ -102,7 +103,7 @@
   document.addEventListener('visibilitychange',requestDraw);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();fallback();canvas.remove();},{once:true});
   restoreView();color();size();
-  window.addEventListener('pagehide',e=>{if(e.persisted)return;resizeObserver.disconnect();visibilityObserver.disconnect();colorObserver.disconnect();if(frame)cancelAnimationFrame(frame);scene.traverse(o=>{o.geometry?.dispose();if(o.material){o.material.map?.dispose();o.material.dispose();}});envTarget.dispose();renderer.dispose();},{once:true});
+  window.addEventListener('pagehide',e=>{if(e.persisted)return;resizeObserver.disconnect();visibilityObserver.disconnect();colorObserver.disconnect();if(frame)cancelAnimationFrame(frame);scene.traverse(o=>{o.geometry?.dispose();if(o.material){o.material.map?.dispose();o.material.dispose();}});envTarget?.dispose();renderer?.dispose();},{once:true});
  }
  if('IntersectionObserver' in window){const lazy=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){lazy.disconnect();activate();}},{rootMargin:'650px'});lazy.observe(host);}else activate();
 })();
