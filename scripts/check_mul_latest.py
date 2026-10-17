@@ -20,7 +20,7 @@ checks = {
     ),
     "no_embedded_image_payload": "data:image" not in site and "base64," not in site,
     "images_explicitly_omitted": (
-        len(re.findall(r'<img\\b[^>]*\\bdata-github-image-omitted="true"', site))
+        len(re.findall(r'<img\b[^>]*\bdata-github-image-omitted="true"', site))
         == manifest.get("images_embedded_in_local_original")
     ),
     "user_facing_media_notice": "GitHub 공개 미리보기" in site,
