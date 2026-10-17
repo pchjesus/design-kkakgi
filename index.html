@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>디자인 깎기 · 연구 사례</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif; color:#18243a; background:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; }
+    main { max-width:920px; margin:0 auto; padding:48px 24px 64px; }
+    header { margin-bottom:32px; }
+    .eyebrow { color:#486887; font-size:12px; font-weight:700; letter-spacing:.08em; }
+    h1 { margin:8px 0 10px; font-size:clamp(30px,6vw,52px); letter-spacing:-.05em; }
+    p { line-height:1.65; }
+    .notice { padding:16px 18px; border:1px solid #cdd8e8; border-radius:12px; background:#fff; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin-top:24px; }
+    article { display:flex; min-height:170px; flex-direction:column; padding:22px; border:1px solid #d6dfec; border-radius:16px; background:#fff; box-shadow:0 8px 22px rgba(29,52,84,.06); }
+    h2 { margin:0 0 8px; font-size:19px; }
+    article p { margin:0 0 20px; color:#44536a; }
+    a { color:#114f91; font-weight:700; text-decoration-thickness:1.5px; text-underline-offset:3px; }
+    article a { margin-top:auto; }
+    footer { margin-top:34px; color:#59697e; font-size:14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">DESIGN-KKAKGI · RESEARCH ARCHIVE</div>
+      <h1>디자인 깎기</h1>
+      <p>콘텐츠·목적·사용자·매체에 맞는 디자인 판단과 구현·검증을 연구하는 아카이브입니다.</p>
+    </header>
+    <div class="notice">
+      이미지 원본·스크린샷은 이 저장소와 사이트에 포함하지 않습니다. 아래 링크는 보존된 코드와 문서 기반의 기존 연구 사례입니다.
+    </div>
+    <section class="grid" aria-label="실행 가능한 연구 사례">
+      <article>
+        <h2>EXP-001 · MUL. 물컵</h2>
+        <p>제품·홍보형 실험의 최신 보존 버전(v1.2 Refined)입니다.</p>
+        <a href="./cases/mul-cup/versions/05_v1.2_Refined/site/">실행하기</a>
+      </article>
+      <article>
+        <h2>EXP-002 · SAI 블로그 v0.1</h2>
+        <p>정보·콘텐츠형 초기 버전입니다.</p>
+        <a href="./cases/sai-blog/v0.1/">실행하기</a>
+      </article>
+      <article>
+        <h2>EXP-002 · SAI 블로그 v0.2</h2>
+        <p>보존된 v0.2 프로젝트 버전입니다.</p>
+        <a href="./cases/sai-blog/v0.2/project/">실행하기</a>
+      </article>
+    </section>
+    <footer>
+      <a href="https://github.com/pchjesus/design-kkakgi">저장소와 연구 문서 보기</a>
+    </footer>
+  </main>
+</body>
+</html>
