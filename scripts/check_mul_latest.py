@@ -58,6 +58,16 @@ checks = {
     "reduced_motion_present": "prefers-reduced-motion" in site,
     "no_old_photo_omission_notice": 'data-github-image-omitted="true"' not in site,
 }
+if manifest.get("release_id") == "E8-SPATIAL-GLASS":
+    assets = manifest.get("three_d_assets", {})
+    checks["three_d_dependency_hashes"] = len(assets) == 3 and all(
+        (site_path.parent / path).is_file()
+        and hashlib.sha256((site_path.parent / path).read_bytes()).hexdigest() == digest
+        for path, digest in assets.items()
+    )
+    checks["three_d_controller_linked"] = 'src="glass-3d.js"' in site
+    viewer = (site_path.parent / "glass-3d.js").read_text()
+    checks["three_d_geometry_and_fallback"] = all(x in viewer for x in ["LatheGeometry", "setFromUnitVectors", "webglcontextlost", "fallback", "IntersectionObserver"])
 for name, passed in checks.items():
     print(f'{"PASS" if passed else "FAIL"}: {name}')
 if not all(checks.values()):

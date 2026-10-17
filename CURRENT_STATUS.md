@@ -37,3 +37,7 @@
 ## 브랜치 전용 실험 — E7
 
 `experiment/mul-material-softness`의 latest는 E7-MATERIAL-STUDY 검토 후보이다. main의 E6-C5-HERO와 기존 Pages는 유지한다. 사용자 승인 전 main에 병합하지 않는다. 진단·검증은 `cases/mul-cup/latest/DESIGN_REVIEW_E7.md` 참조.
+
+## 브랜치 전용 후속 실험 — E8
+
+같은 `experiment/mul-material-softness` 브랜치의 검토 후보를 E8-SPATIAL-GLASS로 발전시켰다. 사용자가 실제 3D와 전체 방향 회전을 이번에 명시적으로 요청했으며, 큰 별도 패널 대신 기존 페이지 안에 통합했다. 우측 정보 폭과 조작부를 수정하고 기존 반동 높이는 보존했다. `cases/mul-cup/latest/DESIGN_REVIEW_E8.md` 참고. main의 승인본은 변경하지 않는다.

@@ -33,3 +33,9 @@
 - 사용자 요청에 따라 `experiment/mul-material-softness`에서 E6-C5-HERO를 개선. main 병합은 사용자 결과 검토 후 결정.
 - HERO 높이/글꼴 폴백, 컵 회전 변형, 사진 경계, 읽기 대비, 단발 재조합, 모달 및 색상 동기화 개선.
 - 진단·참조·검증·제약: `cases/mul-cup/latest/DESIGN_REVIEW_E7.md`.
+
+## 2026-10-17 — MUL. E8 spatial glass
+
+- 사용자 요청에 따라 우측 정보 폭/행 배치 확장, 같은 높이의 단단한 반동, 테두리 없는 컬러 조작부로 개선.
+- 기존 실험 브랜치에 중공 3D 컵·상하좌우/대각 회전·초기화·색상 동기화 추가. 고정된 로컬 Three.js ES module과 SVG fallback 사용.
+- 상세 계약·검증·한계: `cases/mul-cup/latest/DESIGN_REVIEW_E8.md`. main 병합 대기.

@@ -29,5 +29,12 @@
   "baseline_release": "E6-C5-HERO",
   "approval_status": "awaiting-user-review",
   "branch": "experiment/mul-material-softness",
-  "previous_experiment": "E7-MATERIAL-STUDY"
+  "previous_experiment": "E7-MATERIAL-STUDY",
+  "three_d_assets": {
+    "glass-3d.js": "a25c39c795458ce9c79038e658ebe43c07e68f3f4ec96da5ed1795ff0dcec1aa",
+    "vendor/three-0.160.1.module.min.js": "3e690ac7d180b0aadf0891bea39eec643e29e2d3e75c99b18689518665f69ba6",
+    "vendor/THREE-LICENSE.txt": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d"
+  },
+  "three_d_renderer": "Three.js r160.1, local ES module, lazy on view, render on demand",
+  "model_limit": "Procedural concept geometry and stylized water volume; no scanned product and no fluid simulation"
 }
