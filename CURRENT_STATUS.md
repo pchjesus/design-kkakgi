@@ -33,3 +33,7 @@
 - 루트 `index.html`은 고정 `latest/` 경로를 사용. 원본 아카이브 5개를 수정하지 않음.
 - 검증 스크립트·릴리스 메타·워크플로·정책을 새 이미지 예외에 맞게 갱신함. 실제 Pages 서비스 검증 상태는 별도 확인하며 미검증은 PASS로 처리하지 않는다.
 - **이전 섹션의 ‘사진 제한/사진 없는 공개 미리보기’는 이 갱신 이전의 역사적 상태임. 현재 적용 정책은 위 기록과 `IMAGE_POLICY.md` 참조.**
+
+## 브랜치 전용 실험 — E7
+
+`experiment/mul-material-softness`의 latest는 E7-MATERIAL-STUDY 검토 후보이다. main의 E6-C5-HERO와 기존 Pages는 유지한다. 사용자 승인 전 main에 병합하지 않는다. 진단·검증은 `cases/mul-cup/latest/DESIGN_REVIEW_E7.md` 참조.

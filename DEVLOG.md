@@ -27,3 +27,9 @@
 | Public 전환 | PASS | GitHub 원격 메타데이터와 설정 화면에서 `public` 확인 |
 | MUL·SAI 실제 실행/사용자 검증 | NOT RUN | 이번 정책 전환 범위 밖 |
 | 플랫폼 캐시·외부 복사본·미참조 객체 완전 삭제 | NOT RUN | GitHub 가비지 컬렉션·외부 복사본은 즉시 또는 완전 삭제를 보장할 수 없음 |
+
+## 2026-10-17 — MUL. E7 branch experiment
+
+- 사용자 요청에 따라 `experiment/mul-material-softness`에서 E6-C5-HERO를 개선. main 병합은 사용자 결과 검토 후 결정.
+- HERO 높이/글꼴 폴백, 컵 회전 변형, 사진 경계, 읽기 대비, 단발 재조합, 모달 및 색상 동기화 개선.
+- 진단·참조·검증·제약: `cases/mul-cup/latest/DESIGN_REVIEW_E7.md`.
