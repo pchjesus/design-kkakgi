@@ -1,38 +1,32 @@
-# EXP-001 MUL. — GitHub Pages 최신 미리보기 게시 계약
+# EXP-001 MUL. — GitHub Pages 최신본 배포·보존 계약
 
-## 현재 상태 (2026-10-17)
+## 현재 배포 기준 (2026-10-17)
 
-- **최신 승인 개발 기준:** `MUL_E6C5_HERO_APPROVED_INTEGRATED.html` (E6-C5 본편 + 승인된 HERO 최초/재진입 모션)
-- **GitHub 실행 대상:** `cases/mul-cup/latest/index.html`
-- **메인 화면 실행 링크:** 루트 `index.html` → `./cases/mul-cup/latest/`
-- **버전 메타:** `cases/mul-cup/latest/release.json`
-- **과거 비교 아카이브:** `cases/mul-cup/versions/` 그대로 유지. Refined를 최신본으로 간주하지 않는다.
-- **현재 GitHub 버전의 제한:** 승인된 사진 2장을 GitHub 이미지 보관 정책에 따라 제거하고 블루 톤 CSS 배경으로 대체했다. **사진, 재질감, 사진-배경 블렌딩은 완전한 본편과 같지 않다.** 사진을 내장한 원본 HTML은 GitHub에 없다.
-- **3D 모델:** 사용자 거절에 따라 배포/통합하지 않았다. THE COLORS의 기존 2.5D 조작은 유지한다.
-- **범용 지침:** v1.2 DRAFT 그대로.
+- **최신 승인 원본:** `MUL_E6C5_HERO_APPROVED_INTEGRATED.html` (로컬 원본 별도 보존).
+- **온라인 실행 경로:** `cases/mul-cup/latest/index.html`, URL: https://pchjesus.github.io/design-kkakgi/cases/mul-cup/latest/
+- **연구 인덱스:** 루트 `index.html`에서 위 `latest/` 경로로 연결한다. 앞으로 릴리스마다 링크 자체는 바꾸지 않는다.
+- **온라인 버전:** 승인된 원본 HTML과 동일한 구조·CSS·JavaScript에 자체 생성 이미지 2장만 고품질 WebP(quality 95)로 최적화해 내장한 실행본이다. 사진은 삭제하지 않는다.
+- **발행 메타데이터:** `latest/release.json`에 릴리스 ID, 사진의 원본·최적화 SHA-256, 생성 자산 출처·승인 내역을 기록한다.
+- **보존:** `versions/01`~`05` 아카이브는 절대 덮어쓰지 않는다. 현 통합본의 원본 PNG가 포함된 로컬 HTML도 보존한다.
+- **제외:** 사용자가 거절한 WebGL 3D 실험안은 포함하지 않는다. THE COLORS의 2.5D 기능을 유지한다.
+- **지침:** Universal Visual Design UI/UX v1.2 DRAFT 유지.
 
-## 다음 GitHub 업데이트 시 반드시 함께 수행
+## 향후 MUL. GitHub 게시 시 필수 동기화
 
-1. 개발 시작 시 `cases/mul-cup/latest/index.html`과 `release.json`을 읽고, 대화에 있는 승인 원본과 실제 파일을 대조한다. 과거 GitHub 버전을 최신으로 오인하거나 처음부터 다시 만들지 않는다.
-2. 새 본편은 원본을 별도로 보존하고, 현재 승인 사항(정보 구조·카피·HERO·구매·저장·키보드·모바일·모션 감소)을 확인한다.
-3. 새 버전을 **GitHub에 반영하는 같은 작업에서** `cases/mul-cup/latest/index.html`의 공개용 최신 소스 전체를 갱신하고 `release.json`의 release_id/출처를 동기화한다. 루트의 `latest/` 링크는 변경하지 않는다.
-4. 원본 이미지·스크린샷·이미지 내장 HTML·이미지 포함 ZIP을 GitHub에 올리지 않는다(`IMAGE_POLICY.md`). 온라인 공개판은 이미지 없는 상태임을 안내하고 시각적 차이를 숨기지 않는다. 공개판을 사진까지 온전히 보이게 하려면 **별도의 승인된 외부 이미지 호스팅/정책 변경**이 먼저 필요하다.
-5. `python scripts/check_mul_latest.py`를 실행하여 stable link·메타·이미지 정책·핵심 기능 코드 존재를 확인한다. UI 변경 시 Chromium에서 1440/390/320px, 최초/재진입 HERO, 구매·장바구니·키보드·저장/복원을 변경 위험에 맞게 재검증한다.
-6. GitHub `main`에 반영된 뒤 Pages 실행 URL을 별도로 열어 최신판 배포 여부를 확인한다. 실접속 미검증은 `NOT RUN`으로 남긴다. 배포 실패 시 커밋 SHA, Pages 설정, 웹 콘솔을 점검하고 기능을 임의 삭제하지 않는다.
+1. 승인된 최신 본편 소스를 확보하고 이전 버전과 기능·카피·저장·모션·이미지 차이를 검토한다. GitHub `latest/`만 보고 완전한 로컬 원본을 추정하지 않는다.
+2. 콘텐츠와 기능의 변경을 확정한 후, 원본을 보존하고 **같은 릴리스 작업에서** `latest/index.html`을 **전체 HTML로** 업데이트한다. 이미지 최적화가 필요할 경우 직접 만든 이미지의 시각 품질·크롭·채도·블렌딩 유지 여부를 비교한다.
+3. `latest/release.json`에서 릴리스 태그·이미지 개수·이미지 해시·출처·예외 범위를 동기화한다. 과거 버전/릴리스 스냅샷은 보존한다. 루트 `index.html`의 실행 링크는 `latest/`로 고정한다.
+4. 이미지 정책: `IMAGE_POLICY.md`의 **MUL. 자체 생성 이미지 한정 예외**를 따른다. 외부 참고 이미지·저작권 불분명 사진·스크린샷·이미지 포함 ZIP은 승인 없이 올리지 않는다. MUL. 사진을 교체하려면 출처·허가를 다시 확인하고 검증용 해시를 갱신한다.
+5. 배포 전에 `python3 scripts/check_mul_latest.py` (검증 스크립트)와 실제 브라우저 검사를 실행한다. 변경에 영향받는 HERO 첫 진입/상향 재진입/모션 감소, THE COLORS 색상·회전·초기화·등장, 구매 패널·수량·장바구니·합계·삭제·복사, FAQ, `mul-exp001-e1-blue-v1` 저장 호환성, 1440/390/320px 화면을 검토한다.
+6. `main` 게시 후 Actions의 **Verify MUL latest release** 검사를 확인하고 실제 Pages 공개 주소도 열어 이미지·기능·캐시를 확인한다. 캐시 때문에 이전 화면이 보일 수 있으니 재접속 또는 새로고침 후 버전 태그를 점검한다. 실제 확인하지 못한 것은 PASS가 아닌 `NOT RUN`으로 기록한다.
+7. 롤백이 필요한 경우 마지막으로 확인된 정상 `latest/index.html`과 해당 `release.json`을 함께 복원한다. 중간 버전의 HTML 또는 사진 없는 대체판을 최신 승인본으로 오인하지 않는다.
 
-## 같은 링크를 쓰는 이유
+## 승인 범위·한계
 
-https://pchjesus.github.io/design-kkakgi/cases/mul-cup/latest/
+이미지 사용 승인은 사용자가 이 MUL. 프로젝트용으로 생성했다고 확인한 사진 두 장에 대한 것이다. 제3자 이미지 전체 공개, SAI 등 다른 사례의 이미지 업로드, 스크린샷 공개를 승인한 것으로 해석하지 않는다.
 
-위 경로는 고정이다. 후속 릴리스는 기존 HTML을 덮어쓰되 기존 과거 버전의 아카이브를 지우지 않는다. 메인 프로젝트 목록은 항상 그 경로로 연결된다. GitHub Pages가 `main` 루트로 배포되도록 설정돼 있다면 이후 푸시 시 같은 URL의 내용이 갱신된다. Pages 배포 설정과 실제 공개 URL 응답은 별도로 확인해야 한다.
+단일 HTML의 `data:image/webp;base64`는 고품질 압축본이므로 원본 PNG 바이트와 동일하지 않지만, 동일한 사진·크기·크롭·레이아웃을 사용한다. 실제 배포 HTTP 응답, 모바일 실기기 터치 및 브라우저별 렌더링은 개별 실행 기록에 따라 PASS / FAIL / NOT RUN을 보고한다.
 
-## 이번 검증 범위
+## 이전 상태 기록
 
-- **PASS:** 현재 공개용 HTML의 1440/390/320px Chromium DOM 렌더링·가로 넘침 없음, HERO 최초/재진입, 색상 선택, 회전·각도 초기화, 구매 패널, 장바구니, 합계, 삭제와 FAQ, reduced motion (로컬 테스트 기록).
-- **PASS:** 이미지 바이트를 제외했으며 `data:image`가 없다는 정적 검사.
-- **NOT RUN:** GitHub Pages 실제 HTTPS 응답, 외부 웹폰트/모바일 실기기, 실제 배포 origin의 새로고침·저장 영속성.
-- **N/A:** 사진 원본의 온라인 표현 비교(이미지 정책으로 사진 제외).
-
-## 판단
-
-이번 업로드는 **최신 기능을 공개 경로에 연결하는 작업**이다. 온라인 사진 재현 품질이 본편과 같다고 주장하거나, 사진 제외를 원래 디자인의 최종 의도로 취급하지 않는다.
+2026-10-17 초기에 제작된 GitHub 공개 미리보기에서는 기존 이미지 금지 정책 때문에 사진 두 장을 제외했었다. 이는 **과거 경과**일 뿐 현재 승인 디자인이나 최신 배포 정책이 아니다.
