@@ -1,0 +1,27 @@
+name: Verify MUL latest preview
+
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'cases/mul-cup/**'
+      - 'scripts/check_mul_latest.py'
+      - '.github/workflows/verify-mul-latest.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'cases/mul-cup/**'
+      - 'scripts/check_mul_latest.py'
+      - '.github/workflows/verify-mul-latest.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check stable URL and image policy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify latest preview contract
+        run: python3 scripts/check_mul_latest.py
