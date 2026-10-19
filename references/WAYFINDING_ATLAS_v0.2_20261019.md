@@ -306,9 +306,11 @@ v0.1의 11개 평가 영역을 늘리지 않는다. 기존 문구 안에 아래 
 
 ## 17. 추가 참고자료 및 출처 (APA 7판 형태)
 
-Lexon. (n.d.). *Premium+ Large Laptop Bag* [제품 정보]. https://lexon-design.com/kr/premium-large-laptop-bag
+Lexon. (n.d.). *Premium+ Large Laptop Bag* [제품 정보]. https://lexon-design.com/kr/collections/premium
 
 Lexon. (ca. 2015). *Airline: Flags a new identity* [제품 카탈로그, pp. 92–93; 온라인 보관본]. https://manuals.plus/m/21745b4b59959806b40cbbdcaec8b0803a08c5bc7f287c190aa93fb8ae2b53f2.pdf
+
+Lexon. (2013). *Lexon workbook 2013* [제품 카탈로그, 제3자 호스팅 사본]. https://giftmaker.cz/lexon/src/katalogy/LEXON_workbook_2013_BD.pdf
 
 사용자 제공 웨이파인딩 2차 캡처 14개. (2026, 10월 19일). *REF-059~072* [대화에 제공된 이미지; 개별 원저작자·원본 URL·라이선스 미확인].
 
