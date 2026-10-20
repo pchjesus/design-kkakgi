@@ -83,3 +83,27 @@ tokens/                    figma_token.json, transformed_tokens.json
 KRDS-uiux. (n.d.). *KRDS HTML Component Kit* (Version 1.1.0) [Computer software]. GitHub. https://github.com/KRDS-uiux/krds-uiux
 
 KRDS. (n.d.). *HTML 컴포넌트*. https://www.krds.go.kr/html/site/component/component_summary.html
+
+## 6. 공식 KRDS 웹사이트 확장 자료 (2026-10-20)
+
+**기존 HTML Kit ZIP v1.1.0과 별도 출처.** 사이트의 개별 레이아웃/패턴 지침이 패키지 v1.1.0과 같은 버전이라고 표기하지 않는다.
+
+| 범위 | 공식 출처 | 확인 결과 |
+|---|---|---|
+| 페이지 레이아웃 | https://www.krds.go.kr/html/site/style/style_05.html | 6구간 breakpoint, 그리드/마진/가터, 1200px 표준형, 선택적 좌우 메뉴, 간격 |
+| 기본 패턴 | https://www.krds.go.kr/html/site/global/global_summary.html | 공식 메뉴/표기 건수 11개와 개별 `global_01~11.html` URL |
+| 서비스 패턴 | https://www.krds.go.kr/html/site/service/service_summary.html | 5개, 개별 `service_01_01~05_01.html` URL, Do/Better/Best 구분 |
+| 패턴 검색 인덱스 | `pattern_catalog.json` | 11 + 5 = 16개 직접 링크, 중복 없음 |
+| 파생 화면 구조 | `LAYOUT_ATLAS.md`의 L1~L6 | 편집자가 만든 가설; KRDS 공식 이름 아님 |
+
+- **PASS (공식 텍스트 원문 확인):** 대상 17페이지(레이아웃 1, 기본 11, 서비스 5) 및 패턴 요약 페이지 2개 열람.
+- **NOT RUN:** 각 페이지의 모든 그림/모범 사례를 시각적으로 검증, 공식 Figma 프로토타입 분석, 브라우저 이용성 검사, 페이지 내용의 이후 변경 자동 추적.
+- **업데이트 계약:** 공식 웹페이지의 텍스트/URL 변경은 Kit ZIP과 별개로 재검토. 출처에 접근하지 못하면 신뢰도 확인 없이 색인을 새 버전으로 승격하지 않는다.
+
+### 추가 출처 (APA 7)
+
+KRDS. (n.d.). *레이아웃(Layout)*. https://www.krds.go.kr/html/site/style/style_05.html
+
+KRDS. (n.d.). *기본 패턴 소개*. https://www.krds.go.kr/html/site/global/global_summary.html
+
+KRDS. (n.d.). *서비스 패턴 소개*. https://www.krds.go.kr/html/site/service/service_summary.html
