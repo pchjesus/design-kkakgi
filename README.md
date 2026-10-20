@@ -11,7 +11,7 @@
 
 ## 구성
 
-- `guidelines/`: 범용 지침 v1.2 DRAFT, 빠른 실행 카드, 전문 제약과 이력
+- `guidelines/`: **v1.3 DRAFT 검토 후보**(미승인), 보존된 v1.2 DRAFT, 실행 카드, 전문 제약과 이력
 - `references/`: 텍스트 기반 레퍼런스 분석·출처·검증 이력
 - `cases/mul-cup/`: EXP-001 제품·홍보형 MUL. 물컵 사이트의 다섯 버전
 - `cases/sai-blog/`: EXP-002 정보·콘텐츠형 SAI 블로그 v0.1·v0.2
@@ -43,3 +43,10 @@
 - [Apple Figma 레퍼런스 허브](references/apple/README.md): iOS·iPadOS 27 및 macOS 27의 **실제로 검색된 95개 선별 컴포넌트**를 용도별 카테고리로 탐색
 - [컴포넌트 아틀라스](references/apple/COMPONENT_ATLAS.md) · [레이아웃/플랫폼 구조](references/apple/LAYOUT_AND_PLATFORM.md) · [시각 언어](references/apple/VISUAL_LANGUAGE.md) · [Apple × KRDS 선택 규칙](references/apple/REFERENCE_SELECTION.md)
 - 연결된 Figma 라이브러리 이름/컴포넌트만 색인화하며 **원본 디자인/폰트/이미지 등은 재배포하지 않음**. 지침 v1.2 DRAFT 및 기존 제품 코드 변경 없음.
+
+## 범용 디자인 지침 v1.3 개정 검토 (2026-10-20)
+
+- [**v1.3 DRAFT — 모듈형 범용 UI/UX 지침**](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md): KRDS × Apple × Material 3, 역할/상태가 다른 돌봄 플랫폼, 기존 디자인 실험을 중복 없이 반영. **사용자 승인 전**이며 기존 v1.2 DRAFT를 덮어쓰지 않음.
+- [**v1.3 빠른 실행 카드**](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md): 평소 작업의 짧은 진입점 · [v1.2→v1.3 변경/분량/검증 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
+- [**디자인 시스템 3종 비교 + 돌봄 플랫폼 선택 지도**](references/DESIGN_SYSTEM_SELECTION.md) · [Material 3 Figma 선별 조사](references/material3/README.md).
+- 새 지침은 **승인 대기**; 기존 코드/Pages/설계 계약 미변경.
