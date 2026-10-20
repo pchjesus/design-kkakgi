@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "checked_date": "2026-10-20",
+  "source": "KRDS official public website",
+  "baseline_component_kit": "1.1.0",
+  "note": "Official website content may change independently of the 1.1.0 downloaded HTML kit. Context descriptions and keywords are editorial navigation notes, not KRDS canonical labels. Official summary displays 11 basic and 5 service patterns; an extra mobile item is shown in parsed page output and was not classified as one of the 11.",
+  "basic": [
+    {
+      "id": "global_01",
+      "title": "개인 식별 정보 입력",
+      "url": "https://www.krds.go.kr/html/site/global/global_01.html",
+      "purpose": "본인·기관 식별 항목, 입력 이유와 최소 수집",
+      "keywords": [
+        "form",
+        "identity"
+      ]
+    },
+    {
+      "id": "global_02",
+      "title": "도움",
+      "url": "https://www.krds.go.kr/html/site/global/global_02.html",
+      "purpose": "맥락 도움·설명·튜토리얼",
+      "keywords": [
+        "help",
+        "context"
+      ]
+    },
+    {
+      "id": "global_03",
+      "title": "동의",
+      "url": "https://www.krds.go.kr/html/site/global/global_03.html",
+      "purpose": "약관·개인정보 고지와 선택",
+      "keywords": [
+        "consent",
+        "privacy"
+      ]
+    },
+    {
+      "id": "global_04",
+      "title": "목록 탐색",
+      "url": "https://www.krds.go.kr/html/site/global/global_04.html",
+      "purpose": "많은 항목을 빠르게 발견·비교",
+      "keywords": [
+        "list",
+        "browse",
+        "table"
+      ]
+    },
+    {
+      "id": "global_05",
+      "title": "사용자 피드백",
+      "url": "https://www.krds.go.kr/html/site/global/global_05.html",
+      "purpose": "사용성 의견 및 제안 수집",
+      "keywords": [
+        "feedback",
+        "comments"
+      ]
+    },
+    {
+      "id": "global_06",
+      "title": "상세 정보 확인",
+      "url": "https://www.krds.go.kr/html/site/global/global_06.html",
+      "purpose": "제목·요약·본문·이력·다음 행동",
+      "keywords": [
+        "detail",
+        "article"
+      ]
+    },
+    {
+      "id": "global_07",
+      "title": "오류",
+      "url": "https://www.krds.go.kr/html/site/global/global_07.html",
+      "purpose": "원인 설명·복구·다음 단계",
+      "keywords": [
+        "error",
+        "recovery"
+      ]
+    },
+    {
+      "id": "global_08",
+      "title": "입력폼",
+      "url": "https://www.krds.go.kr/html/site/global/global_08.html",
+      "purpose": "다수 입력 컨트롤의 조직과 유효성",
+      "keywords": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "id": "global_09",
+      "title": "첨부파일",
+      "url": "https://www.krds.go.kr/html/site/global/global_09.html",
+      "purpose": "자료 제공·첨부·다운로드",
+      "keywords": [
+        "attachment",
+        "download"
+      ]
+    },
+    {
+      "id": "global_10",
+      "title": "필터링·정렬",
+      "url": "https://www.krds.go.kr/html/site/global/global_10.html",
+      "purpose": "대규모 결과의 범위 좁히기·순서 지정",
+      "keywords": [
+        "filter",
+        "sort",
+        "search"
+      ]
+    },
+    {
+      "id": "global_11",
+      "title": "확인",
+      "url": "https://www.krds.go.kr/html/site/global/global_11.html",
+      "purpose": "비가역·중요 행동의 최종 검토",
+      "keywords": [
+        "confirm",
+        "destructive"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "service_01_01",
+      "title": "방문",
+      "url": "https://www.krds.go.kr/html/site/service/service_01_01.html",
+      "purpose": "메인·서비스 진입·우선순위·첫 탐색",
+      "keywords": [
+        "home",
+        "landing",
+        "navigation"
+      ]
+    },
+    {
+      "id": "service_02_01",
+      "title": "검색",
+      "url": "https://www.krds.go.kr/html/site/service/service_02_01.html",
+      "purpose": "질의→결과→재검색/상세 필터",
+      "keywords": [
+        "search",
+        "results"
+      ]
+    },
+    {
+      "id": "service_03_01",
+      "title": "로그인",
+      "url": "https://www.krds.go.kr/html/site/service/service_03_01.html",
+      "purpose": "서비스 진입에 필요한 사용자 식별·인증 경험",
+      "keywords": [
+        "login",
+        "auth-ui"
+      ]
+    },
+    {
+      "id": "service_04_01",
+      "title": "신청",
+      "url": "https://www.krds.go.kr/html/site/service/service_04_01.html",
+      "purpose": "대상 탐색→작성→최종 검토→결과 확인",
+      "keywords": [
+        "apply",
+        "workflow"
+      ]
+    },
+    {
+      "id": "service_05_01",
+      "title": "정책 정보 확인",
+      "url": "https://www.krds.go.kr/html/site/service/service_05_01.html",
+      "purpose": "상세 정책 설명과 관련 근거 탐색",
+      "keywords": [
+        "policy",
+        "knowledge"
+      ]
+    }
+  ],
+  "layout": {
+    "title": "레이아웃",
+    "url": "https://www.krds.go.kr/html/site/style/style_05.html"
+  },
+  "summary": {
+    "basic": "https://www.krds.go.kr/html/site/global/global_summary.html",
+    "services": "https://www.krds.go.kr/html/site/service/service_summary.html"
+  }
+}
