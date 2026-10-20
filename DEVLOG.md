@@ -75,3 +75,14 @@
 - 허브, 루트 README, 레퍼런스 README, AGENTS에 연결. HTML Kit v1.1.0 원본은 복제하지 않음. **Universal v1.2 DRAFT/기존 제품 코드·이미지 정책 미변경.**
 - **PASS:** 공식 분류 11+5·레이아웃 표·16개 직접 URL 원문 확인, JSON count/unique, 문서와 상위 링크 원격 읽기 확인.
 - **NOT RUN:** 사용자/브라우저 레이아웃 실험, Apple Figma 실제 파일 분석, 패턴 전체 공식 Figma 프로토타입 검증, 제품 기능 회귀(앱 코드 미변경).
+
+## 2026-10-20 — Apple Figma 라이브러리 레퍼런스 인덱스
+
+- 사용자 공유 Figma `HAobgfDkid1Jezh8OYSd6H`의 빈 `Page 1`을 확인하고, **8개 연결 Community 라이브러리**(Apple iOS/iPadOS/macOS 26·27, watchOS 26, visionOS 26, Material 3, Simple DS)를 읽기 전용으로 확인.
+- `iOS and iPadOS 27`의 13종 UI 컴포넌트명 검색어와 스타일/변수 질의, `macOS 27`의 9종 UI 컴포넌트명 검색어로 선별 조회. 검색 결과에서 **iOS/iPadOS 52개, macOS 43개, 95개의 서로 다른 이름**을 카테고리로 색인함. 6개 나머지 라이브러리는 등록명만 확인.
+- `references/apple/`에 `README.md`, `component_catalog.json`, `COMPONENT_ATLAS.md`, `LAYOUT_AND_PLATFORM.md`, `VISUAL_LANGUAGE.md`, `REFERENCE_SELECTION.md`, `SOURCE_PROVENANCE.md`를 추가. JSON은 중복을 제거한 그룹형으로 압축(원안 27k→6.2k 문자).
+- Apple 공식 HIG Layout/Materials/Toolbars/Fonts의 확인된 일반 원리와 **Figma 검색 결과 존재**만을 구분. 원본 Kit 전체 인벤토리/variant/토큰/Apple 공식 파일과의 키 동일성은 미검증.
+- **라이선스:** Apple Design Resources/폰트는 Apple 플랫폼 및 별도 계약 제약이 있으므로 원본 프레임·폰트·이미지·SF Symbols/디자인 아트워크를 Public GitHub에 복제하지 않음.
+- 루트·레퍼런스 README, AGENTS의 선택적 로딩 규칙, KRDS 레퍼런스 문서를 연계. **범용 디자인 지침 v1.2 DRAFT, 사례 웹사이트, 데이터·상태/이미지 정책은 불변.**
+- **PASS:** 연결 8개 라이브러리 확인, Apple 27 컴포넌트 검색, 95개 고유 색인 생성 및 GitHub 파일 원격 재조회.
+- **NOT RUN:** Figma 실제 컴포넌트 상세 variant/레이아웃, 타 라이브러리 인벤토리, 시각·상호작용/접근성 A/B 실험, 라이브러리 출처 동일성/개별 실기기 검증.
