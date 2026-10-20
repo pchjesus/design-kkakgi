@@ -54,4 +54,12 @@
 - 사용자의 문제가 **홈페이지 구조·페이지 다양화·레이아웃·정보 구조**이면 `references/krds/LAYOUT_ATLAS.md`와 필요 시 `PATTERN_ATLAS.md`를 먼저 읽고, 해당 세부 패턴 URL을 확인한다. 개별 UI 구현 문제에서만 컴포넌트 색인/SCSS/JS를 바로 읽는다.
 - **탐색은 선택적으로 진행한다.** 페이지 전체 문제 → 공식 레이아웃/패턴 → 컴포넌트/토큰 필요한 것만. 모든 참고 문서를 매번 로드하지 않는다.
 - `references/krds/REFERENCE_SELECTION.md`의 근거 구분·비교/거절 조건을 준수한다. KRDS 정량값/공식 원문과 디자인 깎기가 제안한 L1~L6 아키타입(가설)을 혼동하지 않는다.
-- 기존 사용자 확정 선호·프로젝트 기능·브랜드 판단 우선. Apple Figma 원본은 수령·확인 전에는 분석/등록 완료로 표현하지 않는다. 별도 파일의 라이선스/폰트/이미지 공개 범위를 검토한다.
+- 기존 사용자 확정 선호·프로젝트 기능·브랜드 판단 우선. Apple 27 Figma 연결 라이브러리의 일부 컴포넌트 이름은 확인했으나 원본 전체·variants·토큰/공식 출처 동등성은 미검증이다. 라이선스/폰트/이미지 공개 범위를 검토한다.
+
+## Apple Figma 레퍼런스 선택적 탐색
+
+- **진입 조건:** Apple HIG, iOS/iPadOS/macOS 컨트롤·레이아웃, 네이티브와 웹 UX 비교, Liquid Glass 계층 연구가 필요한 경우에만 `references/apple/README.md`를 읽는다. 일반 디자인 작업에서 선로딩하지 않는다.
+- **탐색 경로:** 사용자 과업 → `LAYOUT_AND_PLATFORM.md` 또는 `COMPONENT_ATLAS.md`에서 해결할 문제를 찾기 → `component_catalog.json`의 iOS/iPadOS 27·macOS 27 중 **확인된 이름 1~3개** 특정 → 필요할 때만 연결 Figma 라이브러리의 해당 범위를 조회. 대량 반복 검색으로 사용자 무료 계정 한도 낭비 금지.
+- 시각 계층·시스템 컨트롤·사용자 주도권 등의 **일반 원리**만 참고하고, Apple 원본 UI Kit의 아트워크/프레임/폰트·SF Symbols/컴포넌트 원본 코드를 일반 웹에 복제하거나 GitHub Public에 재배포하지 않는다. Apple Design Resources License와 SF 폰트 별도 조건 준수.
+- 연결 라이브러리의 이름/검색 결과를 확인한 것은 사실이나, 전체 원본 Apple Figma UI Kit의 세부 레이어·variant/토큰값이나 Apple 공식 게시본과의 동등성은 **미검증**이다. `SOURCE_PROVENANCE.md`를 확인해 정확히 표기한다.
+- `references/apple/REFERENCE_SELECTION.md`에서 KRDS와 Apple의 역할을 분리해 적용하고, 사용자 선호/기존 기능·안전 계약을 우선한다. 범용 지침 v1.2 DRAFT 및 프로젝트 UX를 자동 개정하지 않는다.
