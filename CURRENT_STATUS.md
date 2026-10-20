@@ -64,3 +64,9 @@
 ### E8 배포 확인 완료
 
 main 병합 커밋 `1ef7174`의 자동 검사와 GitHub Pages 배포가 성공했다. 정식 latest 주소에서 E8 태그·사진 2장·실제 3D 회전/초기화를 확인했고, 3D 모듈 파일도 HTTP 200으로 제공된다. 자세한 근거는 `cases/mul-cup/latest/DESIGN_REVIEW_E8.md`의 main 배포 확인 절을 따른다. 실물 모바일 등 앞서 미실행한 항목은 그대로 미검증이다.
+
+## 2026-10-20 — v1.3 개정 후보 상태
+
+- **v1.3 DRAFT 신규 작성 / 미승인 / 기존 v1.2 DRAFT 보존.** [본문](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md) · [빠른 실행 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) · [분량/누락 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
+- KRDS·Apple·Material 3·돌봄 플랫폼 사례의 [통합 선택 지도](references/DESIGN_SYSTEM_SELECTION.md)와 [Material 3 선별 조사](references/material3/README.md)를 추가.
+- 현행 프로젝트 코드·GitHub Pages·데이터/안전 계약은 변경하지 않았음. **사용자 승인 이후에만** 기본 지침 전환을 별도 수행.
