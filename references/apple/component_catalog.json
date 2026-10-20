@@ -9,7 +9,7 @@
     "canvas_state": "No visible frames; 0x0 root. Connected libraries are searchable."
   },
   "source_kind": "Figma connected design libraries, source=community",
-  "scope_note": "Curated subset of assets observed in query results; NOT exhaustive library inventory, no variant counts or style values.",
+  "scope_note": "Exactly 95 unique curated names found via scoped read-only component searches; not an exhaustive inventory. Groups are editorial, variant internals not measured. Do not treat search result counts as library total.",
   "verified_assets_count": 95,
   "platform_counts": {
     "ios-ipados-27": {
@@ -95,671 +95,123 @@
     "Simple Design System"
   ],
   "other_library_asset_audit": "NOT RUN: only library names were read, not asset inventories",
-  "assets": [
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Tab Bar - iPhone",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Tab Bar - iPhone Duo",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Tab Bar - iPad",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Toolbar - Top - iPhone",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Toolbar - Top - iPhone Duo",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Toolbar - Top - iPad",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Toolbar - Bottom - iPhone",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Toolbar - Bottom - iPad",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Accessory Bar - iPhone/Toolbar",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Accessory Bar - iPhone/Search",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Index Bar",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Page Control",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "navigation",
-      "name": "Sidebar Search Field",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Button - Liquid Glass - Text",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Button - Liquid Glass - Symbol",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Button - Content Area",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Popup Button",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Picker Button",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Text Field",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Segmented Control",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "actions-and-input",
-      "name": "Row - Button",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Row",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Row with Swipe Actions",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Header",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Section Title",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Menu",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Menu Items",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Menu Items - Submenus",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Context Menu",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "content-and-selection",
-      "name": "Text Selection",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Alert",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Sheet - iPhone",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Sheet - iPad",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Action Sheet",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Popovers (iPad Only)",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Context Menu - Dimming Overlay",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Progress Bar - Determinate Linear",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "feedback-and-overlays",
-      "name": "Progress Bar - Indeterminate Circular (\"Spinner\")",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Notification - Collapsed - List",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Lock Screen Widget - Modular List",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Lock Screen Widget - Modular Table",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Lock Screen Widget - Rectangular Text Gauge",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Tab Bar",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Tab Bars",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Sheets (Modals)",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Toolbars - Top",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Toolbars - Bottom",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/List",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Menus",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Keyboard",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Alert",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "ios-ipados-27",
-      "group": "system-and-examples",
-      "name": "Examples/Popover",
-      "library": "iOS and iPadOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Windows - Composed",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Window Titles/Window",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Window BG",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Window Controls",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Window Controls/Standard",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Window Controls/Utility",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Desktop Template",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Sidebars - Composed",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Utility Panel Tab Bar",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Examples/Windows/Default with Titlebar and Sidebar",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Examples/Windows/Unified Toolbar + Title",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Examples/Windows/Unified Compact Toolbar + Title",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "window-and-layout",
-      "name": "Examples/Windows/Expaned Toolbar + Title",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Table Rows",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Table Rows - Blank",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Column Header",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Sort Order Indicator",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Group Title",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Outline View",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Item",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "content-and-tables",
-      "name": "Section Header",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Button",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Buttons",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Button Group",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Buttons - Toggle",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Arrow Buttons",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Pop-Up Button",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Pulldown Button",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Pull Down Button",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Toggles - Radio Buttons",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Segmented Control",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "actions-and-input",
-      "name": "Search",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Menu Items",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Menu Background",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Menu",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Menu Bar",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Popover",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Separators",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Headers",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Pointers",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Examples/Menubar",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Examples/Alert/Side-by-side - Window Modal",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
-    },
-    {
-      "platform": "macos-27",
-      "group": "menus-and-overlays",
-      "name": "Examples/Utility Window",
-      "library": "macOS 27",
-      "verification": "Figma connected library asset returned by search; visual/variants not inspected"
+  "groups": {
+    "ios-ipados-27": {
+      "navigation": [
+        "Tab Bar - iPhone",
+        "Tab Bar - iPhone Duo",
+        "Tab Bar - iPad",
+        "Toolbar - Top - iPhone",
+        "Toolbar - Top - iPhone Duo",
+        "Toolbar - Top - iPad",
+        "Toolbar - Bottom - iPhone",
+        "Toolbar - Bottom - iPad",
+        "Accessory Bar - iPhone/Toolbar",
+        "Accessory Bar - iPhone/Search",
+        "Index Bar",
+        "Page Control",
+        "Sidebar Search Field"
+      ],
+      "actions-and-input": [
+        "Button - Liquid Glass - Text",
+        "Button - Liquid Glass - Symbol",
+        "Button - Content Area",
+        "Popup Button",
+        "Picker Button",
+        "Text Field",
+        "Segmented Control",
+        "Row - Button"
+      ],
+      "content-and-selection": [
+        "Row",
+        "Row with Swipe Actions",
+        "Header",
+        "Section Title",
+        "Menu",
+        "Menu Items",
+        "Menu Items - Submenus",
+        "Context Menu",
+        "Text Selection"
+      ],
+      "feedback-and-overlays": [
+        "Alert",
+        "Sheet - iPhone",
+        "Sheet - iPad",
+        "Action Sheet",
+        "Popovers (iPad Only)",
+        "Context Menu - Dimming Overlay",
+        "Progress Bar - Determinate Linear",
+        "Progress Bar - Indeterminate Circular (\"Spinner\")"
+      ],
+      "system-and-examples": [
+        "Notification - Collapsed - List",
+        "Lock Screen Widget - Modular List",
+        "Lock Screen Widget - Modular Table",
+        "Lock Screen Widget - Rectangular Text Gauge",
+        "Examples/Tab Bar",
+        "Examples/Tab Bars",
+        "Examples/Sheets (Modals)",
+        "Examples/Toolbars - Top",
+        "Examples/Toolbars - Bottom",
+        "Examples/List",
+        "Examples/Menus",
+        "Examples/Keyboard",
+        "Examples/Alert",
+        "Examples/Popover"
+      ]
+    },
+    "macos-27": {
+      "window-and-layout": [
+        "Windows - Composed",
+        "Window Titles/Window",
+        "Window BG",
+        "Window Controls",
+        "Window Controls/Standard",
+        "Window Controls/Utility",
+        "Desktop Template",
+        "Sidebars - Composed",
+        "Utility Panel Tab Bar",
+        "Examples/Windows/Default with Titlebar and Sidebar",
+        "Examples/Windows/Unified Toolbar + Title",
+        "Examples/Windows/Unified Compact Toolbar + Title",
+        "Examples/Windows/Expaned Toolbar + Title"
+      ],
+      "content-and-tables": [
+        "Table Rows",
+        "Table Rows - Blank",
+        "Column Header",
+        "Sort Order Indicator",
+        "Group Title",
+        "Outline View",
+        "Item",
+        "Section Header"
+      ],
+      "actions-and-input": [
+        "Button",
+        "Buttons",
+        "Button Group",
+        "Buttons - Toggle",
+        "Arrow Buttons",
+        "Pop-Up Button",
+        "Pulldown Button",
+        "Pull Down Button",
+        "Toggles - Radio Buttons",
+        "Segmented Control",
+        "Search"
+      ],
+      "menus-and-overlays": [
+        "Menu Items",
+        "Menu Background",
+        "Menu",
+        "Menu Bar",
+        "Popover",
+        "Separators",
+        "Headers",
+        "Pointers",
+        "Examples/Menubar",
+        "Examples/Alert/Side-by-side - Window Modal",
+        "Examples/Utility Window"
+      ]
     }
-  ]
+  }
 }
