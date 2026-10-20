@@ -57,7 +57,7 @@ tokens/                    figma_token.json, transformed_tokens.json
 
 ## 4. 출처 정책·재배포 판단
 
-원본 `package.json`에 `license: ISC`가 적혀 있으나 원본 `README.md`는 **KRDS 이용약관에 따른다**고 별도로 명시한다. 폰트·아이콘 등 각각의 권리 범위까지 이 ZIP만으로 확정하지 않는다. 따라서 이 저장소에는 원본 자산과 소스 전체를 복제하지 않고 **링크·경로·관찰된 구조만 보관**한다. 외부에 소스/에셋을 재배포하려면 해당 시점의 공식 [KRDS 저작권/이용약관](https://www.krds.go.kr/html/site/utility/utility_06.html)을 재확인한다.
+원본 `package.json`에는 `license: ISC`가 적혀 있지만 원본 `README.md`는 **KRDS 이용약관을 따른다**고 별도 명시한다. [KRDS 공식 저작권 안내](https://www.krds.go.kr/html/site/utility/utility_06.html)는 제공 자료를 **공공누리 제1유형(출처표시)** 조건으로 상업·비상업 목적에 활용하고 수정·재배포할 수 있다고 설명한다. 이 저장소는 별도 배포물이 아니라 탐색용 출처·경로·분석 기록이므로 원본 자산과 소스 전체는 복제하지 않는다. 외부 배포 시에는 제공 기관의 구체적인 출처표시를 준수하고, 폰트·제3자 리소스의 별도 조건 여부를 재검토한다.
 
 ## 5. 검증 상태
 
@@ -68,12 +68,15 @@ tokens/                    figma_token.json, transformed_tokens.json
 | HTML 조각 74개 목록 대조 | **PASS** | `component_catalog.json`에 74개 등록 |
 | 토큰 JSON 상위 키 확인 | **PASS** | `TOKEN_GUIDE.md`에 반영 |
 | JS의 `DOMContentLoaded` 초기화 확인 | **PASS** | 소스 정적 분석 |
-| 업스트림 `main`과 ZIP 커밋 동등성 | **NOT RUN** | 업스트림 commit SHA 미확인 |
+| 공식 GitHub 현행 `main`의 대표 파일과 ZIP 일치 | **PASS (8파일)** | package.json, modal.html, tab.html, skip_link.html, 토큰 JSON 2개, ui-script.js, krds_tokens.css의 Git blob SHA 대조 |
+| 업스트림 `main`과 ZIP **전체 커밋** 동등성 | **NOT RUN** | 업스트림 commit SHA 미확인; 8파일 일치만 검증 |
 | 브라우저 시각 회귀 및 WCAG/KWCAG 정식 검사 | **NOT RUN** | 실제 앱 배포 시 별도 |
 | 패키지 에셋 전체 라이선스 적합성 확인 | **NOT RUN** | 전면 재배포를 수행하지 않음 |
 | 디자인 지침 v1.2 자동 변경 | **N/A** | 변경 금지·미변경 |
 
 **갱신 원칙:** 원본이 바뀌면 새 ZIP/태그/커밋을 별도 식별하고, 74개 색인의 존재·이름과 핵심 문서의 경로를 비교한 뒤 변경분만 반영한다. 과거 검증을 새 버전에도 그대로 적용하지 않는다.
+
+공식 원본 파일 8개의 Git blob SHA는 ZIP에서 다시 계산한 Git blob SHA와 **전부 일치**한다. 이는 대표 파일에 대한 동등성 확인이지 245개 전체 파일·정확한 원본 commit 동일성의 증명은 아니다.
 
 ## 참고문헌 (APA 7판)
 
