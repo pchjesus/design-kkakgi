@@ -63,3 +63,12 @@
 - 시각 계층·시스템 컨트롤·사용자 주도권 등의 **일반 원리**만 참고하고, Apple 원본 UI Kit의 아트워크/프레임/폰트·SF Symbols/컴포넌트 원본 코드를 일반 웹에 복제하거나 GitHub Public에 재배포하지 않는다. Apple Design Resources License와 SF 폰트 별도 조건 준수.
 - 연결 라이브러리의 이름/검색 결과를 확인한 것은 사실이나, 전체 원본 Apple Figma UI Kit의 세부 레이어·variant/토큰값이나 Apple 공식 게시본과의 동등성은 **미검증**이다. `SOURCE_PROVENANCE.md`를 확인해 정확히 표기한다.
 - `references/apple/REFERENCE_SELECTION.md`에서 KRDS와 Apple의 역할을 분리해 적용하고, 사용자 선호/기존 기능·안전 계약을 우선한다. 범용 지침 v1.2 DRAFT 및 프로젝트 UX를 자동 개정하지 않는다.
+
+## 범용 v1.3 DRAFT — 승인 대기·토큰 효율 계약
+
+- **현행 지침 지위:** `guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md`는 **사용자 검토용 후보/미승인**이다. 기존 v1.2 DRAFT·기존 프로젝트 계약/지침을 묵시적으로 대체하지 않는다. 사용자가 채택을 승인하면 별도 결정/상태 업데이트를 수행한다.
+- 디자인 검토가 v1.3 후보 자체를 대상으로 할 때는 먼저 `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md`를 읽고, 복잡한 신규 설계나 위험한 변경 때에만 v1.3 본문을 추가로 읽는다. v1.2의 세부 역사적 근거는 차이가 필요한 경우에만 참조.
+- **디자인 시스템 선택:** `references/DESIGN_SYSTEM_SELECTION.md`를 필요할 때 보고, KRDS(웹 IA/서비스 흐름) · Apple(플랫폼 계층/조작) · Material 3(적응형 탐색/컴포넌트)을 해당 문제에 **선택적** 적용한다. 3개 라이브러리와 모든 Figma 자산을 매번 동시에 로드하지 않는다.
+- Figma `Material 3 Design Kit`은 연결된 **Community 라이브러리의 일부 검색 이름**만 확인됨. Apple과 마찬가지로 원본 전체/variant/토큰/공식 소스 동일성은 미검증. 자세한 근거 `references/material3/README.md`.
+- 돌봄 플랫폼은 환자 중심 PRD v0.2가 **현재 ACTIVE DESIGN DRAFT**; 병원 A1/A2/A3는 확장 설계/별도 시연, 실제 의료기관 제휴·임상 검증·구현 인증 아님. 고위험 상태/검토·공개 계약과 프로젝트 전문 요건을 범용 미학으로 대체하지 않는다.
+- **비용 절감이 MUST 면제가 아님:** 기존 상태/저장 데이터 호환성, 접근성, 민감정보, 실제 검증 범위, 안전/권한 계약은 생략할 수 없다.
