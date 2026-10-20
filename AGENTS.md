@@ -41,3 +41,10 @@
 - `cases/menu-roulette/`는 연구용 사례 문서·소개 페이지이며, 실행 앱 코드의 복제본이 아니다.
 - 앱의 **단일 진실 원본은 `pchjesus/menu-roulette` main**; 디자인 깎기 홈페이지의 SIDE-001 카드는 정식 GitHub Pages 실행 URL로 연결한다.
 - 이후 발견하는 디자인 교훈은 사용자 관찰·설계 가설·검증 결과를 구분하여 `LESSONS.md`에 적는다. Universal v1.2 규칙은 사용자가 별도 승인하지 않는 한 변경하지 않는다.
+
+## KRDS 구현 레퍼런스 고속 탐색
+
+- 요청이 KRDS·공공 UI·컴포넌트·토큰 분석에 해당할 때만 `references/krds/README.md`를 진입점으로 사용한다. 일반 디자인 작업에 자동 로드하지 않는다.
+- `component_catalog.json`에서 정확한 HTML 파일 하나를 특정 → 필요한 경우에만 `COMPONENT_GUIDE.md`의 관련 SCSS·JS·`TOKEN_GUIDE.md`로 범위를 넓힌다. 245개 원본이나 축약 번들 전체를 선로딩하지 않는다.
+- 이 저장소는 외부 KRDS 원본 HTML·CSS·JS·폰트·이미지 미러가 아니라 **출처/경로/분석/검증 가이드**를 보관한다. 공식 GitHub `main`은 변경될 수 있으므로 `SOURCE_PROVENANCE.md`의 v1.1.0 ZIP 해시와 구별한다.
+- KRDS 적용은 프로젝트별 명시 승인과 접근성·기능 회귀 검증이 필요한 **선택적 참조**다. 범용 지침 v1.2 DRAFT, 승인 UX, 이미지 정책을 자동 변경하지 않는다.
