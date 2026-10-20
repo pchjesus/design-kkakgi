@@ -42,3 +42,10 @@
 - [74개 HTML 컴포넌트의 기계 판독 색인](krds/component_catalog.json) · [용도별 HTML/SCSS/JS 가이드](krds/COMPONENT_GUIDE.md)
 - [디자인 토큰 구조](krds/TOKEN_GUIDE.md) · [통합/접근성/회귀 점검](krds/INTEGRATION_AND_QA.md) · [원본 해시·검증 기록](krds/SOURCE_PROVENANCE.md)
 - 원본 ZIP·폰트·아이콘은 미게시. 공식 GitHub를 읽는 **외부 구현 참고자료**이며, 개인 취향 레퍼런스 REF-001~072에 새로운 취향 평가로 합산하지 않는다. v1.2 DRAFT 변경 없음.
+
+## KRDS 페이지·서비스 패턴 확장 (2026-10-20)
+
+- [레이아웃 아틀라스](krds/LAYOUT_ATLAS.md): 공식 그리드/브레이크포인트와 페이지 설계 후보 6종을 분리 기록
+- [패턴 아틀라스](krds/PATTERN_ATLAS.md) · [공식 패턴 JSON 인덱스](krds/pattern_catalog.json): KRDS 기본 11종, 서비스 5종을 과업별로 탐색
+- [레퍼런스 선택 프로토콜](krds/REFERENCE_SELECTION.md): 과업에 맞는 레이아웃 2안 이상 비교, KRDS·Apple HIG·기존 미감 레퍼런스의 역할 구분
+- 공식 KRDS **웹사이트**의 레이아웃/패턴(2026-10-20 확인)과 ZIP의 **HTML Kit v1.1.0**은 서로 다른 출처 레이어다. 원본 Figma/이미지·폰트/전체 소스는 미복제, 지침 v1.2 DRAFT 변경 없음.
