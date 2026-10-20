@@ -32,3 +32,8 @@
 
 - [KRDS HTML Component Kit v1.1.0 탐색 허브](references/krds/README.md) — 74개 컴포넌트 색인, 토큰 지도, HTML/SCSS/JS 경로와 검증 규칙. **원본 소스·폰트·아이콘을 저장소에 복제하지 않음.**
 - 외부 참고자료는 현재 지침 v1.2 DRAFT의 자동 개정 또는 UX 표준 채택을 의미하지 않는다.
+
+## KRDS 사이트 구조·서비스 패턴 자료
+
+- [레이아웃 아틀라스](references/krds/LAYOUT_ATLAS.md), [기본 11종·서비스 5종 패턴](references/krds/PATTERN_ATLAS.md), [레퍼런스 선택 프로토콜](references/krds/REFERENCE_SELECTION.md) — 홈페이지·서브페이지 구조부터 사용자 과업, 세부 UI로 내려가는 설계 탐색.
+- 디자인/UX 가설과 공식 KRDS 원칙을 구분하며, 기존 범용 디자인 지침 **v1.2 DRAFT**와 프로젝트 UI는 자동 변경하지 않는다.
