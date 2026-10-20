@@ -56,3 +56,13 @@
 - 제품 코드는 승인된 bff90ca 그대로 유지. 릴리스의 approved/main/고정 route를 갱신하고 의존 파일 해시 검사를 유지.
 - `DESIGN_LEARNINGS_E7_E8.md`에 WHY/WHEN/HOW, 지침·레퍼런스 적용표, 폭/물성/재조합/조작부/3D에 관한 수정 경험과 재사용 절차를 기록.
 - 범용 v1.2 DRAFT는 변경하지 않음. 인덱스·README·배포 계약·결정 기록에서 현재 채택 상태를 연결.
+
+## 2026-10-20 — KRDS v1.1.0 외부 컴포넌트 레퍼런스 색인
+
+- 사용자가 제공한 `krds-uiux-main.zip` (SHA-256: `e915e378d35e52ff8172c4c98f4f0bfedbd53177a8f9e6ff521298d82fa2bf3b`)의 245개 파일을 정적 조사함.
+- `references/krds/`에 허브 `README.md`, HTML 예제 **74개**의 `component_catalog.json`, 용도별 HTML/SCSS/JS 경로 `COMPONENT_GUIDE.md`, 토큰 지도 `TOKEN_GUIDE.md`, 구현·QA 계약 `INTEGRATION_AND_QA.md`, 출처/해시 `SOURCE_PROVENANCE.md`를 추가함.
+- `README.md`, `references/README.md`, `AGENTS.md`에 조건부 탐색 진입점을 연결함. 일반 디자인 작업에 KRDS 선로딩 금지, 관련 1~3개 원본만 조회, 필요할 때 세부 파일로 확대하는 규칙을 기록함.
+- **정책 유지:** 외부 PNG/SVG/폰트·ZIP·전체 소스 미복제, 기존 실험/앱 코드 변경 없음, Universal v1.2 DRAFT 미변경.
+- **PASS (정적/원격):** 74개 색인 경로의 ZIP과 일치성, GitHub 새 문서 6개 및 상위 문서 3개 원격 읽기, 공식 KRDS GitHub 대표 파일 **8개** Git blob SHA 일치, 원본 버전/출처 기록.
+- **NOT RUN:** 245개 전체 원격 Git blob 동등성, 모든 GitHub 링크의 HTTP 열림 여부, 실제 브라우저 동작·접근성/시각 회귀·GitHub Pages 반영. 이번 작업은 **레퍼런스 문서 저장**이며 애플리케이션 릴리스가 아님.
+
