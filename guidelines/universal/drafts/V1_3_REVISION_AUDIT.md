@@ -52,3 +52,9 @@
 ## E. 운영 방침
 
 **제안:** 평소에는 [실행 카드](../../quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md)만, 중요한 신규 설계/검토에는 [v1.3 DRAFT](Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md), 구버전 호환·섬세한 표현/전문 업무·특정 디자인 시스템 값이 필요할 때만 해당 모듈을 추가로 읽는다. 지침이 짧다는 이유로 안전·상태 계약을 생략하지 않는다.
+
+## F. 내부 링크 점검 결과
+
+- 신규 v1.3 본문·실행 카드·통합 레퍼런스·Material 3 및 상위 안내 문서의 상대 경로는 원격 트리 기준 **PASS**.
+- **기존 v1.2 DRAFT의 사전 존재 문제 1건:** 원문 안의 `Universal_Visual_Design_v1.2_QUICK_START.md` 상대 링크는 `guidelines/universal/drafts/`에 없는 파일을 가리킴. 실제 파일은 `guidelines/quick-start/Universal_Visual_Design_v1.2_QUICK_START.md`. v1.2 원본을 보존하기 위해 이번에는 해당 원본의 링크를 수정하지 않았다. 필요 시 별도 편집 패치로 처리.
+- 위 상태는 개별 **내부 링크 경로 검사**이며 외부 원본 사이트의 일시적 접근/웹 실행을 보증하지 않는다.
