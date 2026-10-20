@@ -49,3 +49,10 @@
 - [패턴 아틀라스](krds/PATTERN_ATLAS.md) · [공식 패턴 JSON 인덱스](krds/pattern_catalog.json): KRDS 기본 11종, 서비스 5종을 과업별로 탐색
 - [레퍼런스 선택 프로토콜](krds/REFERENCE_SELECTION.md): 과업에 맞는 레이아웃 2안 이상 비교, KRDS·Apple HIG·기존 미감 레퍼런스의 역할 구분
 - 공식 KRDS **웹사이트**의 레이아웃/패턴(2026-10-20 확인)과 ZIP의 **HTML Kit v1.1.0**은 서로 다른 출처 레이어다. 원본 Figma/이미지·폰트/전체 소스는 미복제, 지침 v1.2 DRAFT 변경 없음.
+
+## Apple Figma UI Kit 레퍼런스 (2026-10-20)
+
+- [**Apple 레퍼런스 탐색 허브**](apple/README.md): 연결된 Figma 파일의 **iOS·iPadOS 27 / macOS 27** 라이브러리 95개 선별 명칭, 추가 연결 6개 라이브러리의 확인 상태
+- [기계 판독 색인](apple/component_catalog.json) · [용도별 컴포넌트](apple/COMPONENT_ATLAS.md) · [플랫폼/레이아웃](apple/LAYOUT_AND_PLATFORM.md) · [재질/타이포/상태](apple/VISUAL_LANGUAGE.md)
+- [KRDS와 선택적으로 조합](apple/REFERENCE_SELECTION.md) · [Figma 접근/권리/검증](apple/SOURCE_PROVENANCE.md)
+- **원본 이미지·디자인 아트워크·폰트·Kit 프레임·바이너리 비보관**. Library 검색 결과의 명칭만 확인했으며 variants/수치는 미검증. 개인 취향 레퍼런스 REF-001~072에 혼합/합산하지 않는다.
