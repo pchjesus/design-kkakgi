@@ -86,3 +86,11 @@
 - 루트·레퍼런스 README, AGENTS의 선택적 로딩 규칙, KRDS 레퍼런스 문서를 연계. **범용 디자인 지침 v1.2 DRAFT, 사례 웹사이트, 데이터·상태/이미지 정책은 불변.**
 - **PASS:** 연결 8개 라이브러리 확인, Apple 27 컴포넌트 검색, 95개 고유 색인 생성 및 GitHub 파일 원격 재조회.
 - **NOT RUN:** Figma 실제 컴포넌트 상세 variant/레이아웃, 타 라이브러리 인벤토리, 시각·상호작용/접근성 A/B 실험, 라이브러리 출처 동일성/개별 실기기 검증.
+
+## 2026-10-20 — 범용 v1.3 모듈형 개정 후보 작성
+
+- 사용자 요청에 따라 v1.2를 원본 보존하고 **별도 `Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md`**를 신규 작성. `Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md`·`V1_3_REVISION_AUDIT.md`를 함께 생성.
+- 본문 문자 수 **v1.2 25,569 → v1.3 13,450(약 47.4% 감소)**, 줄 443→219. 실제 API 토큰/요금 측정값은 아니며 중복된 상세 사례·외부 컴포넌트 목록을 참고 모듈로 분리함. 접근성, 위험도 L/M/H, 구버전 데이터 호환성·마이그레이션/복구, 상태/승인·공개, 검증 수준은 본문에 보존.
+- 새 [디자인 시스템 선택 지도](references/DESIGN_SYSTEM_SELECTION.md) 및 `references/material3/README.md` 생성. 사용자 연결 Figma Material 3 Community Kit에서 Button/Nav Rail/Drawer/Text field/Card/Dialog/Search/Tabs 계열을 선별 검색. Google Android Material 컴포넌트 자료의 M3 Expressive 변화 참고. Kit 전체 인벤토리와 공식 파일 동등성은 NOT RUN.
+- 돌봄 플랫폼의 **환자 중심 현재 ACTIVE DRAFT**와 **병원 A1/A2/A3 확장 설계**를 구분. 의료진/환자 역할의 정보 밀도·근거/결측·검토/승인/환자 공개 범위를 범용 UX 원리의 사례로 제시하되 실증 효과 미주장.
+- 리뷰 상태: **DRAFT / 사용자 승인 전**. 기존 v1.2 및 제품 코드/정식 사이트/기존 프로젝트 상태 불변. 신규 시안의 실제 사람 대상 사용성·완전한 Figma variants·실기기 검증은 NOT RUN.
