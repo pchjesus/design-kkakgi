@@ -37,3 +37,9 @@
 
 - [레이아웃 아틀라스](references/krds/LAYOUT_ATLAS.md), [기본 11종·서비스 5종 패턴](references/krds/PATTERN_ATLAS.md), [레퍼런스 선택 프로토콜](references/krds/REFERENCE_SELECTION.md) — 홈페이지·서브페이지 구조부터 사용자 과업, 세부 UI로 내려가는 설계 탐색.
 - 디자인/UX 가설과 공식 KRDS 원칙을 구분하며, 기존 범용 디자인 지침 **v1.2 DRAFT**와 프로젝트 UI는 자동 변경하지 않는다.
+
+## Apple Figma 디자인 레퍼런스 (2026-10-20)
+
+- [Apple Figma 레퍼런스 허브](references/apple/README.md): iOS·iPadOS 27 및 macOS 27의 **실제로 검색된 95개 선별 컴포넌트**를 용도별 카테고리로 탐색
+- [컴포넌트 아틀라스](references/apple/COMPONENT_ATLAS.md) · [레이아웃/플랫폼 구조](references/apple/LAYOUT_AND_PLATFORM.md) · [시각 언어](references/apple/VISUAL_LANGUAGE.md) · [Apple × KRDS 선택 규칙](references/apple/REFERENCE_SELECTION.md)
+- 연결된 Figma 라이브러리 이름/컴포넌트만 색인화하며 **원본 디자인/폰트/이미지 등은 재배포하지 않음**. 지침 v1.2 DRAFT 및 기존 제품 코드 변경 없음.
