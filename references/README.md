@@ -35,3 +35,10 @@
 ## 이미지 원본 비보관
 
 이 디렉터리는 텍스트 기반 분석·출처·검증 이력만 보관한다. 이미지 원본은 저장소에 올리지 않으며, 새 분석은 일반 ChatGPT 채팅에서 이미지를 확인한 뒤 Markdown 또는 JSON으로 기록한다. 출처가 불명확하면 `미확인`으로 표기하고, 분석은 실험 전까지 후보 근거로 취급한다.
+
+## KRDS HTML Component Kit v1.1.0 — 코드 기반 UI 레퍼런스
+
+- [**KRDS 10초 탐색 허브**](krds/README.md): 출처·필요 파일·권한·탐색 순서
+- [74개 HTML 컴포넌트의 기계 판독 색인](krds/component_catalog.json) · [용도별 HTML/SCSS/JS 가이드](krds/COMPONENT_GUIDE.md)
+- [디자인 토큰 구조](krds/TOKEN_GUIDE.md) · [통합/접근성/회귀 점검](krds/INTEGRATION_AND_QA.md) · [원본 해시·검증 기록](krds/SOURCE_PROVENANCE.md)
+- 원본 ZIP·폰트·아이콘은 미게시. 공식 GitHub를 읽는 **외부 구현 참고자료**이며, 개인 취향 레퍼런스 REF-001~072에 새로운 취향 평가로 합산하지 않는다. v1.2 DRAFT 변경 없음.
