@@ -66,3 +66,12 @@
 - **PASS (정적/원격):** 74개 색인 경로의 ZIP과 일치성, GitHub 새 문서 6개 및 상위 문서 3개 원격 읽기, 공식 KRDS GitHub 대표 파일 **8개** Git blob SHA 일치, 원본 버전/출처 기록.
 - **NOT RUN:** 245개 전체 원격 Git blob 동등성, 모든 GitHub 링크의 HTTP 열림 여부, 실제 브라우저 동작·접근성/시각 회귀·GitHub Pages 반영. 이번 작업은 **레퍼런스 문서 저장**이며 애플리케이션 릴리스가 아님.
 
+## 2026-10-20 — KRDS 사이트·패턴 레퍼런스 확장
+
+- KRDS 공식 `style_05.html`, 기본 패턴 11종의 `global_01~11.html`, 서비스 패턴 5종의 `service_01_01~05_01.html` 상세 페이지를 확인했다.
+- `references/krds/LAYOUT_ATLAS.md`: 6단계 그리드/브레이크포인트, 고정·유동 콘텐츠, 좌우 메뉴, 8pt 기반 간격과 별도로 **파생된 페이지 아키타입 L1~L6(가설)** 기록.
+- `references/krds/PATTERN_ATLAS.md` 및 `pattern_catalog.json`: 기본 11종·서비스 5종의 직접 링크, 과업-패턴-컴포넌트 결합 탐색.
+- `references/krds/REFERENCE_SELECTION.md`: 문제 유형별 selective routing, 2안 비교, KRDS/Apple/기존 미감 레퍼런스 역할 분리 및 향후 Figma 입수 시 라이선스·검증 계약.
+- 허브, 루트 README, 레퍼런스 README, AGENTS에 연결. HTML Kit v1.1.0 원본은 복제하지 않음. **Universal v1.2 DRAFT/기존 제품 코드·이미지 정책 미변경.**
+- **PASS:** 공식 분류 11+5·레이아웃 표·16개 직접 URL 원문 확인, JSON count/unique, 문서와 상위 링크 원격 읽기 확인.
+- **NOT RUN:** 사용자/브라우저 레이아웃 실험, Apple Figma 실제 파일 분석, 패턴 전체 공식 Figma 프로토타입 검증, 제품 기능 회귀(앱 코드 미변경).
