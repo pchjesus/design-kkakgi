@@ -56,3 +56,9 @@
 - [기계 판독 색인](apple/component_catalog.json) · [용도별 컴포넌트](apple/COMPONENT_ATLAS.md) · [플랫폼/레이아웃](apple/LAYOUT_AND_PLATFORM.md) · [재질/타이포/상태](apple/VISUAL_LANGUAGE.md)
 - [KRDS와 선택적으로 조합](apple/REFERENCE_SELECTION.md) · [Figma 접근/권리/검증](apple/SOURCE_PROVENANCE.md)
 - **원본 이미지·디자인 아트워크·폰트·Kit 프레임·바이너리 비보관**. Library 검색 결과의 명칭만 확인했으며 variants/수치는 미검증. 개인 취향 레퍼런스 REF-001~072에 혼합/합산하지 않는다.
+
+## 디자인 시스템 3종 통합 선택 지도 (2026-10-20)
+
+- [**KRDS × Apple × Material 3 + 돌봄 플랫폼**](DESIGN_SYSTEM_SELECTION.md): 사용자 과업과 매체에 따라 참조 대상을 선택하고 중복 탐색을 줄임.
+- [**Material 3 연결 Figma 라이브러리 선별 조사**](material3/README.md): 적응형 Rail/Drawer, 버튼, 입력, 탭·Dialog 등 **실제 검색된 이름**과 M3 Expressive 버전 경계. 전수 조사/전체 variants·토큰 값 미검증.
+- [범용 v1.3 DRAFT](../guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md)의 선택적 참조 모듈이며, 개인 취향 REF-001~072에는 포함하지 않는다.
