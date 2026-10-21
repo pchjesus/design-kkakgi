@@ -102,3 +102,11 @@
 - v1.3 DRAFT는 기존 MUST 추가 없이 §3.1 레이아웃·§3.2 타이포·§3.3 색·§6.4 A/B 확인 문장을 **수정**, 이력과 기존 증거 상태 정정. [빠른 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) 및 [개정 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md) 동기화.
 - 지침 본문 v1.2 **25,569자**, v1.3 최초 **13,450자** → 1~3차 피드백 개정 후보 **14,136자** (**v1.2 대비 44.7% 축소**). 문자 수이며 실제 토큰 사용량 측정값 아님.
 - v1.2 원본, 기존 사례 HTML·서비스 코드/Pages, 기본 지침 채택 상태는 변경하지 않음. **사용자 승인 대기**.
+
+## 2026-10-21 — v1.3 승인·정식 기준 반영 및 운영 지침 v1.2
+
+- 사용자 최종 승인에 따라 v1.3의 문서 상태를 **APPROVED**로 전환하고 `guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md`에 승인본을 신규 등록. `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md` 생성.
+- 상대 링크를 승인본의 실제 위치에 맞게 갱신하고, 기존 `drafts/` v1.2 및 v1.3 후보 문서를 **변경 없이 보존**함.
+- 사용자 제공 프로젝트 운영 지침 v1.1을 `project/PROJECT_OPERATING_INSTRUCTIONS_v1.1_ARCHIVE.md`로 보존, 승인 지침/선택적 KRDS·Apple·Material 3 참조/실험 화면 실제 표시 검증·근거 구분 등을 반영한 `project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md`를 신규 작성.
+- 루트 README, AGENTS, CURRENT_STATUS, DECISION_LOG 및 관련 기본 참조를 현행 v1.3/운영 v1.2에 맞춰 정리. ChatGPT 프로젝트 설정 및 기존 프로젝트 앱/Pages는 **직접 수정하지 않음**.
+- **검증 대상:** 문서 존재·상대 링크·규범 보존·DRAFT 아카이브 상태, 운영 문서 기준의 일치. 실제 브라우저/실사용자/토큰 계측과 혼동하지 않음.
