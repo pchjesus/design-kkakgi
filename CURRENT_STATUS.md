@@ -70,3 +70,10 @@ main 병합 커밋 `1ef7174`의 자동 검사와 GitHub Pages 배포가 성공�
 - **v1.3 DRAFT 신규 작성 / 미승인 / 기존 v1.2 DRAFT 보존.** [본문](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md) · [빠른 실행 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) · [분량/누락 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
 - KRDS·Apple·Material 3·돌봄 플랫폼 사례의 [통합 선택 지도](references/DESIGN_SYSTEM_SELECTION.md)와 [Material 3 선별 조사](references/material3/README.md)를 추가.
 - 현행 프로젝트 코드·GitHub Pages·데이터/안전 계약은 변경하지 않았음. **사용자 승인 이후에만** 기본 지침 전환을 별도 수행.
+
+## 2026-10-21 — v1.3 1~3차 실험 반영 후 최종 개정 후보
+
+- **v1.3 DRAFT(미승인)**의 §3.1·3.2·3.3·6.4를 1~3차 사용자 피드백에 따라 통합·명료화했다. 새 MUST나 특정 팔레트·서체·패널 비율의 전역 강제 없음.
+- [개정된 전체 지침](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md) · [빠른 실행 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) · [실험 관찰/변경 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
+- 기존 v1.2, 기존 제품 코드·Pages·데이터/UX 계약은 변경하지 않음. 검증되지 않은 독립 사용자 사용성·임상/접근성·실제 토큰 계측을 PASS로 표시하지 않음.
+- **정식 채택·기본 링크 전환은 사용자 최종 승인 시에만 수행.**
