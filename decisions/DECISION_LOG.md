@@ -29,3 +29,13 @@
 - **운영:** MUL. 고정 latest 실행 경로, 사진 2장·3D 의존 파일·라이선스·해시를 함께 동기화. 메뉴 슬롯 등 동시 main 작업 보존.
 - **기록:** `cases/mul-cup/DESIGN_LEARNINGS_E7_E8.md`에 기존 지침 적용, 사용자 피드백, 수정 방법, 참고 출처, 증거 수준과 후속 가설을 남김.
 - **지침:** v1.2 DRAFT는 개정하지 않음. 개인 선호와 단일 사례 채택을 범용 원칙 검증으로 확대하지 않음.
+
+## D-005 — 범용 v1.3 정식 채택 및 운영 지침 v1.2 (2026-10-21)
+
+- **명시적 사용자 승인:** 앞선 v1.3 최종 후보에 대해 “ㄱㄱ”, 프로젝트 운영 지침 v1.1 개정 지시도 함께 전달.
+- **현행 기본 기준:** `guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md` (**APPROVED**) 및 `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md`.
+- **운영 기준:** `project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md`. v1.1 보존본 `project/PROJECT_OPERATING_INSTRUCTIONS_v1.1_ARCHIVE.md`.
+- **근거:** KRDS/Apple/Material 3/돌봄 플랫폼 참조와 1~3차 시안 실험, 사용자 1인의 직접 평가. 정보 구조 개선·색채/서체 맥락 적합성·A/B 표시 오류 등 구현 검증의 교훈. 사용자 선호를 전체 사용성·임상 근거로 확대하지 않음.
+- **보존:** v1.2/v1.3 실험 DRAFT, v1.3 개정 감사, 원래 시안/서비스 코드는 이력 유지.
+- **효력 제한:** 정식 가이드 채택은 개별 제품의 브랜드·기능·저장·데이터·권한·배포 변경을 승인하는 행위가 아니다. 다른 저장소/GitHub Pages 자동 적용 금지.
+- **남은 조치:** ChatGPT 프로젝트의 실제 지침·첨부파일은 GitHub와 동기화가 자동으로 되지 않으므로 별도 갱신이 필요하다.
