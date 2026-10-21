@@ -110,3 +110,11 @@
 - 사용자 제공 프로젝트 운영 지침 v1.1을 `project/PROJECT_OPERATING_INSTRUCTIONS_v1.1_ARCHIVE.md`로 보존, 승인 지침/선택적 KRDS·Apple·Material 3 참조/실험 화면 실제 표시 검증·근거 구분 등을 반영한 `project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md`를 신규 작성.
 - 루트 README, AGENTS, CURRENT_STATUS, DECISION_LOG 및 관련 기본 참조를 현행 v1.3/운영 v1.2에 맞춰 정리. ChatGPT 프로젝트 설정 및 기존 프로젝트 앱/Pages는 **직접 수정하지 않음**.
 - **검증 대상:** 문서 존재·상대 링크·규범 보존·DRAFT 아카이브 상태, 운영 문서 기준의 일치. 실제 브라우저/실사용자/토큰 계측과 혼동하지 않음.
+
+### v1.3 정식 채택 문서 QA (2026-10-21)
+
+- **PASS:** 승인 v1.3 본문·실행 카드·프로젝트 운영 지침 v1.2·운영 지침 v1.1 이력본·AGENTS·README·CURRENT_STATUS·DECISION_LOG 원격 읽기 성공(관련 문서 12개 재조회).
+- **PASS:** 승인된 v1.3에서 이전 v1.3 DRAFT의 `MUST` 행 19개 **원문 그대로 보존**; v1.2 DRAFT 문자열 길이 25,569 및 v1.3 DRAFT '미승인' 상태 보존. 승인본 14,344자(승인 상태/링크 추가 포함), 승인 실행 카드 1,777자.
+- **PASS:** 재조회한 관련 Markdown 파일의 상대 링크 114개 중 **113개 유효**, 새 승인/프로젝트 운영 문서에서 누락된 경로 0개.
+- **KNOWN LEGACY ISSUE:** 보존한 v1.2 DRAFT 원문에 기존 빠른 카드 상대 링크 오류 1개가 있어 미수정(아카이브 원문 보존 선택).
+- **NOT RUN / 불가:** ChatGPT 프로젝트 설정의 '맞춤 지침' 직접 변경 및 프로젝트 첨부파일 교체(현 채팅 도구에 설정 변경 기능 없음), 실제 프로젝트에서 v1.3 자동 적용, 기존 앱/Pages UI 회귀. 사용자가 새 운영 지침을 프로젝트 설정에 붙여 넣고 승인 가이드/실행 카드 첨부를 교체해야 함.
