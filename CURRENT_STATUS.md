@@ -3,7 +3,7 @@
 ## 현재 단계
 
 - 저장소 운영 정책 전환: **COMPLETED** — 이미지 없는 새 Git 이력과 Public 전환 완료
-- 범용 시각 디자인 지침: v1.2 **DRAFT** 유지
+- 범용 시각 디자인 지침: **v1.3 APPROVED** (2026-10-21). [현행 승인본](guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md) · [빠른 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md)
 - EXP-001 MUL.: 다섯 버전 코드·문서·피드백·검증 기록 보존. 미리보기·공유 이미지 제거에 따른 화면 재현 영향은 사례 README에 기록됨.
 - EXP-001 MUL. 동기화(2026-10-16): 통합 백업과 5개 실행 HTML·13개 문서/검증 파일 Git blob SHA 일치 확인. 동일 파일 재업로드 없이 [동기화 검증 기록](cases/mul-cup/SYNC_REVIEW_2026-10-16.md) 추가. 이미지 포함 ZIP은 기존 이미지 정책에 따라 제외.
 - EXP-002 SAI: v0.1·v0.2 코드·문서 보존. 서로 다른 localStorage 키와 자동 이전 부재는 변경하지 않음.
@@ -77,3 +77,12 @@ main 병합 커밋 `1ef7174`의 자동 검사와 GitHub Pages 배포가 성공�
 - [개정된 전체 지침](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md) · [빠른 실행 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) · [실험 관찰/변경 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
 - 기존 v1.2, 기존 제품 코드·Pages·데이터/UX 계약은 변경하지 않음. 검증되지 않은 독립 사용자 사용성·임상/접근성·실제 토큰 계측을 PASS로 표시하지 않음.
 - **정식 채택·기본 링크 전환은 사용자 최종 승인 시에만 수행.**
+
+## 2026-10-21 — 범용 v1.3 정식 채택 / 프로젝트 운영 지침 v1.2
+
+- **사용자 명시 승인:** v1.3 개정 후보를 범용 기본 기준으로 채택하고 프로젝트 운영 지침 v1.1을 v1.2로 갱신하도록 요청.
+- **정식 기준:** [v1.3 APPROVED](guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md) · [v1.3 빠른 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md) · [프로젝트 운영 지침 v1.2](project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md).
+- v1.2 디자인 DRAFT, v1.3 실험 DRAFT, 운영 v1.1은 **이력 보존**. 위의 오래된 날짜별 'v1.2 DRAFT 유지/승인 대기' 설명은 **당시 상황의 기록**이지 현재 지위를 나타내지 않는다.
+- **범위:** 디자인 기준·운영 문서와 참조 기본값만 전환. 기존 웹앱/데이터/상태/브랜드/배포 사이트에 일괄 적용하지 않음.
+- **ChatGPT 프로젝트 설정:** GitHub 문서가 바뀌어도 프로젝트 '맞춤 지침' 입력란 및 과거 v1.2 첨부파일은 **자동 변경되지 않음**. 사용자 교체/첨부 필요.
+- **검증 경계:** GitHub 원격 파일·링크·참조·원본 보존 정합성은 별도 확인. 실제 사용자 집단 사용성·임상·토큰 절감량 검증은 여전히 NOT RUN.
