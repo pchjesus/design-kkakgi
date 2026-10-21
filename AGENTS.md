@@ -1,5 +1,7 @@
 # 작업 계약
 
+> **현행 범용 디자인 기준:** `guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md` (**APPROVED, 2026-10-21**). 일상 작업은 `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md`부터, 상세 참조는 필요할 때만 확인한다. **프로젝트 운영 지침:** `project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md`. 제품별 승인 계약이 우선한다.
+
 ## 목적과 권한
 
 - 이 저장소는 상황에 맞는 디자인 판단·구현·검증을 연구한다. 개인 취향을 범용 규칙으로 자동 전환하지 않는다.
@@ -40,14 +42,14 @@
 
 - `cases/menu-roulette/`는 연구용 사례 문서·소개 페이지이며, 실행 앱 코드의 복제본이 아니다.
 - 앱의 **단일 진실 원본은 `pchjesus/menu-roulette` main**; 디자인 깎기 홈페이지의 SIDE-001 카드는 정식 GitHub Pages 실행 URL로 연결한다.
-- 이후 발견하는 디자인 교훈은 사용자 관찰·설계 가설·검증 결과를 구분하여 `LESSONS.md`에 적는다. Universal v1.2 규칙은 사용자가 별도 승인하지 않는 한 변경하지 않는다.
+- 이후 발견하는 디자인 교훈은 사용자 관찰·설계 가설·검증 결과를 구분하여 `LESSONS.md`에 적는다. 현재 **승인된 Universal v1.3**을 사용자 요청 없는 실험 피드백으로 자동 개정하지 않는다. v1.2는 이력용으로 보존한다.
 
 ## KRDS 구현 레퍼런스 고속 탐색
 
 - 요청이 KRDS·공공 UI·컴포넌트·토큰 분석에 해당할 때만 `references/krds/README.md`를 진입점으로 사용한다. 일반 디자인 작업에 자동 로드하지 않는다.
 - `component_catalog.json`에서 정확한 HTML 파일 하나를 특정 → 필요한 경우에만 `COMPONENT_GUIDE.md`의 관련 SCSS·JS·`TOKEN_GUIDE.md`로 범위를 넓힌다. 245개 원본이나 축약 번들 전체를 선로딩하지 않는다.
 - 이 저장소는 외부 KRDS 원본 HTML·CSS·JS·폰트·이미지 미러가 아니라 **출처/경로/분석/검증 가이드**를 보관한다. 공식 GitHub `main`은 변경될 수 있으므로 `SOURCE_PROVENANCE.md`의 v1.1.0 ZIP 해시와 구별한다.
-- KRDS 적용은 프로젝트별 명시 승인과 접근성·기능 회귀 검증이 필요한 **선택적 참조**다. 범용 지침 v1.2 DRAFT, 승인 UX, 이미지 정책을 자동 변경하지 않는다.
+- KRDS 적용은 프로젝트별 명시 승인과 접근성·기능 회귀 검증이 필요한 **선택적 참조**다. 승인된 범용 지침 v1.3, 프로젝트 UX, 이미지 정책을 자동 변경하지 않는다.
 
 ## KRDS 페이지·패턴 아틀라스 활용 규칙
 
@@ -62,13 +64,14 @@
 - **탐색 경로:** 사용자 과업 → `LAYOUT_AND_PLATFORM.md` 또는 `COMPONENT_ATLAS.md`에서 해결할 문제를 찾기 → `component_catalog.json`의 iOS/iPadOS 27·macOS 27 중 **확인된 이름 1~3개** 특정 → 필요할 때만 연결 Figma 라이브러리의 해당 범위를 조회. 대량 반복 검색으로 사용자 무료 계정 한도 낭비 금지.
 - 시각 계층·시스템 컨트롤·사용자 주도권 등의 **일반 원리**만 참고하고, Apple 원본 UI Kit의 아트워크/프레임/폰트·SF Symbols/컴포넌트 원본 코드를 일반 웹에 복제하거나 GitHub Public에 재배포하지 않는다. Apple Design Resources License와 SF 폰트 별도 조건 준수.
 - 연결 라이브러리의 이름/검색 결과를 확인한 것은 사실이나, 전체 원본 Apple Figma UI Kit의 세부 레이어·variant/토큰값이나 Apple 공식 게시본과의 동등성은 **미검증**이다. `SOURCE_PROVENANCE.md`를 확인해 정확히 표기한다.
-- `references/apple/REFERENCE_SELECTION.md`에서 KRDS와 Apple의 역할을 분리해 적용하고, 사용자 선호/기존 기능·안전 계약을 우선한다. 범용 지침 v1.2 DRAFT 및 프로젝트 UX를 자동 개정하지 않는다.
+- `references/apple/REFERENCE_SELECTION.md`에서 KRDS와 Apple의 역할을 분리해 적용하고, 사용자 선호/기존 기능·안전 계약을 우선한다. 승인된 범용 지침 v1.3 및 프로젝트 UX를 자동 개정하지 않는다.
 
-## 범용 v1.3 DRAFT — 승인 대기·토큰 효율 계약
+## 범용 v1.3 APPROVED — 효율·검증 계약
 
-- **현행 지침 지위:** `guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md`는 **사용자 검토용 후보/미승인**이다. 기존 v1.2 DRAFT·기존 프로젝트 계약/지침을 묵시적으로 대체하지 않는다. 사용자가 채택을 승인하면 별도 결정/상태 업데이트를 수행한다.
-- 디자인 검토가 v1.3 후보 자체를 대상으로 할 때는 먼저 `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md`를 읽고, 복잡한 신규 설계나 위험한 변경 때에만 v1.3 본문을 추가로 읽는다. v1.2의 세부 역사적 근거는 차이가 필요한 경우에만 참조.
-- **디자인 시스템 선택:** `references/DESIGN_SYSTEM_SELECTION.md`를 필요할 때 보고, KRDS(웹 IA/서비스 흐름) · Apple(플랫폼 계층/조작) · Material 3(적응형 탐색/컴포넌트)을 해당 문제에 **선택적** 적용한다. 3개 라이브러리와 모든 Figma 자산을 매번 동시에 로드하지 않는다.
-- Figma `Material 3 Design Kit`은 연결된 **Community 라이브러리의 일부 검색 이름**만 확인됨. Apple과 마찬가지로 원본 전체/variant/토큰/공식 소스 동일성은 미검증. 자세한 근거 `references/material3/README.md`.
-- 돌봄 플랫폼은 환자 중심 PRD v0.2가 **현재 ACTIVE DESIGN DRAFT**; 병원 A1/A2/A3는 확장 설계/별도 시연, 실제 의료기관 제휴·임상 검증·구현 인증 아님. 고위험 상태/검토·공개 계약과 프로젝트 전문 요건을 범용 미학으로 대체하지 않는다.
-- **비용 절감이 MUST 면제가 아님:** 기존 상태/저장 데이터 호환성, 접근성, 민감정보, 실제 검증 범위, 안전/권한 계약은 생략할 수 없다.
+- **현행 기준:** `guidelines/universal/Universal_Visual_Design_UI_UX_Guidelines_v1.3.md`은 **2026-10-21 사용자 정식 승인본**이다. `guidelines/universal/drafts/`의 v1.2 및 v1.3 DRAFT는 **이력·비교용**, 기본 기준이 아니다.
+- **진입 비용:** 일반 작업은 `guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START.md`에서 시작하고, 중요 신규 설계/접근성/상태·저장·권한 변경은 본문에서 필요한 MUST를 확인한다. 전체 레퍼런스 선로딩은 금지하며, 필요 시 `references/DESIGN_SYSTEM_SELECTION.md`로 KRDS/Apple/Material 3 중 적합한 곳만 조회한다.
+- **운영 절차:** `project/PROJECT_OPERATING_INSTRUCTIONS_v1.2.md`가 현행 프로젝트의 실험·비교·검증·개정 계약이다. A/B 실험에서 선택한 시안과 변수가 **실제로 렌더링·적용되는지** 확인한 후 평가한다. 구현 결함/평가자의 취향/지침 결함을 구분한다.
+- **출처 경계:** Apple 27 Figma는 일부 검색된 이름(95개)만 확인되었고, Material 3도 선별된 Community 라이브러리 명칭만 확인했다. 두 시스템의 전체 variant·토큰값과 공식 파일 동일성은 미검증. `references/apple/SOURCE_PROVENANCE.md`, `references/material3/README.md` 참조.
+- **돌봄 플랫폼 근거 경계:** 환자 중심 PRD v0.2는 현재 ACTIVE DESIGN DRAFT; 병원 A1/A2/A3는 별도 연구/확장/시연 설계. 실제 의료기관 제휴·임상/고령 환자 검증이나 안전 인증으로 간주하지 않는다.
+- **안전 계약:** 비용 절감을 이유로 접근성, 기존 상태·데이터 호환성, 민감정보, 실제 검사 근거, 안전·권한 계약을 생략하지 않는다.
+- **권한 경계:** v1.3 채택은 다른 제품의 디자인·저장 구조·브랜드·기능 또는 Pages 배포를 일괄 승인하지 않는다. 별도 사용자 요청과 제품별 검증 계약이 필요하다.
