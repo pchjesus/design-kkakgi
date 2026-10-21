@@ -94,3 +94,11 @@
 - 새 [디자인 시스템 선택 지도](references/DESIGN_SYSTEM_SELECTION.md) 및 `references/material3/README.md` 생성. 사용자 연결 Figma Material 3 Community Kit에서 Button/Nav Rail/Drawer/Text field/Card/Dialog/Search/Tabs 계열을 선별 검색. Google Android Material 컴포넌트 자료의 M3 Expressive 변화 참고. Kit 전체 인벤토리와 공식 파일 동등성은 NOT RUN.
 - 돌봄 플랫폼의 **환자 중심 현재 ACTIVE DRAFT**와 **병원 A1/A2/A3 확장 설계**를 구분. 의료진/환자 역할의 정보 밀도·근거/결측·검토/승인/환자 공개 범위를 범용 UX 원리의 사례로 제시하되 실증 효과 미주장.
 - 리뷰 상태: **DRAFT / 사용자 승인 전**. 기존 v1.2 및 제품 코드/정식 사이트/기존 프로젝트 상태 불변. 신규 시안의 실제 사람 대상 사용성·완전한 Figma variants·실기기 검증은 NOT RUN.
+
+## 2026-10-21 — 1~3차 시안 피드백과 v1.3 개정 후보 보완
+
+- 사용자 직접 피드백 1차 3유형 비교, 2차 제품 4건/정보 2건, 3차 제품·정보 각 1건을 대조. 제품의 자연광 계열 색·절제된 세리프/브랜드명 반복, 의미 있는 제목 줄바꿈, 정보형 상단 검색·필터와 목록:상세 가변 폭, 업무형 적절한 정보 위계가 핵심 관찰.
+- 이 결과는 **사용자 1인의 시각적 평가**이며 전체 사용성·임상 검증 근거가 아님. 2차 초기 A/B 표시 오류는 구현·테스트 문제로 분리.
+- v1.3 DRAFT는 기존 MUST 추가 없이 §3.1 레이아웃·§3.2 타이포·§3.3 색·§6.4 A/B 확인 문장을 **수정**, 이력과 기존 증거 상태 정정. [빠른 카드](guidelines/quick-start/Universal_Visual_Design_v1.3_QUICK_START_DRAFT.md) 및 [개정 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md) 동기화.
+- 지침 본문 v1.2 **25,569자**, v1.3 최초 **13,450자** → 1~3차 피드백 개정 후보 **14,136자** (**v1.2 대비 44.7% 축소**). 문자 수이며 실제 토큰 사용량 측정값 아님.
+- v1.2 원본, 기존 사례 HTML·서비스 코드/Pages, 기본 지침 채택 상태는 변경하지 않음. **사용자 승인 대기**.
