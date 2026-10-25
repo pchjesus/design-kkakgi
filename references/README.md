@@ -67,3 +67,9 @@
 - [**KRDS × Apple × Material 3 + 돌봄 플랫폼**](DESIGN_SYSTEM_SELECTION.md): 사용자 과업과 매체에 따라 참조 대상을 선택하고 중복 탐색을 줄임.
 - [**Material 3 연결 Figma 라이브러리 선별 조사**](material3/README.md): 적응형 Rail/Drawer, 버튼, 입력, 탭·Dialog 등 **실제 검색된 이름**과 M3 Expressive 버전 경계. 전수 조사/전체 variants·토큰 값 미검증.
 - [범용 v1.3 DRAFT](../guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md)의 선택적 참조 모듈이며, 개인 취향 REF-001~072에는 포함하지 않는다.
+
+## Creative Coding · 인터랙션/모션/색채 선택형 참고자료 (2026-10-26)
+
+- [Creative Coding 탐색 허브](creative-coding/README.md): Castle Jelly 공개 프롬프트·Anime.js·Coolors·Codrops의 실제 기능·역할·출처·한계를 구분한 참고자료.
+- [인터랙션·시뮬레이션 설계 플레이북 v0.1 DRAFT](creative-coding/INTERACTION_PLAYBOOK_v0.1_DRAFT.md): 시각→행동→상태→구현→검증 8칸 명세, 작업 유형별 지시문, 회귀/접근성/성능 검사 규칙.
+- 승인된 범용 v1.3과 프로젝트 운영 v1.2는 **변경 없음**. 실제 코딩·제품 적용·실기기 검증 **NOT RUN**이며, 이미지/외부 코드를 복제하지 않음.
