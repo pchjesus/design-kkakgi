@@ -55,3 +55,9 @@
 - [v1.2 과거 DRAFT](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.2.md) · [v1.3 실험 초안](guidelines/universal/drafts/Universal_Visual_Design_UI_UX_Guidelines_v1.3_DRAFT.md) · [1~3차 실험/개정 감사](guidelines/universal/drafts/V1_3_REVISION_AUDIT.md).
 - [KRDS × Apple × Material 3 × 돌봄 플랫폼 선택 지도](references/DESIGN_SYSTEM_SELECTION.md) · [Material 3 선별 조사](references/material3/README.md).
 - **범위:** 문서 기준과 운영 절차의 승인·전환만 수행. 기존 실서비스 코드, 브랜드, 데이터/저장, GitHub Pages 동작을 일괄 변경하거나 배포하지 않음. ChatGPT 프로젝트 설정의 맞춤 지침/첨부물은 사용자가 별도 갱신해야 한다.
+
+## Creative Coding · 인터랙티브 디자인 신규 참고자료 (2026-10-26)
+
+- [Creative Coding 선택형 탐색 허브](references/creative-coding/README.md): Castle Jelly, Anime.js, Coolors, Codrops의 역할·한계·출처.
+- [상황별 디자인/개발 지시문과 검증 플레이북 v0.1 DRAFT](references/creative-coding/INTERACTION_PLAYBOOK_v0.1_DRAFT.md): 행동·상태·모션·시뮬레이션 명세와 사용 시점.
+- **연구 참고자료만 추가.** Universal v1.3 APPROVED / 운영 v1.2, 기존 프로젝트 코드와 GitHub Pages 배포는 변경하지 않음.
