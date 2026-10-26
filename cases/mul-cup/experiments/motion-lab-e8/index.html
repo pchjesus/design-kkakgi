@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUL. Motion Lab — 착지 반동 A/B 실험</title>
+<meta name="description" content="기존 E8 컵 착지 반동 19px과 변형 10px을 한 가지 변수만 바꿔 비교합니다.">
+<style>
+:root {color-scheme:light;--ink:#183f54;--sub:#526f80;--stroke:#cee0e8;--cup-tint:#b7d9e7;--cup-ink:#386377;--bg:#f5f9fb; font-family:system-ui,-apple-system,Segoe UI,"Noto Sans KR",sans-serif}
+* {box-sizing:border-box}
+body{margin:0;background:linear-gradient(#f9fcfd,#eaf4f8);color:var(--ink);line-height:1.6}
+main{width:min(1100px,calc(100% - 32px));margin:auto;padding:36px 0 80px}
+header{margin:0 0 28px}
+.eyebrow{font-size:12px;letter-spacing:.13em;font-weight:700;color:#567c91}
+h1{font-size:clamp(30px,4vw,46px);margin:8px 0 8px;line-height:1.18;letter-spacing:-.04em}
+.intro{max-width:780px;color:var(--sub);margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.meta span{font-size:12px;border:1px solid var(--stroke);padding:5px 9px;border-radius:99px;background:#fff9}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:28px 0 18px}
+button{border:1px solid #9dbdcd;border-radius:12px;background:#fff;color:#17455e;font:inherit;font-weight:700;cursor:pointer;min-height:44px;padding:8px 16px}
+button:hover{background:#e9f3f7}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #2f88b3;outline-offset:3px}
+button.primary{background:#214e64;border-color:#214e64;color:#fff}
+button.primary:hover{background:#15394c}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{border:1px solid #d1e2e9;background:linear-gradient(150deg,#f7fbff,#fff 80%);border-radius:24px;overflow:hidden;min-width:0;padding:22px;box-shadow:0 12px 36px #31536f12}
+.card h2{font-size:22px;margin:2px 0 0;letter-spacing:-.025em}
+.card p{color:var(--sub);margin:0 0 8px;font-size:14px}
+.measure{font-size:32px;font-weight:750;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stage{position:relative;height:310px;display:flex;justify-content:center;align-items:flex-end;overflow:hidden}
+.cup{width:min(232px,80%);height:auto;transform-origin:50% 88%;transform:translate3d(0,0,0) rotate(16deg);opacity:1;will-change:auto;display:block}
+.cup svg{display:block;width:100%;height:auto}
+.contact{position:absolute;bottom:2px;left:33%;width:34%;height:16px;border-radius:50%;background:radial-gradient(ellipse,#41697e5b,transparent 70%);filter:blur(6px);opacity:.5;pointer-events:none}
+.stage.is-playing .cup{animation:e8-motion-arrival 880ms both;will-change:transform,opacity}
+.stage.is-playing .contact{animation:e8-contact 880ms both}
+@keyframes e8-motion-arrival{
+  0%{opacity:0;transform:translate3d(0,-112px,0) rotate(16deg);animation-timing-function:cubic-bezier(.48,.02,.82,.72)}
+  10%{opacity:1}
+  54%{opacity:1;transform:translate3d(0,0,0) rotate(16deg);animation-timing-function:cubic-bezier(.08,.72,.28,1)}
+  76%{transform:translate3d(0,var(--bounce-height,-19px),0) rotate(16deg);animation-timing-function:cubic-bezier(.48,.03,.8,.8)}
+  100%{opacity:1;transform:translate3d(0,0,0) rotate(16deg)}
+}
+@keyframes e8-contact{
+  0%,10%{opacity:0;transform:scale(.65)}
+  54%{opacity:.9;transform:scale(1.1)}
+  76%{opacity:.35;transform:scale(.86)}
+  100%{opacity:.5;transform:scale(1)}
+}
+.controls{border-top:1px solid #e1ebf0;padding:16px 0 0;margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.controls label{font-weight:650}
+input[type=range]{width:min(240px,100%);accent-color:#226388;touch-action:pan-y}
+.note{color:var(--sub);font-size:13px}
+.lesson{border:1px solid #d1e2e9;border-radius:20px;background:#fffdfc;margin-top:22px;padding:20px 24px}
+.lesson h2{font-size:20px;margin:0 0 7px}
+.lesson h3{font-size:16px;margin:16px 0 5px}
+.lesson p{margin:5px 0;color:#415e6e}
+pre{overflow:auto;background:#142e3b;color:#f0f8fb;border-radius:12px;padding:14px;font-size:13px;line-height:1.6}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+a{color:#246286;text-underline-offset:3px}
+.status{font-size:13px;color:#486c7c;margin:0 0 10px;min-height:20px}
+footer{font-size:13px;color:#567486;margin:20px 0 0}
+@media(max-width:720px){.cards{grid-template-columns:1fr}.card{padding:18px}.stage{height:290px}.toolbar{margin:18px 0 12px}main{padding-top:22px}}
+@media(prefers-reduced-motion:reduce){
+ .stage.is-playing .cup,.stage.is-playing .contact{animation:none!important}
+ .cup{transform:rotate(16deg);opacity:1}
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">DESIGN KKAKGI / EXP-001 / E8 MOTION LAB</div>
+<h1>컵의 무게감은 어디서 느껴질까?</h1>
+<p class="intro">승인된 MUL. E8의 <strong>실제 SVG 대체 그래픽과 최종 CSS 착지 타이밍</strong>을 복제한 독립 학습 실험이야. 880ms 전체 시간·착지 시점·가속도는 그대로 두고, <strong>반동 높이 한 가지</strong>만 비교해 봐. 본편 3D·구매 기능은 건드리지 않았어.</p>
+<div class="meta"><span>원본 E8 유지</span><span>A 19px / B 10px</span><span>880ms · 54% 착지 · 76% 반동</span><span>CSS/JavaScript 입문</span></div>
+</header>
+<div class="toolbar">
+<button id="both" class="primary" type="button">A · B 동시에 재생</button>
+<button id="only-a" type="button">A만 재생</button>
+<button id="only-b" type="button">B만 재생</button>
+</div>
+<p class="status" id="status" role="status" aria-live="polite">재생 버튼을 눌러 두 컵의 착지 차이를 관찰해 봐.</p>
+<div class="cards">
+<section class="card" aria-labelledby="label-a">
+<div class="eyebrow">A / ORIGINAL E8</div><h2 id="label-a">경쾌한 반동</h2><p>승인된 E8과 동일한 반동 높이</p><div class="measure">19px</div>
+<div class="stage" id="stage-a" style="--bounce-height:-19px" role="img" aria-label="기존 E8 반동 19픽셀을 재생하는 유리컵"><div class="contact" aria-hidden="true"></div><div class="cup" aria-hidden="true"><svg aria-hidden="true" class="cup-svg" focusable="false" viewbox="0 0 440 510" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="a-glass-stage" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".55"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="a-drink-stage" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="a-light-stage" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".05"></stop><stop offset=".5" stop-color="#fff" stop-opacity=".85"></stop><stop offset="1" stop-color="#fff" stop-opacity=".04"></stop></lineargradient>
+<filter height="300%" id="a-shadow-stage" width="220%" x="-60%" y="-100%"><fegaussianblur stddeviation="16"></fegaussianblur></filter>
+<clippath id="a-clip-stage"><path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z"></path></clippath>
+</defs>
+<ellipse cx="220" cy="468" fill="#254b57" filter="url(#a-shadow-stage)" opacity=".13" rx="122" ry="16"></ellipse>
+<g class="glass-turn">
+<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#a-glass-stage)" class="glass-wall" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
+<g clip-path="url(#a-clip-stage)"><path class="glass-foot" d="M139 415 Q220 441 302 415"/>
+<path d="M122 268 Q210 282 318 266 L304 428 Q280 447 219 448 Q157 445 140 426Z" fill="url(#a-drink-stage)" opacity=".54"></path>
+<ellipse cx="220" cy="268" fill="var(--cup-tint)" class="water-meniscus" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
+<path class="water-light" d="M132 267 Q220 288 308 267"/><path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#a-light-stage)" stroke-linecap="round" stroke-width="19"></path>
+<path d="M289 143 Q285 299 277 390" fill="none" opacity=".42" stroke="#fff" stroke-linecap="round" stroke-width="7"></path>
+<path d="M151 427 Q220 451 291 425" fill="none" opacity=".64" stroke="#fff" stroke-width="5"></path>
+<g class="cup-logo" opacity=".68"><path d="M211 197C211 190 220 177 220 177S229 190 229 197A9 9 0 0 1 211 197Z" fill="none" stroke="var(--cup-ink)" stroke-width="1.8"></path><text fill="var(--cup-ink)" font-size="11" font-weight="600" letter-spacing="2.5" text-anchor="middle" x="220" y="225">MUL.</text></g>
+</g>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" class="glass-rim" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".23" rx="104" ry="12" stroke="#fff" stroke-opacity=".85" stroke-width="2"></ellipse>
+<path d="M141 422 Q146 444 220 449 Q292 446 300 420" fill="none" opacity=".55" stroke="#fff" stroke-width="5"></path>
+</g>
+</svg></div></div>
+<p class="note">컵은 찌그러지지 않고 한 번만 튀어 올라. 유리의 단단함을 유지하는 동작이야.</p>
+</section>
+<section class="card" aria-labelledby="label-b">
+<div class="eyebrow">B / TEST VARIANT</div><h2 id="label-b">절제된 반동</h2><p>높이만 수정하는 실험 시안</p><div class="measure"><output id="height-label" for="height">10</output>px</div>
+<div class="stage" id="stage-b" style="--bounce-height:-10px" role="img" aria-label="실험 반동 10픽셀을 재생하는 유리컵"><div class="contact" aria-hidden="true"></div><div class="cup" aria-hidden="true"><svg aria-hidden="true" class="cup-svg" focusable="false" viewbox="0 0 440 510" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="b-glass-stage" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#d4e5eb" stop-opacity=".55"></stop><stop offset="20%" stop-color="var(--cup-tint)" stop-opacity=".26"></stop><stop offset="57%" stop-color="#fff" stop-opacity=".16"></stop><stop offset="86%" stop-color="var(--cup-tint)" stop-opacity=".42"></stop><stop offset="100%" stop-color="#c0d5dc" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="b-drink-stage" x1="0" x2=".4" y1="0" y2="1"><stop offset="0%" stop-color="var(--cup-tint)" stop-opacity=".38"></stop><stop offset="100%" stop-color="var(--cup-tint)" stop-opacity=".5"></stop></lineargradient>
+<lineargradient id="b-light-stage" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".05"></stop><stop offset=".5" stop-color="#fff" stop-opacity=".85"></stop><stop offset="1" stop-color="#fff" stop-opacity=".04"></stop></lineargradient>
+<filter height="300%" id="b-shadow-stage" width="220%" x="-60%" y="-100%"><fegaussianblur stddeviation="16"></fegaussianblur></filter>
+<clippath id="b-clip-stage"><path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z"></path></clippath>
+</defs>
+<ellipse cx="220" cy="468" fill="#254b57" filter="url(#b-shadow-stage)" opacity=".13" rx="122" ry="16"></ellipse>
+<g class="glass-turn">
+<path d="M108 89 Q110 274 139 420 Q147 447 219 449 Q293 447 301 420 Q330 276 332 89Z" fill="url(#b-glass-stage)" class="glass-wall" stroke="#a4c3cd" stroke-opacity=".68" stroke-width="2"></path>
+<g clip-path="url(#b-clip-stage)"><path class="glass-foot" d="M139 415 Q220 441 302 415"/>
+<path d="M122 268 Q210 282 318 266 L304 428 Q280 447 219 448 Q157 445 140 426Z" fill="url(#b-drink-stage)" opacity=".54"></path>
+<ellipse cx="220" cy="268" fill="var(--cup-tint)" class="water-meniscus" fill-opacity=".31" rx="103" ry="14" stroke="var(--cup-tint)" stroke-opacity=".48"></ellipse>
+<path class="water-light" d="M132 267 Q220 288 308 267"/><path class="glass-glint" d="M151 126 Q151 283 167 408" fill="none" opacity=".9" stroke="url(#b-light-stage)" stroke-linecap="round" stroke-width="19"></path>
+<path d="M289 143 Q285 299 277 390" fill="none" opacity=".42" stroke="#fff" stroke-linecap="round" stroke-width="7"></path>
+<path d="M151 427 Q220 451 291 425" fill="none" opacity=".64" stroke="#fff" stroke-width="5"></path>
+<g class="cup-logo" opacity=".68"><path d="M211 197C211 190 220 177 220 177S229 190 229 197A9 9 0 0 1 211 197Z" fill="none" stroke="var(--cup-ink)" stroke-width="1.8"></path><text fill="var(--cup-ink)" font-size="11" font-weight="600" letter-spacing="2.5" text-anchor="middle" x="220" y="225">MUL.</text></g>
+</g>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".26" class="glass-rim" rx="113" ry="20" stroke="#9bb7c1" stroke-width="4"></ellipse>
+<ellipse cx="220" cy="88" fill="#fff" fill-opacity=".23" rx="104" ry="12" stroke="#fff" stroke-opacity=".85" stroke-width="2"></ellipse>
+<path d="M141 422 Q146 444 220 449 Q292 446 300 420" fill="none" opacity=".55" stroke="#fff" stroke-width="5"></path>
+</g>
+</svg></div></div>
+<div class="controls"><label for="height">B 높이 직접 바꾸기</label><input id="height" type="range" min="0" max="30" value="10" step="1" aria-describedby="range-note"/><span class="note" id="range-note">0~30px</span></div>
+<p class="note">슬라이더에서 5px, 10px, 19px, 25px를 차례로 비교해 봐. 바꾸면 B를 다시 재생해.</p>
+</section>
+</div>
+<section class="lesson">
+<h2>코드 읽기 연습: 딱 한 줄만 바꾼다면?</h2>
+<p>원본 E8의 최종 착지 효과는 <strong>54% 시점에 닿고 → 76% 시점에 반동 → 100%에 정착</strong>하는 구조야. 여기에선 76%의 이동 거리만 변수로 뺐어.</p>
+<pre><code>/* E8 원본 — 76%에서 19px 위로 */
+76% { transform: translate3d(0, -19px, 0) rotate(16deg); }
+
+/* Motion Lab — 두 안을 하나의 CSS로 비교 */
+76% { transform: translate3d(0, var(--bounce-height), 0) rotate(16deg); }
+
+/* A는 -19px / B는 -10px */
+</code></pre>
+<h3>이해하면 좋은 개념 세 가지</h3>
+<p><strong>HTML</strong>은 컵과 재생 버튼의 자리, <strong>CSS</strong>는 착지 동작과 색·크기, <strong>JavaScript</strong>는 버튼을 누르면 애니메이션을 다시 시작하는 역할이야.</p>
+<p>이제 네가 직접 B의 높이를 바꿔보면서 “몇 px가 더 단단하고 자연스럽게 보이는가?”를 비교하면 돼. 다음 실험에서는 높이가 아닌 <em>전체 시간</em>을 바꿔볼 수 있어.</p>
+<h3>실험 범위와 주의점</h3>
+<p>이 페이지는 원본의 SVG 대체 그래픽을 사용한 <strong>착지 모션 비교기</strong>야. 실제 3D WebGL 렌더링이나 구매 화면은 포함하지 않아. 움직임 감소 설정을 켜면 애니메이션을 실행하지 않으며, 실제 3D 본편의 동작 검증으로 간주하지 않아.</p>
+</section>
+<footer><a href="../../latest/">승인된 MUL. E8 원본 보기</a> · <a href="https://github.com/pchjesus/design-kkakgi/blob/main/cases/mul-cup/latest/DESIGN_REVIEW_E8.md">E8 설계 기록</a> · Motion Lab은 독립 실험이며 main/Pages 자동 배포 대상이 아님.</footer>
+</main>
+<script>
+(() => {
+  'use strict';
+  const a=document.querySelector('#stage-a'),b=document.querySelector('#stage-b');
+  const height=document.querySelector('#height'),out=document.querySelector('#height-label');
+  const status=document.querySelector('#status');
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  const timers=new WeakMap();
+  function replay(stage) {
+    if(reduced.matches){status.textContent='기기의 움직임 감소 설정이 켜져 있어 애니메이션을 재생하지 않아.';return;}
+    clearTimeout(timers.get(stage));
+    stage.classList.remove('is-playing');
+    void stage.offsetWidth; // 강제로 이전 프레임을 확정해 동일 CSS 애니메이션을 다시 시작
+    stage.classList.add('is-playing');
+    timers.set(stage,setTimeout(()=>stage.classList.remove('is-playing'),900));
+  }
+  document.querySelector('#both').addEventListener('click',()=>{replay(a);replay(b);if(!reduced.matches)status.textContent='A(19px)와 B('+height.value+'px)를 함께 재생했어.';});
+  document.querySelector('#only-a').addEventListener('click',()=>{replay(a);if(!reduced.matches)status.textContent='A안 19px을 재생했어.';});
+  document.querySelector('#only-b').addEventListener('click',()=>{replay(b);if(!reduced.matches)status.textContent='B안 '+height.value+'px을 재생했어.';});
+  height.addEventListener('input',()=>{
+    const n=Number(height.value);
+    b.style.setProperty('--bounce-height',(-n)+'px');
+    b.setAttribute('aria-label','실험 반동 '+n+'픽셀을 재생하는 유리컵');
+    out.textContent=String(n);
+    replay(b);
+    if(!reduced.matches)status.textContent='B의 반동 높이를 '+n+'px로 바꾸고 재생했어.';
+  });
+})();
+</script>
+</body>
+</html>
