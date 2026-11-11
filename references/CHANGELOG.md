@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-11-11 — 레이아웃·첫 사용 경험 레퍼런스 3장 반영
+
+- `UI_LAYOUT_FIRST_USE_ATLAS_v0.1_20261111.md` 등록: 사용자 제공 **3장×9칸=27칸**(SRC-19~21)의 목록·순서를 보존, 기존 171칸과 누적 **198개 원자료 칸(중복 포함)**으로 기록. 서로 다른 UI 198종이라고 주장하지 않음.
+- SRC-19 레이아웃 9개(Hero, Bento, Split, Card grid, Sidebar, Magazine, Dashboard, Z-pattern, Full bleed), SRC-20 앱 첫 사용 경험 9개(Splash, Onboarding, Permission, Coach mark, Social login, Terms, Profile, Skeleton, Welcome) 분석 및 비교·사용/오용 기준 추가.
+- SRC-21 iOS 피드백 9개는 기존 **SRC-15의 동일 목록**으로 처리해 상세 설명은 기존 문서에 연결. Apple/Android/MDN/NN/g 공식 자료와 캡처 근거를 분리했고, 원본 Instagram 영상의 동작·직접 조작/사용성 검증은 **NOT RUN**.
+- 원본 스크린샷·동영상·폰트·외부 에셋 업로드 없음. `references/README.md`·루트 README·기존 아틀라스 상호참조만 갱신, **범용 v1.3·앱·Pages 미변경**.
+
 ## 2026-11-10 — COLOR-001 색채 레퍼런스 등록
 
 - `COLOR_BALANCE_CONTRAST_NOTE_v0.1_20261110.md` 신규: 60/30/10 설명용 색면 도식에 실린 3개 사이트의 대비를 분석하고, **버터크림·그린·핑크 1안 선호**, 핑크→주황 변주 제안(미평가), 블루·라임 2안 긍정, 네이비·블루·오렌지 3안 무난함을 사용자 직접 진술로 기록.
