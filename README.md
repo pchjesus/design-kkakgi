@@ -8,6 +8,7 @@
 - [**UI 패턴 현장 아틀라스 — 신규 12개 캡처 분류와 선택 기준**](references/UI_PATTERN_FIELD_ATLAS_v0.1_20261105.md): 108개 항목(중복 포함)의 출처별 명칭과 실무 선택표, 로딩·빈 상태·입력·알림·시각 스타일·행동 심리 분리. 앞선 9종 심층 아틀라스와 상호 참조.
 - [**UI 움직임·전환·완료 피드백 심층 근거 (추가 6장·54항목)**](references/UI_MOTION_BEHAVIOR_ADDENDUM_v0.1_20261108.md): 텍스트 모션·화면 이동·iOS 피드백·완료 표시·헷갈리는 컴포넌트 비교를 공식 구현 자료와 연결. 원본 소셜 영상의 실제 프레임은 미검증.
 - [**화면 배치·앱 첫 사용 UX 아틀라스 (3장·27칸)**](references/UI_LAYOUT_FIRST_USE_ATLAS_v0.1_20261111.md): Hero/Bento/Split/Magazine 등 배치 9종, Splash/Onboarding/Permission 등 첫 사용 9종, 기존 iOS 피드백 9종 중복 연계. 원본 영상·실기기 NOT RUN.
+- [**날짜 선택·행동심리 보강 (2장·18칸)**](references/UI_DATE_SELECTION_BEHAVIOR_ATLAS_v0.1_20261111.md): Calendar/Wheel/Date range/Time slots/Recurrence 등 날짜 UX 9종 신규 정리, 행동심리 9종은 기존 분류와 연결해 심리 효과 과장·기만적 패턴의 위험을 보강.
 - [**텍스트 모션 실험 01 — 페이드·스크램블 사용자 평가**](references/TEXT_MOTION_LAB_NOTE_01_20261108.md): 짧은 단회 실험의 실제 취향 반응과 구현 한계, 이후 레퍼런스 중심 운영 방침을 기록. **기존 앱/사이트는 변경 없음.**
 
 ## 디자인 깎기의 출발점 — ORIGIN-001
