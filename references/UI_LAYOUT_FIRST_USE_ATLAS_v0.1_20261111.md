@@ -11,6 +11,8 @@
 
 > **후속 자료 (2026-11-11):** [SRC-22 날짜 선택·SRC-23 행동심리 보강](UI_DATE_SELECTION_BEHAVIOR_ATLAS_v0.1_20261111.md)으로 이어진다. 본 문서의 198칸은 당시 집계이므로 소급 변경하지 않는다.
 
+> **후속 목록 구조 연구 (2026-11-12):** [SRC-24 List/Grid/Card/Carousel/Table/Timeline/Accordion/Masonry/Infinite scroll](UI_LIST_PRESENTATION_ATLAS_v0.1_20261112.md)에서 SRC-19의 Card grid·Bento와 차이를 비교한다. 이 문서의 198칸은 작성 당시 집계로 보존한다.
+
 ## 1. 원본 캡처 인벤토리 — 표기 순서와 범위 보존
 
 | ID | 캡처 제목 | 01–09 |
