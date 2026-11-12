@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2026-11-12 — SRC-24 목록 표시·비교·탐색 9종 신규 분석
+
+- `UI_LIST_PRESENTATION_ATLAS_v0.1_20261112.md` 추가: 사용자 제공 @uxwoodytips 정적 캡처 **1장×9칸=9칸(SRC-24)**. 기존 누적 216칸에서 **225칸(중복 포함)**으로 확장. 225개 고유 패턴 또는 사용자 선호라고 주장하지 않음.
+- List/Grid/Card/Carousel/Table/Timeline/Accordion/Masonry/Infinite scroll을 동급 대안으로 보지 않고 **정보 단위·배치·의미 관계·조작·데이터 로딩**으로 구분. 기존 SRC-01/08/16/19와 중복 연결하며 선택 과업·반례·키보드·상태 복구·모바일 고려사항 정리.
+- W3C WAI-ARIA Carousel·Accordion, MDN Grid lanes, NN/g Infinite scroll 근거 링크. 정적 캡처 확인 PASS, Instagram 원본 모션·실제 작동·접근성·선호 검증 NOT RUN. 외부 이미지·영상·폰트 비공개. **승인 범용 v1.3·앱·Pages 미변경**.
+
 ## 2026-11-12 — COLOR-002·003 개인 선호와 기능적 색채 레퍼런스 보강
 
 - `COLOR_APPLICATION_MATERIAL_ATLAS_v0.1_20261112.md` 등록: @quanovaai 표기의 사용자 제공 정적 캡처 **3장 + 6장**을 두 연구 묶음으로 구분. **COLOR-002:** Blush Sand/Cocoa Brown/Electric Blue를 3안 중 가장 선호한다는 **직접 평가**와 기존 COLOR-001·H-03/H-08 연결. **COLOR-003:** 6종 조합에는 강한 미적 선호가 없다는 직접 평가를 보존하면서, **분해도 내 부품/라벨의 강조색**, 제품색·물성의 UI 연결, 색만 바꾼 레이아웃의 반복성에 주목.
