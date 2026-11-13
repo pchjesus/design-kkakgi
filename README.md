@@ -15,6 +15,7 @@
 - [**화면 배치·앱 첫 사용 UX 아틀라스 (3장·27칸)**](references/UI_LAYOUT_FIRST_USE_ATLAS_v0.1_20261111.md): Hero/Bento/Split/Magazine 등 배치 9종, Splash/Onboarding/Permission 등 첫 사용 9종, 기존 iOS 피드백 9종 중복 연계. 원본 영상·실기기 NOT RUN.
 - [**날짜 선택·행동심리 보강 (2장·18칸)**](references/UI_DATE_SELECTION_BEHAVIOR_ATLAS_v0.1_20261111.md): Calendar/Wheel/Date range/Time slots/Recurrence 등 날짜 UX 9종 신규 정리, 행동심리 9종은 기존 분류와 연결해 심리 효과 과장·기만적 패턴의 위험을 보강.
 - [**목록 표현·비교·탐색 패턴 9종 (SRC-24)**](references/UI_LIST_PRESENTATION_ATLAS_v0.1_20261112.md): List/Grid/Card/Table/Timeline과 Carousel/Accordion/Infinite scroll의 서로 다른 역할을 구분하고, Masonry와 Bento의 차이·오용·접근성·상태 복구를 정리. 신규 캡처 1장, 누적 225칸(중복 포함).
+- [**데이터 시각화 9종 + 검색 UX 9종 (SRC-25·26)**](references/UI_DATA_VISUALIZATION_SEARCH_ATLAS_v0.1_20261113.md): 차트와 KPI의 의미, 도넛과 진행률의 구별, 검색 입력·제안·필터·정렬·결과 없음의 상태와 복구, 공식 자료 근거. 캡처 2장, 누적 243칸(중복 포함).
 - [**텍스트 모션 실험 01 — 페이드·스크램블 사용자 평가**](references/TEXT_MOTION_LAB_NOTE_01_20261108.md): 짧은 단회 실험의 실제 취향 반응과 구현 한계, 이후 레퍼런스 중심 운영 방침을 기록. **기존 앱/사이트는 변경 없음.**
 
 ## 디자인 깎기의 출발점 — ORIGIN-001
