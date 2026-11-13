@@ -30,6 +30,8 @@
 
 > **후속 사례 (2026-11-12):** [SRC-24 목록 표현·비교·탐색 9종](UI_LIST_PRESENTATION_ATLAS_v0.1_20261112.md)에서 본 문서의 **SRC-01 Carousel, SRC-08 Infinite scroll** 및 후속 **SRC-16 Card vs List**를 관련 목록 패턴으로 연결한다. 기존 117칸은 작성 당시의 기록으로 유지한다.
 
+> **후속 데이터·검색 연구 (2026-11-13):** [SRC-25 데이터 시각화 / SRC-26 검색 UX](UI_DATA_VISUALIZATION_SEARCH_ATLAS_v0.1_20261113.md). 본 문서의 **SRC-02 Search bar, SRC-06 No search results, SRC-08 탭, SRC-12 Progress ring**을 기능 흐름·데이터 의미 관점에서 보완한다. 이 문서의 기존 117칸은 당시 집계로 보존한다.
+
 ## 2. 선택을 위한 상위 분류 — 11개 계층이 아니라 11개 탐색 입구
 
 | 탐색 입구 | 관련 SRC | 목적에 따른 질문 | 구현/효과의 확인 범위 |
