@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-11-13 — SRC-25 데이터 시각화·SRC-26 검색 경험 각 9종 기록
+
+- `UI_DATA_VISUALIZATION_SEARCH_ATLAS_v0.1_20261113.md` 신규: 사용자 제공 정적 캡처 **2장 × 9칸 = 18칸**(SRC-25·26). 기존 225칸에서 누적 **243칸(중복 포함)**으로 확장. 독립 UI 유형 243종이나 개인적 선호 평가 243건이라는 뜻은 아님.
+- 데이터 시각화 9종(Bar/Line/Donut/Sparkline/Gauge/Progress ring/Heatmap/KPI card/Stacked bar): **비교·추세·구성·범위 내 상태·완료·핵심 수치**의 데이터 계약을 구분. 특히 Donut과 Progress ring, KPI 카드와 차트의 차이, 축·단위·결측·색상/수치 대안, FT Visual Vocabulary 외부 근거 연결.
+- 검색 UX 9종(Search bar/Autocomplete/Recent/Trending/Filter/Sort/Highlight/No results/Scope tabs): **입력→제안→범위·결과 제어→표시→빈 상태 복구**로 정리. W3C Combobox 키보드·ARIA 참고, 최근 검색 개인정보·근거 없는 인기순위·검색 0건/필터 0건/네트워크 오류 구분.
+- 기존 SRC-00/02/06/08/12/24 및 색인·루트 README와 상호 연결. **정적 캡처·문서 검토 PASS**, 원본 영상 모션·실기기/사용자 시험·취향 선호 검증 **NOT RUN**. 외부 이미지·영상·폰트 미복제, 승인 범용 지침 v1.3·웹앱·Pages 미변경.
+
 ## 2026-11-12 — SRC-24 목록 표시·비교·탐색 9종 신규 분석
 
 - `UI_LIST_PRESENTATION_ATLAS_v0.1_20261112.md` 추가: 사용자 제공 @uxwoodytips 정적 캡처 **1장×9칸=9칸(SRC-24)**. 기존 누적 216칸에서 **225칸(중복 포함)**으로 확장. 225개 고유 패턴 또는 사용자 선호라고 주장하지 않음.
