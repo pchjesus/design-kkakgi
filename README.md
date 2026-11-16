@@ -1,5 +1,8 @@
 # 디자인 깎기
 
+> **2026-11-16 참고자료 탐색 구조 개편:** [**통합 아틀라스**](references/ATLAS_HOME.md) · [**새 레퍼런스 분석·등록**](references/REFERENCE_INTAKE_PROTOCOL.md) · [**UX Foundations 학술 기초**](references/foundations/README.md) · [**FOUND-001 30쪽 강의 분석**](references/foundations/FOUND-001_UCD_NURSING_USABILITY.md). 기존 연구·지침·웹앱·배포는 유지하며, 신규 레퍼런스는 먼저 분석해 등록한다.
+
+
 콘텐츠·목적·이용자·매체·기능에 맞는 디자인 판단과 구현·검증 능력을 연구하는 독립 저장소다. 개인 취향을 보편 규칙으로 자동 전환하지 않는다.
 
 ## UI 스타일 비교·사용자 취향 업데이트 (2026-11-16)
