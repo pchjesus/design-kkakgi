@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2026-11-16 — 통합 아틀라스 탐색·학술 기초 자료실 개편
+
+- 사용자 운영 요청 반영: **새 레퍼런스는 우선 분석·등록**, 이후 필요한 이론 조사나 소규모 실험으로 보완. [ATLAS_HOME.md](ATLAS_HOME.md), [REFERENCE_INTAKE_PROTOCOL.md](REFERENCE_INTAKE_PROTOCOL.md) 신설.
+- **UX Foundations** 분리: [자료실](foundations/README.md), [FOUND-001 — 사용자중심 디자인과 간호기술 사용성](foundations/FOUND-001_UCD_NURSING_USABILITY.md), [강의·외부 주장 검증표](foundations/CLAIM_VERIFICATION_REGISTER.md), [간단 사용성 평가 카드](foundations/USABILITY_EVALUATION_CARD.md) 신규.
+- 교안 30쪽의 **사용자중심 디자인·UX/UI·IA·Flow·심리학 10원리·사용자 여정·간호 환자안전·사용성 평가·디자인씽킹**을 요약·해석. 출처는 이예림(2026) 간호대학 6주차 강의자료로 명시하고, 강의 원문 PDF·이미지 미게시.
+- ISO 9241-11/210 공개 요약, FDA 2026-08-03 지침, W3C WCAG 2.2, RFC 9413, SUS 출처와 연결. **강의 내용/공식 검증/AI 가설/미검증 통계**를 구분. 9쪽의 UX 불만 약 1/3, 12쪽의 Netflix 탐색 시간은 원전 미확인으로 기록.
+- **개편은 상위 색인·문서 추가만**: 기존 REF-001~072, SRC 원자료 243칸(중복 포함), COLOR/STYLE/ORIGIN 계열·내부 경로 보존. Universal v1.3 APPROVED, 앱 코드, GitHub Pages 미변경. 정적 문서 검토 PASS; 실제 사용자·접근성·임상/동작 시험 NOT RUN.
+
+
 ## 2026-11-16 — STYLE-001 12종 UI 시각 언어·직접 취향 평가 분석
 
 - `STYLE_VISUAL_LANGUAGES_ATLAS_v0.1_20261116.md` 신규: 사용자가 제공한 **12개 정적 스타일 판본**을 비교. 01 Liquid Glass·05 Plasma Glow는 **사용자 직접 긍정**, 12 Risograph는 **색채 비선호/조형 선호**로 서로 다른 축에 기록. 선호 이유는 명시되지 않아 AI의 추론과 분리하고, 나머지 9종은 미평가로 둠.
