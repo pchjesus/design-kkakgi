@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-11-16 — STYLE-001 12종 UI 시각 언어·직접 취향 평가 분석
+
+- `STYLE_VISUAL_LANGUAGES_ATLAS_v0.1_20261116.md` 신규: 사용자가 제공한 **12개 정적 스타일 판본**을 비교. 01 Liquid Glass·05 Plasma Glow는 **사용자 직접 긍정**, 12 Risograph는 **색채 비선호/조형 선호**로 서로 다른 축에 기록. 선호 이유는 명시되지 않아 AI의 추론과 분리하고, 나머지 9종은 미평가로 둠.
+- 이전 AI가 Skeuomorphic Hardware(06)·Bauhaus(09)·Swiss Editorial(11)·Risograph(12) 등을 개인 선호 후보로 과도하게 추정했던 **실패를 수정 이력으로 보존**. 06·09·11을 비선호라고 추정하지 않음. 기존 취향 지도의 매트·재료·명암 관심과 새로운 **투명·발광 선호**를 통합하되 범용 규칙으로 승격하지 않음.
+- Apple HIG Liquid Glass 적용 범위, W3C 비텍스트 대비, MDN reduced motion/투명도(후자 지원 제한), MICA 인쇄 재료 특성에 대한 근거 연결. **SNS의 “Same 14 components”는 검증되지 않은 주장**으로 기록.
+- `references/README.md`·루트 `README.md`·기존 시각 스타일/질감 아틀라스에 링크 추가. STYLE은 **SRC-00~26과 별도 계열**, 기존 **243칸(중복 포함) 유지**. **정적 관찰/문서 PASS**, 실행·모션·성능·접근성·동일 기능 구현 **NOT RUN**. 원본 이미지/영상/폰트 미복제, 범용 v1.3·앱·Pages 미변경.
+
 ## 2026-11-13 — SRC-25 데이터 시각화·SRC-26 검색 경험 각 9종 기록
 
 - `UI_DATA_VISUALIZATION_SEARCH_ATLAS_v0.1_20261113.md` 신규: 사용자 제공 정적 캡처 **2장 × 9칸 = 18칸**(SRC-25·26). 기존 225칸에서 누적 **243칸(중복 포함)**으로 확장. 독립 UI 유형 243종이나 개인적 선호 평가 243건이라는 뜻은 아님.
