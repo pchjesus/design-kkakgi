@@ -7,6 +7,12 @@
 
 **누적 REF-001~072:** 1차 20장, 회화·푸드 26장, 웨이파인딩 1·2차 26장을 원본 이미지 없이 텍스트로 관리한다. 기존 v0.3의 ‘5건 직접 평가’는 **첫 20장에 한정**한 과거 시점 기록이다.
 
+## 2026-11-17 — SRC-27~29 스크롤·아이콘·UI 선택 의미 보강
+
+- [**SRC-27 — 스크롤 경험/등장 9종**](UI_SCROLL_EFFECTS_ATLAS_v0.1_20261117.md): Fade up·Parallax·Sticky header·Horizontal scroll·Scale in·Text reveal·Stagger·Progress bar·Infinite scroll. **스크롤 기반 모션 / 공간 배치 / 실제 데이터·진행 상태**를 다른 층위로 분리하고 MDN 공식 개념과 과업별 오용을 연결.
+- [**SRC-28·29 — 아이콘 의미 9쌍 + 헷갈리는 UI 9쌍**](UI_SEMANTIC_PAIRS_ATLAS_v0.1_20261117.md): Hamburger/Kebab, Kebab/Meatballs, Like/Bookmark, Share/Export, Close/Back, Refresh/Undo, Search/Zoom, Filter/Sort, Edit/Compose와 Alert/Confirm, Dropdown/Picker, Carousel/Horizontal scroll, Top bar/Tab bar, Paging/Infinite, Floating/Sticky, Placeholder/Label, Progress/Steps, Accordion/More. **아이콘 조형·행동·상태·컴포넌트 수준의 차이**를 비교.
+- 신규 **3장 × 9칸 = 27개 원자료 칸**. 기존 누적 243칸(중복 포함)에서 **270칸(중복 포함)**으로 확장. 이미 SRC-07·13·16·18·24 등에 있는 중복 개념은 연결만 함. 270종의 독립 UI 패턴이나 270건의 개인 선호가 아니다. **[USER] 이번 27칸의 개별 선호는 미평가**, 정적 캡처 분석 PASS, 실제 원본 영상 모션·제품 성능·사용자 시험 NOT RUN. 현행 v1.3·제품/Pages 미변경.
+
 ## UI 스타일·물성·빛의 비교 연구 (2026-11-16)
 
 - [**STYLE-001 — 12 UI Visual Languages (Liquid Glass·Plasma Glow·Risograph 등)**](STYLE_VISUAL_LANGUAGES_ATLAS_v0.1_20261116.md): 동일 14개 컴포넌트라는 SNS 화면 표기를 가진 **12개 정적 판본**을 색·광원·타이포·조형·배치·물성·정보 위계·위험으로 비교. **[USER] Liquid Glass(01)·Plasma Glow(05) 선호, Risograph(12)는 색채 비선호·조형 선호.** 06·09·11 등 다른 스타일 선호는 미평가. 이전 AI 예측의 빗나감을 기록. **STYLE 별도 계열**로 관리하여 UI 패턴 원자료 누적 **243칸에는 합산하지 않음**. 원본 동작·실사용 NOT RUN, 범용 v1.3·제품 미변경.
