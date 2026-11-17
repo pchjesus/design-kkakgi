@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-11-17 — SRC-27~29 스크롤·아이콘/패턴 차이 레퍼런스 추가
+
+- [SRC-27 스크롤·등장 효과](UI_SCROLL_EFFECTS_ATLAS_v0.1_20261117.md) 9칸: Fade up, Parallax, Sticky header, Horizontal scroll, Scale in, Text reveal, Stagger, Progress bar, Infinite scroll을 **모션/구조/상태/데이터**로 분리; MDN scroll/view timeline, IntersectionObserver, CSS sticky, reduced-motion 근거 연결.
+- [SRC-28·29 아이콘 9쌍·UI 비교 9쌍](UI_SEMANTIC_PAIRS_ATLAS_v0.1_20261117.md) 18칸: **조형의 별칭과 실제 행동의 의미를 구별**, Alert vs Confirm, Close vs Back, Refresh vs Undo, Filter vs Sort, Placeholder vs Label, Carousel vs Horizontal scroll, Paging vs Infinite 및 Floating/Sticky의 개념 혼동 방지. WAI-ARIA/WCAG/MDN/NN/g 공식 개념 대조.
+- 누적 SRC 원자료 **243→270칸(중복 포함)**. 기존 분류·기존 문서·ID는 소급 변경하지 않고 신규 분석·링크만 추가. 사용자의 개별 선호 미평가, SNS 실제 모션·원본 코드·사용자·접근성·임상 시험 **NOT RUN**.
+- 원본 외부 SNS 사진·영상·폰트·알림창 개인정보를 GitHub에 올리지 않음. Universal v1.3 APPROVED·실제 웹앱·GitHub Pages는 미변경.
+
 ## 2026-11-16 — 통합 아틀라스 탐색·학술 기초 자료실 개편
 
 - 사용자 운영 요청 반영: **새 레퍼런스는 우선 분석·등록**, 이후 필요한 이론 조사나 소규모 실험으로 보완. [ATLAS_HOME.md](ATLAS_HOME.md), [REFERENCE_INTAKE_PROTOCOL.md](REFERENCE_INTAKE_PROTOCOL.md) 신설.
