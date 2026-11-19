@@ -7,6 +7,12 @@
 
 **누적 REF-001~072:** 1차 20장, 회화·푸드 26장, 웨이파인딩 1·2차 26장을 원본 이미지 없이 텍스트로 관리한다. 기존 v0.3의 ‘5건 직접 평가’는 **첫 20장에 한정**한 과거 시점 기록이다.
 
+## 2026-11-19 — SRC-30·31 입력과 '모던한 UI'의 경계
+
+- [**SRC-30 — 입력 UI의 헷갈리는 짝 9개**](UI_INPUT_DISTINCTIONS_ATLAS_v0.1_20261119.md): Helper/Error, Input/Textarea, Autocomplete/Suggest, Password/OTP, Clear/Show, Counter/Max length, Numpad/Keyboard, Date input/Picker, Required/Optional. 원본 명칭을 보존하고 **동작·필요한 검증·접근성의 차이**를 설명.
+- [**SRC-31 — 모던 UI 관습 9가지의 적절한 사용과 오용**](MODERN_UI_CONVENTIONS_CRITIQUE_v0.1_20261119.md): White space, Rounded corners, Big type, One accent color, Soft shadow, Hairline divider, Card layout, Neutral grays, Dark mode. **기존 사용자 취향과 AI 추론 분리**, NN/g 및 WCAG와 교차 분석.
+- 신규 2장×9칸 = **18칸**. 누적 SRC 원자료 **270→288칸(중복 포함)**. 중복 주제는 연결만. 캡처 원본·알림 속 개인 정보 미게시; 사용자의 새 항목별 선호 평가·모션·기능 시험 **NOT RUN**. 기존 범용 v1.3, 웹앱·배포 미변경.
+
 ## 2026-11-17 — SRC-27~29 스크롤·아이콘·UI 선택 의미 보강
 
 - [**SRC-27 — 스크롤 경험/등장 9종**](UI_SCROLL_EFFECTS_ATLAS_v0.1_20261117.md): Fade up·Parallax·Sticky header·Horizontal scroll·Scale in·Text reveal·Stagger·Progress bar·Infinite scroll. **스크롤 기반 모션 / 공간 배치 / 실제 데이터·진행 상태**를 다른 층위로 분리하고 MDN 공식 개념과 과업별 오용을 연결.
