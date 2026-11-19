@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2026-11-19 — SRC-30 입력 UI 짝·SRC-31 모던 UI 관습의 비판적 분석
+
+- [SRC-30 입력 UI 9쌍](UI_INPUT_DISTINCTIONS_ATLAS_v0.1_20261119.md): 안내/오류, 입력/텍스트영역, 자동완성/추천, 암호/OTP, 지우기/보기, 글자수/길이 제한, 숫자패드/키보드, 날짜 입력/피커, 필수/선택의 **행동·데이터·상태 차이** 분석. W3C WCAG 2.2·WAI Forms·MDN 근거 대조.
+- [SRC-31 모던 UI 9관습](MODERN_UI_CONVENTIONS_CRITIQUE_v0.1_20261119.md): 여백·라운딩·큰 타이포·강조색·그림자·구분선·카드·중성색·다크모드를 **자동 적용하는 일률적 AI 미감의 위험**과 맥락별 장점으로 분리. 기존 취향 지도/STYLE-001 및 NN/g와 대조.
+- **새 사용자 취향은 미평가**. SNS 정적 캡처 2장/18칸 등록. 원자료 누적 **270→288칸(중복 포함)**. 캡처 원본·타사 이미지·알림에 포함된 개인정보 비공개.
+- 기존 범용 v1.3 APPROVED·GitHub Pages·실제 앱 코드 수정 없음. 정적 조사 PASS, 작동/사용자/임상/접근성 실측 NOT RUN.
+
 ## 2026-11-17 — SRC-27~29 스크롤·아이콘/패턴 차이 레퍼런스 추가
 
 - [SRC-27 스크롤·등장 효과](UI_SCROLL_EFFECTS_ATLAS_v0.1_20261117.md) 9칸: Fade up, Parallax, Sticky header, Horizontal scroll, Scale in, Text reveal, Stagger, Progress bar, Infinite scroll을 **모션/구조/상태/데이터**로 분리; MDN scroll/view timeline, IntersectionObserver, CSS sticky, reduced-motion 근거 연결.
