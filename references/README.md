@@ -7,6 +7,12 @@
 
 **누적 REF-001~072:** 1차 20장, 회화·푸드 26장, 웨이파인딩 1·2차 26장을 원본 이미지 없이 텍스트로 관리한다. 기존 v0.3의 ‘5건 직접 평가’는 **첫 20장에 한정**한 과거 시점 기록이다.
 
+## 2026-11-20 — 화면 전체의 조형을 읽는 선택형 분석 기준
+
+- [**REFERENCE_INTAKE_PROTOCOL v0.2**](REFERENCE_INTAKE_PROTOCOL.md): 요소 중심 분석을 기본으로, **구도·시점·빛·그림자·물성·배경·무게중심 등 요소 사이의 관계가 중요하면** 장면 분석을 추가. 불명확할 때는 기본 분석과 선택형 질문으로 처리.
+- 사용자 제공 RESSA 패키지·칵테일 콜라주는 장면 분석 사례, 녹색 모자 강아지·Blubird 서체는 기본 분석 사례, Felici 상자는 단순한 물체라도 그림자가 장면의 주역이 되는 반례로 기록. **정적 관찰과 제작 의도 추론 분리**.
+- 새 레퍼런스 ID·자료 건수 증가는 없음. 승인 범용 v1.3, 실제 앱, 배포 및 이미지 원본 보존 정책 미변경.
+
 ## 2026-11-19 — SRC-30·31 입력과 '모던한 UI'의 경계
 
 - [**SRC-30 — 입력 UI의 헷갈리는 짝 9개**](UI_INPUT_DISTINCTIONS_ATLAS_v0.1_20261119.md): Helper/Error, Input/Textarea, Autocomplete/Suggest, Password/OTP, Clear/Show, Counter/Max length, Numpad/Keyboard, Date input/Picker, Required/Optional. 원본 명칭을 보존하고 **동작·필요한 검증·접근성의 차이**를 설명.
