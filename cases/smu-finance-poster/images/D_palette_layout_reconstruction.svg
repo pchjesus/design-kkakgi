@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1414" viewBox="0 0 1000 1414" role="img" aria-label="SFC 포스터 D안 색상 및 구조 재현 자료">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf8"/><stop offset="1" stop-color="#f8f4ed"/></linearGradient>
+<linearGradient id="wave" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e8edf7" stop-opacity=".0"/><stop offset=".6" stop-color="#b8d3fa" stop-opacity=".35"/><stop offset="1" stop-color="#dfeafa" stop-opacity=".7"/></linearGradient>
+<style>
+.serif{font-family:Georgia,'Times New Roman',serif;fill:#102650}
+.sans{font-family:'Noto Sans CJK KR','Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif;fill:#122750}
+.mini{font-size:19px;letter-spacing:3px}.copy{font-size:24px}.label{font-size:27px;font-weight:700}.detail{font-size:20px}.small{font-size:18px}
+</style></defs>
+<rect width="1000" height="1414" fill="url(#bg)"/>
+<g fill="none" stroke="url(#wave)" stroke-width="1.1">
+<path d="M0 535 C 300 730, 540 285, 1000 295"/><path d="M0 539 C 300 732, 540 290, 1000 299"/><path d="M0 543 C 300 734, 540 295, 1000 303"/><path d="M0 547 C 300 736, 540 300, 1000 307"/><path d="M0 551 C 300 738, 540 305, 1000 311"/><path d="M0 555 C 300 740, 540 310, 1000 315"/><path d="M0 559 C 300 742, 540 315, 1000 319"/><path d="M0 563 C 300 744, 540 320, 1000 323"/><path d="M0 567 C 300 746, 540 325, 1000 327"/><path d="M0 571 C 300 748, 540 330, 1000 331"/><path d="M0 575 C 300 750, 540 335, 1000 335"/><path d="M0 579 C 300 752, 540 340, 1000 339"/><path d="M0 583 C 300 754, 540 345, 1000 343"/><path d="M0 587 C 300 756, 540 350, 1000 347"/><path d="M0 591 C 300 758, 540 355, 1000 351"/><path d="M0 595 C 300 760, 540 360, 1000 355"/><path d="M0 599 C 300 762, 540 365, 1000 359"/><path d="M0 603 C 300 764, 540 370, 1000 363"/><path d="M0 607 C 300 766, 540 375, 1000 367"/><path d="M0 611 C 300 768, 540 380, 1000 371"/><path d="M0 615 C 300 770, 540 385, 1000 375"/><path d="M0 619 C 300 772, 540 390, 1000 379"/>
+<path d="M0 1270 C 330 1155, 690 1470, 1000 1200"/><path d="M0 1272 C 330 1158, 690 1468, 1000 1202"/><path d="M0 1274 C 330 1161, 690 1466, 1000 1204"/><path d="M0 1276 C 330 1164, 690 1464, 1000 1206"/><path d="M0 1278 C 330 1167, 690 1462, 1000 1208"/><path d="M0 1280 C 330 1170, 690 1460, 1000 1210"/><path d="M0 1282 C 330 1173, 690 1458, 1000 1212"/><path d="M0 1284 C 330 1176, 690 1456, 1000 1214"/><path d="M0 1286 C 330 1179, 690 1454, 1000 1216"/><path d="M0 1288 C 330 1182, 690 1452, 1000 1218"/><path d="M0 1290 C 330 1185, 690 1450, 1000 1220"/><path d="M0 1292 C 330 1188, 690 1448, 1000 1222"/><path d="M0 1294 C 330 1191, 690 1446, 1000 1224"/><path d="M0 1296 C 330 1194, 690 1444, 1000 1226"/><path d="M0 1298 C 330 1197, 690 1442, 1000 1228"/><path d="M0 1300 C 330 1200, 690 1440, 1000 1230"/><path d="M0 1302 C 330 1203, 690 1438, 1000 1232"/>
+</g>
+<text x="70" y="68" class="sans" font-size="24" font-weight="700">상명대학교</text><text x="70" y="94" class="sans" font-size="12" letter-spacing="4">SANGMYUNG UNIVERSITY</text>
+<line x1="244" y1="43" x2="244" y2="103" stroke="#12376d"/><text x="270" y="73" class="sans" font-size="23">경영학부 학술동아리</text><text x="785" y="72" class="sans mini">2027 SPRING</text>
+<text x="63" y="319" class="serif" font-size="244" letter-spacing="-17">SFC.</text>
+<text x="72" y="405" class="sans" font-size="62" font-weight="800">신입회원 모집</text>
+<text x="75" y="453" class="sans" font-size="30">기업재무분석 학술동아리</text>
+<line x1="75" y1="493" x2="120" y2="493" stroke="#1664bc" stroke-width="4"/>
+<text x="76" y="535" class="sans copy">재무·투자 이론을 실제 기업 분석에 적용해</text><text x="76" y="572" class="sans copy">기업의 가치를 평가하는 실습형 학술동아리입니다.</text>
+<text x="75" y="697" class="sans label">주요 활동</text><text x="232" y="697" class="sans mini" fill="#1664bc">PROGRAM</text><line x1="370" y1="686" x2="929" y2="686" stroke="#1864bc" stroke-width="2"/>
+<line x1="367" y1="742" x2="367" y2="1020" stroke="#9db3d1"/><line x1="672" y1="742" x2="672" y2="1020" stroke="#9db3d1"/>
+<text x="75" y="804" class="serif" font-style="italic" font-size="66" fill="#155db5">01</text><text x="405" y="804" class="serif" font-style="italic" font-size="66">02</text><text x="714" y="804" class="serif" font-style="italic" font-size="66">03</text>
+<text x="75" y="857" class="sans" font-size="32" font-weight="700">기초교육</text><text x="405" y="857" class="sans" font-size="30" font-weight="700">기업분석 실습</text><text x="714" y="857" class="sans" font-size="30" font-weight="700">리서치 리포트</text>
+<text x="75" y="902" class="sans detail">재무제표 분석</text><text x="75" y="933" class="sans detail">상대가치평가, DCF</text><text x="405" y="902" class="sans detail">기업가치평가</text><text x="405" y="933" class="sans detail">동종기업 비교</text><text x="405" y="964" class="sans detail">IPO 공모가 분석</text><text x="714" y="902" class="sans detail">팀별 기업분석</text><text x="714" y="933" class="sans detail">리포트 작성·발표</text>
+<text x="76" y="1012" class="sans small" fill="#185bb2">1–4주</text><text x="405" y="1012" class="sans small">5–12주</text><text x="714" y="1012" class="sans small">13–15주</text>
+<text x="75" y="1105" class="sans label">모집 안내</text><text x="233" y="1105" class="sans mini">RECRUITMENT</text><line x1="441" y1="1095" x2="929" y2="1095" stroke="#1864bc" stroke-width="2"/>
+<line x1="505" y1="1132" x2="505" y2="1270" stroke="#9db3d1"/>
+<g class="sans detail"><text x="75" y="1163" font-weight="700">모집 대상</text><text x="218" y="1163">전 학년 재학생</text><text x="75" y="1210" font-weight="700">모집 인원</text><text x="218" y="1210">20~30명</text><text x="75" y="1257" font-weight="700">활동 시간</text><text x="218" y="1257">주 1회, 약 2시간</text>
+<text x="535" y="1163" font-weight="700">모집 시기</text><text x="690" y="1163">2027년 3월 초</text><text x="535" y="1210" font-weight="700">선발 방식</text><text x="690" y="1210">서류 및 면접</text><text x="535" y="1257" font-weight="700">활동 기간</text><text x="690" y="1257">2027학년도 1학기</text></g>
+</svg>
